@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.answerit.HomeFragment"
+        android:label="Ana Sayfa"
+        tools:layout="@layout/fragment_home">
+        
+        <action
+            android:id="@+id/action_homeFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+            
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+            
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.answerit.GameFragment"
+        android:label="Oyun"
+        tools:layout="@layout/fragment_game">
+        
+        <action
+            android:id="@+id/action_gameFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.answerit.ProfileFragment"
+        android:label="Profil"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.answerit.SettingsFragment"
+        android:label="Ayarlar"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_userAgreementFragment"
+            app:destination="@id/userAgreementFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.example.answerit.LanguageFragment"
+        android:label="Dil Seçimi"
+        tools:layout="@layout/fragment_language" />
+
+    <fragment
+        android:id="@+id/userAgreementFragment"
+        android:name="com.example.answerit.UserAgreementFragment"
+        android:label="Kullanıcı Sözleşmesi"
+        tools:layout="@layout/fragment_user_agreement" />
+
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.example.answerit.PrivacyPolicyFragment"
+        android:label="Gizlilik Politikası"
+        tools:layout="@layout/fragment_privacy_policy" />
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.answerit.ResultFragment"
+        android:label="Sonuç"
+        tools:layout="@layout/fragment_result">
+        
+        <action
+            android:id="@+id/action_resultFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation> 

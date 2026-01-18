@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_minimal_dark"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/languageTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language"
+            android:textColor="@color/gold"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/languageRadioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/languageTitleText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp">
+
+            <RadioButton android:id="@+id/turkishRadio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/turkish" android:textColor="@color/text_primary" android:textSize="16sp" android:layout_marginBottom="8dp" android:buttonTint="@color/minimal_dark_primary" />
+            <RadioButton android:id="@+id/englishRadio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/english" android:textColor="@color/text_primary" android:textSize="16sp" android:layout_marginBottom="8dp" android:buttonTint="@color/minimal_dark_primary" />
+            <RadioButton android:id="@+id/chineseRadio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chinese" android:textColor="@color/text_primary" android:textSize="16sp" android:layout_marginBottom="8dp" android:buttonTint="@color/minimal_dark_primary" />
+            <RadioButton android:id="@+id/spanishRadio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/spanish" android:textColor="@color/text_primary" android:textSize="16sp" android:layout_marginBottom="8dp" android:buttonTint="@color/minimal_dark_primary" />
+            <RadioButton android:id="@+id/arabicRadio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arabic" android:textColor="@color/text_primary" android:textSize="16sp" android:layout_marginBottom="8dp" android:buttonTint="@color/minimal_dark_primary" />
+            <RadioButton android:id="@+id/germanRadio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/german" android:textColor="@color/text_primary" android:textSize="16sp" android:layout_marginBottom="8dp" android:buttonTint="@color/minimal_dark_primary" />
+            <RadioButton android:id="@+id/frenchRadio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/french" android:textColor="@color/text_primary" android:textSize="16sp" android:layout_marginBottom="8dp" android:buttonTint="@color/minimal_dark_primary" />
+            <RadioButton android:id="@+id/russianRadio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/russian" android:textColor="@color/text_primary" android:textSize="16sp" android:layout_marginBottom="8dp" android:buttonTint="@color/minimal_dark_primary" />
+            <RadioButton android:id="@+id/hindiRadio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hindi" android:textColor="@color/text_primary" android:textSize="16sp" android:layout_marginBottom="8dp" android:buttonTint="@color/minimal_dark_primary" />
+            <RadioButton android:id="@+id/japaneseRadio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/japanese" android:textColor="@color/text_primary" android:textSize="16sp" android:layout_marginBottom="8dp" android:buttonTint="@color/minimal_dark_primary" />
+            <RadioButton android:id="@+id/koreanRadio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/korean" android:textColor="@color/text_primary" android:textSize="16sp" android:layout_marginBottom="8dp" android:buttonTint="@color/minimal_dark_primary" />
+            <RadioButton android:id="@+id/portugueseRadio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/portuguese" android:textColor="@color/text_primary" android:textSize="16sp" android:layout_marginBottom="8dp" android:buttonTint="@color/minimal_dark_primary" />
+            <RadioButton android:id="@+id/vietnameseRadio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vietnamese" android:textColor="@color/text_primary" android:textSize="16sp" android:buttonTint="@color/minimal_dark_primary" />
+            <RadioButton android:id="@+id/italianRadio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/italian" android:textColor="@color/text_primary" android:textSize="16sp" android:layout_marginBottom="8dp" android:buttonTint="@color/minimal_dark_primary" />
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/minimal_dark_surface"
+            android:padding="16dp"
+            android:text="@string/back_to_menu"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            app:cornerRadius="12dp"
+            app:strokeColor="@color/minimal_dark_primary"
+            app:strokeWidth="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/languageRadioGroup"
+            android:layout_marginTop="24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView> 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Minimal Dark Theme -->
+    <color name="minimal_dark_bg">#FF121212</color>
+    <color name="minimal_dark_surface">#FF1E1E1E</color>
+    <color name="minimal_dark_primary">#FF2196F3</color>
+    <color name="minimal_dark_accent">#FF64B5F6</color>
+    
+    <!-- Minimal Light Theme -->
+    <color name="minimal_light_bg">#FFF5F5F5</color>
+    <color name="minimal_light_surface">#FFFFFFFF</color>
+    <color name="minimal_light_primary">#FF1976D2</color>
+    <color name="minimal_light_accent">#FF42A5F5</color>
+    
+    <!-- Gradient Colors -->
+    <color name="gradient_blue_start">#FF1976D2</color>
+    <color name="gradient_blue_end">#FF0D47A1</color>
+    <color name="gradient_purple_start">#FF9C27B0</color>
+    <color name="gradient_purple_end">#FF6A1B9A</color>
+    <color name="gradient_gold_start">#FFFFD700</color>
+    <color name="gradient_gold_end">#FFFFA000</color>
+    
+    <!-- Common Colors -->
+    <color name="gold">#FFFFD700</color>
+    <color name="green">#FF4CAF50</color>
+    <color name="red">#FFF44336</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFB3B3B3</color>
+    <color name="text_dark">#FF212121</color>
+    <color name="text_dark_secondary">#FF757575</color>
+    <color name="card_light_bg">#FFF0F0F0</color>
+    <color name="text_black">#FF000000</color>
+</resources> 

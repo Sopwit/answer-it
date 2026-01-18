@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application xmlns:android="http://schemas.android.com/apk/res/android">
+    <icon android:drawable="@drawable/ic_launcher_simple" />
+</application> 
