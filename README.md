@@ -24,7 +24,7 @@
 
 1.  **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/Answer-it.git
+    git clone https://github.com/Sopwit/Answer-it.git
     ```
 2.  **Open in Android Studio**:
     Open the project folder in Android Studio.
