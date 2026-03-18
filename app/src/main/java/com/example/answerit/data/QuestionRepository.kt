@@ -373,6 +373,7 @@ object QuestionRepository {
             listOf("은", "금", "구리", "알루미늄"),
             listOf("Prata", "Ouro", "Cobre", "Alumínio"),
             listOf("Bạc", "Vàng", "Đồng", "Nhôm"),
+            listOf("Argento", "Oro", "Rame", "Alluminio"),
             1,
             Difficulty.HARD,
             32000
