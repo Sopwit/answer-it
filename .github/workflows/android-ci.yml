@@ -21,15 +21,24 @@ jobs:
           java-version: "17"
           cache: gradle
 
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
       - name: Install SDK packages
         run: |
-          sdkmanager "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+          yes | sdkmanager --licenses
+          sdkmanager --install "platform-tools" "platforms;android-36" "build-tools;36.0.0"
 
       - name: Grant Gradle execute permission
         run: chmod +x gradlew
 
+      - name: Print Tool Versions
+        run: |
+          java -version
+          ./gradlew --version
+
       - name: Build Debug APK
-        run: ./gradlew :app:assembleDebug --stacktrace
+        run: ./gradlew :app:assembleDebug --no-daemon --stacktrace --info
