@@ -7,13 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import android.widget.Toast
 import com.example.answerit.data.AppSettings
 import com.example.answerit.data.BackgroundTheme
 import com.example.answerit.data.Language
 import com.example.answerit.data.LanguageManager
 import com.example.answerit.databinding.FragmentSettingsBinding
-import android.widget.TextView
 import com.example.answerit.R
 
 class SettingsFragment : Fragment() {

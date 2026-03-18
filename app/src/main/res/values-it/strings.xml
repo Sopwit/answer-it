@@ -21,11 +21,11 @@
     <string name="game_over">Gioco finito</string>
     <string name="congratulations">Congratulazioni!</string>
     <string name="you_won">Hai vinto!</string>
-    <string name="prize_money">Premio: €%1$s</string>
-    <string name="current_prize">Premio attuale: €%1$s</string>
+    <string name="prize_money">Premio: %1$s</string>
+    <string name="current_prize">Premio attuale: %1$s</string>
     <string name="next_question">Prossima domanda</string>
     <string name="quit_game">Abbandona il gioco</string>
-    <string name="safe_haven">Salvagente: €%1$s</string>
+    <string name="safe_haven">Salvagente: %1$s</string>
     <string name="million_dollars">€1.000.000</string>
     <string name="background_theme">Tema sfondo</string>
     <string name="minimal_dark">Scuro</string>
@@ -43,9 +43,9 @@
     <string name="save">Salva</string>
     <string name="cancel">Annulla</string>
     <string name="welcome_message">Benvenuto su Answer It!</string>
-    <string name="best_score">Miglior punteggio: €%1$s</string>
+    <string name="best_score">Miglior punteggio: %1$s</string>
     <string name="games_played">Giochi giocati: %1$d</string>
-    <string name="total_winnings">Vincite totali: €%1$s</string>
+    <string name="total_winnings">Vincite totali: %1$s</string>
     <string name="edit_profile">Modifica profilo</string>
     <string name="change_name">Cambia nome</string>
     <string name="reset_stats">Reimposta statistiche</string>
@@ -87,7 +87,7 @@
     <string name="thank_you">Grazie!</string>
     <string name="audience_help_title">Aiuto del pubblico</string>
     <string name="audience_votes">Voti del pubblico:</string>
-    <string name="audience_option">%1$s: %%2$d%%</string>
+    <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">Ho capito</string>
     <string name="quit_game_title">Abbandona il gioco</string>
     <string name="quit_game_message">Sei sicuro di voler abbandonare il gioco? Salvagente: %1$s</string>

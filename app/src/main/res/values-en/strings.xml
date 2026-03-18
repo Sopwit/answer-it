@@ -19,11 +19,11 @@
     <string name="game_over">Game Over</string>
     <string name="congratulations">Congratulations!</string>
     <string name="you_won">You Won!</string>
-    <string name="prize_money">Prize: $%1$s</string>
-    <string name="current_prize">Current Prize: $%1$s</string>
+    <string name="prize_money">Prize: %1$s</string>
+    <string name="current_prize">Current Prize: %1$s</string>
     <string name="next_question">Next Question</string>
     <string name="quit_game">Quit Game</string>
-    <string name="safe_haven">Safe Haven: $%1$s</string>
+    <string name="safe_haven">Safe Haven: %1$s</string>
     <string name="million_dollars">$1,000,000</string>
     <string name="background_theme">Background Theme</string>
     <string name="minimal_dark">Dark</string>
@@ -41,9 +41,9 @@
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
     <string name="welcome_message">Welcome to Answer It!</string>
-    <string name="best_score">Best Score: $%1$s</string>
+    <string name="best_score">Best Score: %1$s</string>
     <string name="games_played">Games Played: %1$d</string>
-    <string name="total_winnings">Total Winnings: $%1$s</string>
+    <string name="total_winnings">Total Winnings: %1$s</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="change_name">Change Name</string>
     <string name="reset_stats">Reset Statistics</string>
@@ -86,7 +86,7 @@
     <string name="thank_you">Thank you!</string>
     <string name="audience_help_title">Ask the Audience</string>
     <string name="audience_votes">Audience Votes:</string>
-    <string name="audience_option">%1$s: %%2$d%%</string>
+    <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">Understood</string>
     <string name="quit_game_title">Quit Game</string>
     <string name="quit_game_message">Are you sure you want to quit the game? Your safe haven: %1$s</string>

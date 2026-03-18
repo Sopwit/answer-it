@@ -19,11 +19,11 @@
     <string name="game_over">Игра Окончена</string>
     <string name="congratulations">Поздравляем!</string>
     <string name="you_won">Вы выиграли!</string>
-    <string name="prize_money">Приз: ₽%1$s</string>
-    <string name="current_prize">Текущий Приз: ₽%1$s</string>
+    <string name="prize_money">Приз: %1$s</string>
+    <string name="current_prize">Текущий Приз: %1$s</string>
     <string name="next_question">Следующий Вопрос</string>
     <string name="quit_game">Выйти из Игры</string>
-    <string name="safe_haven">Безопасная Гавань: ₽%1$s</string>
+    <string name="safe_haven">Безопасная Гавань: %1$s</string>
     <string name="million_dollars">₽1,000,000</string>
     <string name="background_theme">Тема Фона</string>
     <string name="minimal_dark">Тёмная</string>
@@ -41,9 +41,9 @@
     <string name="save">Сохранить</string>
     <string name="cancel">Отмена</string>
     <string name="welcome_message">Добро пожаловать в Answer It!</string>
-    <string name="best_score">Лучший Результат: ₽%1$s</string>
+    <string name="best_score">Лучший Результат: %1$s</string>
     <string name="games_played">Сыгранные Игры: %1$d</string>
-    <string name="total_winnings">Общий Выигрыш: ₽%1$s</string>
+    <string name="total_winnings">Общий Выигрыш: %1$s</string>
     <string name="edit_profile">Редактировать Профиль</string>
     <string name="change_name">Изменить Имя</string>
     <string name="reset_stats">Сбросить Статистику</string>
@@ -85,7 +85,7 @@
     <string name="thank_you">Спасибо!</string>
     <string name="audience_help_title">Помощь Зала</string>
     <string name="audience_votes">Голоса Зрителей:</string>
-    <string name="audience_option">%1$s: %%2$d%%</string>
+    <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">Понятно</string>
     <string name="quit_game_title">Выйти из Игры</string>
     <string name="quit_game_message">Вы уверены, что хотите выйти из игры? Ваша безопасная гавань: %1$s</string>

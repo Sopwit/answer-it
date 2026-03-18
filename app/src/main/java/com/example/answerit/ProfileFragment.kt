@@ -11,8 +11,6 @@ import com.example.answerit.R
 import com.example.answerit.databinding.FragmentProfileBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.textfield.TextInputEditText
-import java.text.SimpleDateFormat
-import java.util.*
 
 class ProfileFragment : Fragment() {
     private var _binding: FragmentProfileBinding? = null

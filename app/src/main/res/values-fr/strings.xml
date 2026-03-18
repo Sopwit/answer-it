@@ -19,11 +19,11 @@
     <string name="game_over">Fin de Partie</string>
     <string name="congratulations">Félicitations!</string>
     <string name="you_won">Vous avez gagné!</string>
-    <string name="prize_money">Prix: €%1$s</string>
-    <string name="current_prize">Prix Actuel: €%1$s</string>
+    <string name="prize_money">Prix: %1$s</string>
+    <string name="current_prize">Prix Actuel: %1$s</string>
     <string name="next_question">Question Suivante</string>
     <string name="quit_game">Quitter le Jeu</string>
-    <string name="safe_haven">Port de Refuge: €%1$s</string>
+    <string name="safe_haven">Port de Refuge: %1$s</string>
     <string name="million_dollars">€1,000,000</string>
     <string name="background_theme">Thème d\'Arrière-plan</string>
     <string name="minimal_dark">Sombre</string>
@@ -41,9 +41,9 @@
     <string name="save">Sauvegarder</string>
     <string name="cancel">Annuler</string>
     <string name="welcome_message">Bienvenue dans Answer It!</string>
-    <string name="best_score">Meilleur Score: €%1$s</string>
+    <string name="best_score">Meilleur Score: %1$s</string>
     <string name="games_played">Parties Jouées: %1$d</string>
-    <string name="total_winnings">Gains Totaux: €%1$s</string>
+    <string name="total_winnings">Gains Totaux: %1$s</string>
     <string name="edit_profile">Modifier le Profil</string>
     <string name="change_name">Changer le Nom</string>
     <string name="reset_stats">Réinitialiser les Statistiques</string>
@@ -85,7 +85,7 @@
     <string name="thank_you">Merci!</string>
     <string name="audience_help_title">Demander au Public</string>
     <string name="audience_votes">Votes du Public:</string>
-    <string name="audience_option">%1$s: %%2$d%%</string>
+    <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">Compris</string>
     <string name="quit_game_title">Quitter le Jeu</string>
     <string name="quit_game_message">Êtes-vous sûr de vouloir quitter le jeu? Votre port de refuge: %1$s</string>

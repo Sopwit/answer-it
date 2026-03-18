@@ -19,11 +19,11 @@
     <string name="game_over">खेल समाप्त</string>
     <string name="congratulations">बधाई हो!</string>
     <string name="you_won">आप जीत गए!</string>
-    <string name="prize_money">पुरस्कार: ₹%1$s</string>
-    <string name="current_prize">वर्तमान पुरस्कार: ₹%1$s</string>
+    <string name="prize_money">पुरस्कार: %1$s</string>
+    <string name="current_prize">वर्तमान पुरस्कार: %1$s</string>
     <string name="next_question">अगला प्रश्न</string>
     <string name="quit_game">खेल छोड़ें</string>
-    <string name="safe_haven">सुरक्षित बंदरगाह: ₹%1$s</string>
+    <string name="safe_haven">सुरक्षित बंदरगाह: %1$s</string>
     <string name="million_dollars">₹1,000,000</string>
     <string name="background_theme">पृष्ठभूमि थीम</string>
     <string name="minimal_dark">डार्क</string>
@@ -41,9 +41,9 @@
     <string name="save">सहेजें</string>
     <string name="cancel">रद्द करें</string>
     <string name="welcome_message">Answer It में आपका स्वागत है!</string>
-    <string name="best_score">सर्वश्रेष्ठ स्कोर: ₹%1$s</string>
+    <string name="best_score">सर्वश्रेष्ठ स्कोर: %1$s</string>
     <string name="games_played">खेले गए खेल: %1$d</string>
-    <string name="total_winnings">कुल जीत: ₹%1$s</string>
+    <string name="total_winnings">कुल जीत: %1$s</string>
     <string name="edit_profile">प्रोफ़ाइल संपादित करें</string>
     <string name="change_name">नाम बदलें</string>
     <string name="reset_stats">आंकड़े रीसेट करें</string>
@@ -85,7 +85,7 @@
     <string name="thank_you">धन्यवाद!</string>
     <string name="audience_help_title">दर्शकों से पूछें</string>
     <string name="audience_votes">दर्शकों के वोट:</string>
-    <string name="audience_option">%1$s: %%2$d%%</string>
+    <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">समझ गया</string>
     <string name="quit_game_title">खेल छोड़ें</string>
     <string name="quit_game_message">क्या आप वाकई खेल छोड़ना चाहते हैं? आपका सुरक्षित बंदरगाह: %1$s</string>

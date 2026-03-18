@@ -19,11 +19,11 @@
     <string name="game_over">Oyun Bitti</string>
     <string name="congratulations">Tebrikler!</string>
     <string name="you_won">Kazandınız!</string>
-    <string name="prize_money">Ödül: ₺%1$s</string>
-    <string name="current_prize">Mevcut Ödül: ₺%1$s</string>
+    <string name="prize_money">Ödül: %1$s</string>
+    <string name="current_prize">Mevcut Ödül: %1$s</string>
     <string name="next_question">Sonraki Soru</string>
     <string name="quit_game">Oyundan Çık</string>
-    <string name="safe_haven">Güvenli Liman: ₺%1$s</string>
+    <string name="safe_haven">Güvenli Liman: %1$s</string>
     <string name="million_dollars">₺1,000,000</string>
     <string name="background_theme">Arka Plan Teması</string>
     <string name="minimal_dark">Koyu</string>
@@ -41,9 +41,9 @@
     <string name="save">Kaydet</string>
     <string name="cancel">İptal</string>
     <string name="welcome_message">Answer It\'e Hoş Geldiniz!</string>
-    <string name="best_score">En İyi Skor: ₺%1$s</string>
+    <string name="best_score">En İyi Skor: %1$s</string>
     <string name="games_played">Oynanan Oyun: %1$d</string>
-    <string name="total_winnings">Toplam Kazanç: ₺%1$s</string>
+    <string name="total_winnings">Toplam Kazanç: %1$s</string>
     <string name="edit_profile">Profili Düzenle</string>
     <string name="change_name">İsim Değiştir</string>
     <string name="reset_stats">İstatistikleri Sıfırla</string>
@@ -85,7 +85,7 @@
     <string name="thank_you">Teşekkürler!</string>
     <string name="audience_help_title">Seyirci Joker</string>
     <string name="audience_votes">Seyirci Oyları:</string>
-    <string name="audience_option">%1$s: %%2$d%%</string>
+    <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">Anladım</string>
     <string name="quit_game_title">Oyundan Çık</string>
     <string name="quit_game_message">Oyundan çıkmak istediğinizden emin misiniz? Güvenli limanınız: %1$s</string>

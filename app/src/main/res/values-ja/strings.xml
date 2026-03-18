@@ -19,11 +19,11 @@
     <string name="game_over">ゲームオーバー</string>
     <string name="congratulations">おめでとう！</string>
     <string name="you_won">あなたの勝ち！</string>
-    <string name="prize_money">賞金：¥%1$s</string>
-    <string name="current_prize">現在の賞金：¥%1$s</string>
+    <string name="prize_money">賞金：%1$s</string>
+    <string name="current_prize">現在の賞金：%1$s</string>
     <string name="next_question">次の質問</string>
     <string name="quit_game">ゲームを終了</string>
-    <string name="safe_haven">セーフハーバー：¥%1$s</string>
+    <string name="safe_haven">セーフハーバー：%1$s</string>
     <string name="million_dollars">¥1,000,000</string>
     <string name="background_theme">背景テーマ</string>
     <string name="minimal_dark">ダーク</string>
@@ -41,9 +41,9 @@
     <string name="save">保存</string>
     <string name="cancel">キャンセル</string>
     <string name="welcome_message">Answer Itへようこそ！</string>
-    <string name="best_score">最高スコア：¥%1$s</string>
+    <string name="best_score">最高スコア：%1$s</string>
     <string name="games_played">プレイしたゲーム：%1$d</string>
-    <string name="total_winnings">総獲得賞金：¥%1$s</string>
+    <string name="total_winnings">総獲得賞金：%1$s</string>
     <string name="edit_profile">プロフィール編集</string>
     <string name="change_name">名前変更</string>
     <string name="reset_stats">統計リセット</string>
@@ -85,7 +85,7 @@
     <string name="thank_you">ありがとう！</string>
     <string name="audience_help_title">観客に聞く</string>
     <string name="audience_votes">観客の投票：</string>
-    <string name="audience_option">%1$s: %%2$d%%</string>
+    <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">了解</string>
     <string name="quit_game_title">ゲームを終了</string>
     <string name="quit_game_message">ゲームを終了してもよろしいですか？セーフハーバー：%1$s</string>

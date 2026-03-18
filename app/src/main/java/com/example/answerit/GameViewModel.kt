@@ -3,10 +3,13 @@ package com.example.answerit
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.answerit.data.*
-import android.app.Application
-import android.content.Context
-import java.util.Locale
+import com.example.answerit.data.AppSettings
+import com.example.answerit.data.GameState
+import com.example.answerit.data.GameStatus
+import com.example.answerit.data.Language
+import com.example.answerit.data.PlayerProfile
+import com.example.answerit.data.Question
+import com.example.answerit.data.QuestionRepository
 
 class GameViewModel : ViewModel() {
     private val _appSettings = MutableLiveData(AppSettings())

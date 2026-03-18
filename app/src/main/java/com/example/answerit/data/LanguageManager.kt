@@ -39,6 +39,7 @@ class LanguageManager(private val context: Context) {
             "ko" -> Language.KOREAN
             "pt" -> Language.PORTUGUESE
             "vi" -> Language.VIETNAMESE
+            "it" -> Language.ITALIAN
             else -> Language.TURKISH // Default to Turkish
         }
     }

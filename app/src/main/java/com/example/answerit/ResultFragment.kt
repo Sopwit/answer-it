@@ -33,7 +33,7 @@ class ResultFragment : Fragment() {
     }
 
     private fun setupObservers() {
-        viewModel.gameState.observe(viewLifecycleOwner) { gameState ->
+        viewModel.gameState.observe(viewLifecycleOwner) {
             updateResultDisplay()
         }
 
@@ -54,7 +54,6 @@ class ResultFragment : Fragment() {
 
     private fun updateResultDisplay() {
         val gameState = viewModel.gameState.value ?: return
-        val currentQuestion = viewModel.currentQuestion.value
         
         // Update result title and message
         when (gameState.gameStatus) {

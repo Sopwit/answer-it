@@ -19,11 +19,11 @@
     <string name="game_over">Fim de Jogo</string>
     <string name="congratulations">Parabéns!</string>
     <string name="you_won">Você Venceu!</string>
-    <string name="prize_money">Prêmio: R$%1$s</string>
-    <string name="current_prize">Prêmio Atual: R$%1$s</string>
+    <string name="prize_money">Prêmio: %1$s</string>
+    <string name="current_prize">Prêmio Atual: %1$s</string>
     <string name="next_question">Próxima Pergunta</string>
     <string name="quit_game">Sair do Jogo</string>
-    <string name="safe_haven">Porto Seguro: R$%1$s</string>
+    <string name="safe_haven">Porto Seguro: %1$s</string>
     <string name="million_dollars">R$1,000,000</string>
     <string name="background_theme">Tema de Fundo</string>
     <string name="minimal_dark">Escuro</string>
@@ -41,9 +41,9 @@
     <string name="save">Salvar</string>
     <string name="cancel">Cancelar</string>
     <string name="welcome_message">Bem-vindo ao Answer It!</string>
-    <string name="best_score">Melhor Pontuação: R$%1$s</string>
+    <string name="best_score">Melhor Pontuação: %1$s</string>
     <string name="games_played">Jogos Jogados: %1$d</string>
-    <string name="total_winnings">Ganhos Totais: R$%1$s</string>
+    <string name="total_winnings">Ganhos Totais: %1$s</string>
     <string name="edit_profile">Editar Perfil</string>
     <string name="change_name">Alterar Nome</string>
     <string name="reset_stats">Redefinir Estatísticas</string>
@@ -85,7 +85,7 @@
     <string name="thank_you">Obrigado!</string>
     <string name="audience_help_title">Perguntar à Plateia</string>
     <string name="audience_votes">Votos da Plateia:</string>
-    <string name="audience_option">%1$s: %%2$d%%</string>
+    <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">Entendi</string>
     <string name="quit_game_title">Sair do Jogo</string>
     <string name="quit_game_message">Tem certeza que deseja sair do jogo? Seu porto seguro: %1$s</string>

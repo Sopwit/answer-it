@@ -19,11 +19,11 @@
     <string name="game_over">게임 오버</string>
     <string name="congratulations">축하합니다!</string>
     <string name="you_won">당신이 이겼습니다!</string>
-    <string name="prize_money">상금: ₩%1$s</string>
-    <string name="current_prize">현재 상금: ₩%1$s</string>
+    <string name="prize_money">상금: %1$s</string>
+    <string name="current_prize">현재 상금: %1$s</string>
     <string name="next_question">다음 질문</string>
     <string name="quit_game">게임 종료</string>
-    <string name="safe_haven">세이프 헤이븐: ₩%1$s</string>
+    <string name="safe_haven">세이프 헤이븐: %1$s</string>
     <string name="million_dollars">₩1,000,000</string>
     <string name="background_theme">배경 테마</string>
     <string name="minimal_dark">다크</string>
@@ -41,9 +41,9 @@
     <string name="save">저장</string>
     <string name="cancel">취소</string>
     <string name="welcome_message">Answer It에 오신 것을 환영합니다!</string>
-    <string name="best_score">최고 점수: ₩%1$s</string>
+    <string name="best_score">최고 점수: %1$s</string>
     <string name="games_played">플레이한 게임: %1$d</string>
-    <string name="total_winnings">총 상금: ₩%1$s</string>
+    <string name="total_winnings">총 상금: %1$s</string>
     <string name="edit_profile">프로필 편집</string>
     <string name="change_name">이름 변경</string>
     <string name="reset_stats">통계 초기화</string>
@@ -85,7 +85,7 @@
     <string name="thank_you">감사합니다!</string>
     <string name="audience_help_title">관객에게 물어보기</string>
     <string name="audience_votes">관객 투표:</string>
-    <string name="audience_option">%1$s: %%2$d%%</string>
+    <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">알겠습니다</string>
     <string name="quit_game_title">게임 종료</string>
     <string name="quit_game_message">게임을 종료하시겠습니까? 세이프 헤이븐: %1$s</string>

@@ -19,11 +19,11 @@
     <string name="game_over">انتهت اللعبة</string>
     <string name="congratulations">تهانينا!</string>
     <string name="you_won">لقد فزت!</string>
-    <string name="prize_money">الجائزة: ر.س%1$s</string>
-    <string name="current_prize">الجائزة الحالية: ر.س%1$s</string>
+    <string name="prize_money">الجائزة: %1$s</string>
+    <string name="current_prize">الجائزة الحالية: %1$s</string>
     <string name="next_question">السؤال التالي</string>
     <string name="quit_game">الخروج من اللعبة</string>
-    <string name="safe_haven">الميناء الآمن: ر.س%1$s</string>
+    <string name="safe_haven">الميناء الآمن: %1$s</string>
     <string name="million_dollars">ر.س1,000,000</string>
     <string name="background_theme">مظهر الخلفية</string>
     <string name="minimal_dark">داكن</string>
@@ -41,9 +41,9 @@
     <string name="save">حفظ</string>
     <string name="cancel">إلغاء</string>
     <string name="welcome_message">مرحباً بك في Answer It!</string>
-    <string name="best_score">أفضل نتيجة: ر.س%1$s</string>
+    <string name="best_score">أفضل نتيجة: %1$s</string>
     <string name="games_played">الألعاب الملعوبة: %1$d</string>
-    <string name="total_winnings">إجمالي المكاسب: ر.س%1$s</string>
+    <string name="total_winnings">إجمالي المكاسب: %1$s</string>
     <string name="edit_profile">تعديل الملف الشخصي</string>
     <string name="change_name">تغيير الاسم</string>
     <string name="reset_stats">إعادة تعيين الإحصائيات</string>
@@ -85,7 +85,7 @@
     <string name="thank_you">شكراً لك!</string>
     <string name="audience_help_title">مساعدة الجمهور</string>
     <string name="audience_votes">أصوات الجمهور:</string>
-    <string name="audience_option">%1$s: %%2$d%%</string>
+    <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">فهمت</string>
     <string name="quit_game_title">الخروج من اللعبة</string>
     <string name="quit_game_message">هل أنت متأكد من أنك تريد الخروج من اللعبة؟ ميناؤك الآمن: %1$s</string>
