@@ -71,6 +71,7 @@ class PrivacyPolicyFragment : Fragment() {
 
         binding.backButton.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
         binding.backButton.setTextColor(secondaryBtnText)
+        binding.backButton.iconTint = android.content.res.ColorStateList.valueOf(secondaryBtnText)
         binding.backButton.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
         binding.backButton.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
     }

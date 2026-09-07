@@ -2,40 +2,63 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
     
-    <!-- Minimal Dark Theme -->
-    <color name="minimal_dark_bg">#FF121212</color>
-    <color name="minimal_dark_surface">#FF1E1E1E</color>
-    <color name="minimal_dark_primary">#FF2196F3</color>
-    <color name="minimal_dark_accent">#FF64B5F6</color>
+    <!-- Premium Dark Palette -->
+    <color name="minimal_dark_bg">#FF0F1117</color>
+    <color name="minimal_dark_surface">#FF1A1D27</color>
+    <color name="minimal_dark_card">#FF222736</color>
+    <color name="minimal_dark_primary">#FF2979FF</color>
+    <color name="minimal_dark_accent">#FF00E5FF</color>
     
-    <!-- Minimal Light Theme -->
-    <color name="minimal_light_bg">#FFF5F5F5</color>
+    <!-- Premium Light Palette -->
+    <color name="minimal_light_bg">#FFF4F6FB</color>
     <color name="minimal_light_surface">#FFFFFFFF</color>
-    <color name="minimal_light_primary">#FF1976D2</color>
-    <color name="minimal_light_accent">#FF42A5F5</color>
+    <color name="minimal_light_card">#FFFFFFFF</color>
+    <color name="minimal_light_primary">#FF1565C0</color>
+    <color name="minimal_light_accent">#FF00B0FF</color>
     
-    <!-- Gradient Colors -->
-    <color name="gradient_blue_start">#FF1976D2</color>
-    <color name="gradient_blue_end">#FF0D47A1</color>
-    <color name="gradient_purple_start">#FF9C27B0</color>
-    <color name="gradient_purple_end">#FF6A1B9A</color>
-    <color name="gradient_gold_start">#FFFFD700</color>
-    <color name="gradient_gold_end">#FFFFA000</color>
+    <!-- Gradient Colors (Deep Navy / Nebula Purple / Royal Gold) -->
+    <color name="gradient_blue_start">#FF0F2027</color>
+    <color name="gradient_blue_mid">#FF203A43</color>
+    <color name="gradient_blue_end">#FF2C5364</color>
     
-    <!-- Common Colors -->
+    <color name="gradient_purple_start">#FF1D0A35</color>
+    <color name="gradient_purple_mid">#FF3B1569</color>
+    <color name="gradient_purple_end">#FF6420AA</color>
+    
+    <color name="gradient_gold_start">#FFFFF3D0</color>
+    <color name="gradient_gold_mid">#FFFFE082</color>
+    <color name="gradient_gold_end">#FFFFD54F</color>
+    
+    <!-- Premium Gold & Jewels -->
     <color name="gold">#FFFFD700</color>
-    <color name="gold_accent_readable">#FF7A4A00</color>
-    <color name="gold_primary_button">#FF1F1F1F</color>
-    <color name="green">#FF4CAF50</color>
-    <color name="red">#FFF44336</color>
+    <color name="gold_gradient_start">#FFFFD700</color>
+    <color name="gold_gradient_end">#FFFFA000</color>
+    <color name="gold_glow">#40FFD700</color>
+    <color name="gold_accent_readable">#FF8C5A00</color>
+    <color name="gold_primary_button">#FF1C1A14</color>
+    <color name="gold_card_bg">#FFFFFDF5</color>
+    
+    <!-- Status & Functional Colors -->
+    <color name="green">#FF00E676</color>
+    <color name="green_dark">#FF00A854</color>
+    <color name="green_glow">#4000E676</color>
+    <color name="red">#FFFF3D57</color>
+    <color name="red_dark">#FFD50000</color>
+    <color name="red_glow">#40FF3D57</color>
+    
+    <!-- Typography -->
     <color name="text_primary">#FFFFFFFF</color>
-    <color name="text_secondary">#FFB3B3B3</color>
-    <color name="text_dark">#FF212121</color>
-    <color name="text_dark_secondary">#FF616161</color>
-    <color name="card_light_bg">#FFF0F0F0</color>
+    <color name="text_secondary">#FFA0A5B5</color>
+    <color name="text_tertiary">#FF6C7282</color>
+    <color name="text_dark">#FF161823</color>
+    <color name="text_dark_secondary">#FF5A6072</color>
     <color name="text_black">#FF000000</color>
-    <color name="stroke_dark">#33FFFFFF</color>
-    <color name="stroke_light">#FFE0E0E0</color>
-    <color name="stroke_gold">#4D7A4A00</color>
+    
+    <!-- Borders & Dividers -->
+    <color name="stroke_dark">#24FFFFFF</color>
+    <color name="stroke_light">#1A000000</color>
+    <color name="stroke_gold">#66FFD700</color>
+    <color name="card_light_bg">#FFF8FAFD</color>
 </resources> 

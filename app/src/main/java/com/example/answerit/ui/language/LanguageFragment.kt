@@ -92,12 +92,14 @@ class LanguageFragment : Fragment() {
         binding.root.setBackgroundResource(theme.drawableRes)
 
         val textColor = ContextCompat.getColor(requireContext(), theme.textColorRes)
+        val cardBg = ContextCompat.getColor(requireContext(), theme.cardBgColorRes)
         val accentColor = ContextCompat.getColor(requireContext(), theme.accentColorRes)
         val secondaryBtnBg = ContextCompat.getColor(requireContext(), theme.secondaryButtonBgRes)
         val secondaryBtnText = ContextCompat.getColor(requireContext(), theme.secondaryButtonTextRes)
         val secondaryBtnStroke = ContextCompat.getColor(requireContext(), theme.secondaryButtonStrokeRes)
 
         binding.languageTitleText.setTextColor(textColor)
+        binding.languageCard.setCardBackgroundColor(cardBg)
 
         val radioButtons = listOf(
             binding.turkishRadio,
@@ -123,6 +125,7 @@ class LanguageFragment : Fragment() {
 
         binding.backButton.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
         binding.backButton.setTextColor(secondaryBtnText)
+        binding.backButton.iconTint = android.content.res.ColorStateList.valueOf(secondaryBtnText)
         binding.backButton.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
         binding.backButton.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
     }

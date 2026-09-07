@@ -112,7 +112,9 @@ class ResultFragment : Fragment() {
         binding.root.setBackgroundResource(theme.drawableRes)
 
         val textColor = ContextCompat.getColor(requireContext(), theme.textColorRes)
+        val subTextColor = ContextCompat.getColor(requireContext(), theme.subTextColorRes)
         val cardBg = ContextCompat.getColor(requireContext(), theme.cardBgColorRes)
+        val cardStroke = ContextCompat.getColor(requireContext(), theme.cardStrokeColorRes)
         val cardTextColor = ContextCompat.getColor(requireContext(), theme.cardTextColorRes)
         val accentColor = ContextCompat.getColor(requireContext(), theme.accentColorRes)
         val primaryBtnBg = ContextCompat.getColor(requireContext(), theme.primaryButtonBgRes)
@@ -123,17 +125,32 @@ class ResultFragment : Fragment() {
 
         binding.resultTitleText.setTextColor(textColor)
         binding.resultCard.setCardBackgroundColor(cardBg)
+        binding.resultIcon.imageTintList = android.content.res.ColorStateList.valueOf(accentColor)
         binding.resultMessageText.setTextColor(cardTextColor)
         binding.prizeWonText.setTextColor(accentColor)
+
+        val statsShape = android.graphics.drawable.GradientDrawable().apply {
+            setColor(secondaryBtnBg)
+            cornerRadius = 14 * resources.displayMetrics.density
+            setStroke((1.2f * resources.displayMetrics.density).toInt(), cardStroke)
+        }
+        binding.statsBox.background = statsShape
+
+        binding.reachedQuestionLabel.setTextColor(subTextColor)
+        binding.usedLifelinesLabel.setTextColor(subTextColor)
+        binding.safeHavenLabel.setTextColor(subTextColor)
+
         binding.reachedQuestionText.setTextColor(cardTextColor)
         binding.usedLifelinesText.setTextColor(cardTextColor)
-        binding.safeHavenText.setTextColor(cardTextColor)
+        binding.safeHavenText.setTextColor(ContextCompat.getColor(requireContext(), R.color.green))
 
         binding.playAgainButton.backgroundTintList = android.content.res.ColorStateList.valueOf(primaryBtnBg)
         binding.playAgainButton.setTextColor(primaryBtnText)
+        binding.playAgainButton.iconTint = android.content.res.ColorStateList.valueOf(primaryBtnText)
 
         binding.backToMenuButton.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
         binding.backToMenuButton.setTextColor(secondaryBtnText)
+        binding.backToMenuButton.iconTint = android.content.res.ColorStateList.valueOf(secondaryBtnText)
         binding.backToMenuButton.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
         binding.backToMenuButton.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
     }

@@ -191,27 +191,41 @@ class GameFragment : Fragment() {
     private fun updateBackgroundTheme(theme: BackgroundTheme) {
         binding.root.setBackgroundResource(theme.drawableRes)
 
-        binding.questionNumberText.setTextColor(ContextCompat.getColor(requireContext(), theme.subTextColorRes))
-        binding.prizeMoneyText.setTextColor(ContextCompat.getColor(requireContext(), theme.accentColorRes))
-
         val cardBg = ContextCompat.getColor(requireContext(), theme.cardBgColorRes)
         val cardStroke = ContextCompat.getColor(requireContext(), theme.cardStrokeColorRes)
         val cardTextColor = ContextCompat.getColor(requireContext(), theme.cardTextColorRes)
+        val accentColor = ContextCompat.getColor(requireContext(), theme.accentColorRes)
 
-        val shape = android.graphics.drawable.GradientDrawable().apply {
+        binding.questionNumberText.setTextColor(cardTextColor)
+        binding.prizeMoneyText.setTextColor(accentColor)
+        binding.prizeIcon.imageTintList = android.content.res.ColorStateList.valueOf(accentColor)
+
+        // Question Card
+        val questionCardShape = android.graphics.drawable.GradientDrawable().apply {
             setColor(cardBg)
             cornerRadius = 16 * resources.displayMetrics.density
             setStroke((1.5f * resources.displayMetrics.density).toInt(), cardStroke)
         }
-        binding.questionText.background = shape
+        binding.questionText.background = questionCardShape
         binding.questionText.setTextColor(cardTextColor)
 
+        // Pill Badges (Question number & Prize pill)
+        val pillShape = android.graphics.drawable.GradientDrawable().apply {
+            setColor(cardBg)
+            cornerRadius = 20 * resources.displayMetrics.density
+            setStroke((1.2f * resources.displayMetrics.density).toInt(), cardStroke)
+        }
+        binding.questionNumberText.background = pillShape
+        binding.prizeContainer.background = pillShape
+
+        // Lifelines
         val lifelineBg = ContextCompat.getColor(requireContext(), theme.lifelineBgRes)
         val lifelineText = ContextCompat.getColor(requireContext(), theme.lifelineTextRes)
         val lifelines = listOf(binding.fiftyFiftyButton, binding.phoneFriendButton, binding.audienceHelpButton)
         lifelines.forEach { btn ->
             btn.backgroundTintList = android.content.res.ColorStateList.valueOf(lifelineBg)
             btn.setTextColor(lifelineText)
+            btn.iconTint = android.content.res.ColorStateList.valueOf(lifelineText)
         }
     }
 

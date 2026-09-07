@@ -116,6 +116,7 @@ class SettingsFragment : Fragment() {
         buttons.forEach { btn ->
             btn.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
             btn.setTextColor(secondaryBtnText)
+            btn.iconTint = android.content.res.ColorStateList.valueOf(secondaryBtnText)
             btn.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
             btn.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
         }
@@ -129,9 +130,11 @@ class SettingsFragment : Fragment() {
         // Legal Cards
         binding.userAgreementCard.setCardBackgroundColor(cardBg)
         binding.userAgreementText.setTextColor(accentColor)
+        binding.userAgreementIcon.imageTintList = android.content.res.ColorStateList.valueOf(accentColor)
 
         binding.privacyPolicyCard.setCardBackgroundColor(cardBg)
         binding.privacyPolicyText.setTextColor(accentColor)
+        binding.privacyPolicyIcon.imageTintList = android.content.res.ColorStateList.valueOf(accentColor)
     }
 
     override fun onDestroyView() {

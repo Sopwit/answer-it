@@ -49,6 +49,12 @@ class ProfileFragment : Fragment() {
                         updateBackgroundTheme(settings.backgroundTheme)
                     }
                 }
+                launch {
+                    viewModel.playerProfile.collect { profile ->
+                        binding.playerNameText.text = profile.name
+                        binding.totalEarningsValue.text = viewModel.formatPrizeMoney(profile.totalWinnings.toInt())
+                    }
+                }
             }
         }
     }
@@ -71,19 +77,39 @@ class ProfileFragment : Fragment() {
         binding.root.setBackgroundResource(theme.drawableRes)
 
         val textColor = ContextCompat.getColor(requireContext(), theme.textColorRes)
-        val primaryBtnBg = ContextCompat.getColor(requireContext(), theme.primaryButtonBgRes)
-        val primaryBtnText = ContextCompat.getColor(requireContext(), theme.primaryButtonTextRes)
+        val subTextColor = ContextCompat.getColor(requireContext(), theme.subTextColorRes)
+        val cardBg = ContextCompat.getColor(requireContext(), theme.cardBgColorRes)
+        val cardStroke = ContextCompat.getColor(requireContext(), theme.cardStrokeColorRes)
+        val cardTextColor = ContextCompat.getColor(requireContext(), theme.cardTextColorRes)
+        val accentColor = ContextCompat.getColor(requireContext(), theme.accentColorRes)
         val secondaryBtnBg = ContextCompat.getColor(requireContext(), theme.secondaryButtonBgRes)
         val secondaryBtnText = ContextCompat.getColor(requireContext(), theme.secondaryButtonTextRes)
         val secondaryBtnStroke = ContextCompat.getColor(requireContext(), theme.secondaryButtonStrokeRes)
 
         binding.profileTitleText.setTextColor(textColor)
+        binding.playerCard.setCardBackgroundColor(cardBg)
+        binding.avatarIcon.imageTintList = android.content.res.ColorStateList.valueOf(accentColor)
+        binding.playerNameText.setTextColor(cardTextColor)
+        binding.playerRankBadge.setTextColor(accentColor)
+        binding.totalEarningsLabel.setTextColor(subTextColor)
+        binding.totalEarningsValue.setTextColor(accentColor)
 
-        binding.editNameButton.backgroundTintList = android.content.res.ColorStateList.valueOf(primaryBtnBg)
-        binding.editNameButton.setTextColor(primaryBtnText)
+        val boxShape = android.graphics.drawable.GradientDrawable().apply {
+            setColor(secondaryBtnBg)
+            cornerRadius = 14 * resources.displayMetrics.density
+            setStroke((1.2f * resources.displayMetrics.density).toInt(), cardStroke)
+        }
+        binding.earningsBox.background = boxShape
+
+        binding.editNameButton.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
+        binding.editNameButton.setTextColor(secondaryBtnText)
+        binding.editNameButton.iconTint = android.content.res.ColorStateList.valueOf(secondaryBtnText)
+        binding.editNameButton.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
+        binding.editNameButton.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
 
         binding.backButton.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
         binding.backButton.setTextColor(secondaryBtnText)
+        binding.backButton.iconTint = android.content.res.ColorStateList.valueOf(secondaryBtnText)
         binding.backButton.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
         binding.backButton.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
     }

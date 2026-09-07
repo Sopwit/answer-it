@@ -10,9 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="32dp">
 
-        <!-- Title -->
+        <!-- Screen Title -->
         <TextView
             android:id="@+id/profileTitleText"
             android:layout_width="match_parent"
@@ -24,43 +25,143 @@
             android:gravity="center"
             android:layout_marginBottom="24dp" />
 
-        <!-- Buttons -->
+        <!-- Player Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/playerCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/minimal_dark_surface"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="24dp">
+
+                <!-- Avatar Circle -->
+                <ImageView
+                    android:id="@+id/avatarIcon"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/ic_person"
+                    android:contentDescription="Player Avatar"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Player Name -->
+                <TextView
+                    android:id="@+id/playerNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_contestant"
+                    android:textColor="@color/text_primary"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/playerRankBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ŞAMPİYON YARIŞMACI"
+                    android:textColor="@color/gold"
+                    android:textSize="12sp"
+                    android:letterSpacing="0.1"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Total Earnings Box -->
+                <LinearLayout
+                    android:id="@+id/earningsBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_background"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingVertical="14dp"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView
+                        android:id="@+id/totalEarningsLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_earnings"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="13sp"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:id="@+id/totalEarningsValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₺0"
+                        android:textColor="@color/gold"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Edit Name Button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/editNameButton"
             android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:backgroundTint="@color/minimal_dark_primary"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/minimal_dark_surface"
             android:text="@string/change_name"
-            android:textColor="@color/white"
+            android:textColor="@color/text_primary"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginBottom="14dp"
-            app:cornerRadius="12dp" />
+            app:icon="@drawable/ic_edit"
+            app:iconGravity="textStart"
+            app:iconPadding="10dp"
+            app:iconSize="20dp"
+            app:strokeColor="@color/stroke_dark"
+            app:strokeWidth="1.5dp"
+            android:layout_marginBottom="12dp"
+            app:cornerRadius="14dp" />
 
+        <!-- Reset Stats Button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/resetStatsButton"
             android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:backgroundTint="@color/red"
+            android:layout_height="56dp"
+            android:backgroundTint="#26FF3D57"
             android:text="@string/reset_stats"
-            android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:textSize="15sp"
             android:textStyle="bold"
-            android:layout_marginBottom="14dp"
-            app:cornerRadius="12dp" />
+            app:icon="@drawable/ic_refresh"
+            app:iconGravity="textStart"
+            app:iconPadding="10dp"
+            app:iconSize="20dp"
+            app:iconTint="@color/red"
+            app:strokeColor="@color/red"
+            app:strokeWidth="1.5dp"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="14dp" />
 
+        <!-- Back Button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/backButton"
             android:layout_width="match_parent"
-            android:layout_height="54dp"
+            android:layout_height="56dp"
             android:backgroundTint="@color/minimal_dark_surface"
             android:text="@string/back_to_menu"
             android:textColor="@color/text_primary"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:strokeColor="@color/minimal_dark_primary"
+            app:icon="@drawable/ic_arrow_back"
+            app:iconGravity="textStart"
+            app:iconPadding="10dp"
+            app:iconSize="20dp"
+            app:strokeColor="@color/stroke_dark"
             app:strokeWidth="1.5dp"
-            app:cornerRadius="12dp" />
+            app:cornerRadius="14dp" />
 
     </LinearLayout>
 </ScrollView>

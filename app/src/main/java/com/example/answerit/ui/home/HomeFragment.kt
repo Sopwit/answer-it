@@ -71,6 +71,8 @@ class HomeFragment : Fragment() {
         binding.root.setBackgroundResource(theme.drawableRes)
 
         val textColor = ContextCompat.getColor(requireContext(), theme.textColorRes)
+        val subTextColor = ContextCompat.getColor(requireContext(), theme.subTextColorRes)
+        val accentColor = ContextCompat.getColor(requireContext(), theme.accentColorRes)
         val primaryBtnBg = ContextCompat.getColor(requireContext(), theme.primaryButtonBgRes)
         val primaryBtnText = ContextCompat.getColor(requireContext(), theme.primaryButtonTextRes)
         val secondaryBtnBg = ContextCompat.getColor(requireContext(), theme.secondaryButtonBgRes)
@@ -78,19 +80,24 @@ class HomeFragment : Fragment() {
         val secondaryBtnStroke = ContextCompat.getColor(requireContext(), theme.secondaryButtonStrokeRes)
 
         binding.welcomeText.setTextColor(textColor)
+        binding.subtitleText.setTextColor(subTextColor)
+        binding.logoIcon.imageTintList = android.content.res.ColorStateList.valueOf(accentColor)
 
         binding.playButton.backgroundTintList = android.content.res.ColorStateList.valueOf(primaryBtnBg)
         binding.playButton.setTextColor(primaryBtnText)
+        binding.playButton.iconTint = android.content.res.ColorStateList.valueOf(primaryBtnText)
 
         binding.profileButton.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
         binding.profileButton.setTextColor(secondaryBtnText)
+        binding.profileButton.iconTint = android.content.res.ColorStateList.valueOf(secondaryBtnText)
         binding.profileButton.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
-        binding.profileButton.strokeWidth = (2 * resources.displayMetrics.density).toInt()
+        binding.profileButton.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
 
         binding.settingsButton.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
         binding.settingsButton.setTextColor(secondaryBtnText)
+        binding.settingsButton.iconTint = android.content.res.ColorStateList.valueOf(secondaryBtnText)
         binding.settingsButton.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
-        binding.settingsButton.strokeWidth = (2 * resources.displayMetrics.density).toInt()
+        binding.settingsButton.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
     }
 
     override fun onDestroyView() {
