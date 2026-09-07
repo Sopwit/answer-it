@@ -9,190 +9,210 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:padding="20dp">
 
-        <!-- Prize Money Display -->
+        <!-- Top Header: Question Number & Prize -->
+        <TextView
+            android:id="@+id/questionNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soru 1 / 15"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
         <TextView
             android:id="@+id/prizeMoneyText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/current_prize"
             android:textColor="@color/gold"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Question Number -->
-        <TextView
-            android:id="@+id/questionNumberText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Soru 1 / 15"
-            android:textColor="@color/text_secondary"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/prizeMoneyText" />
-
-        <!-- Question Text -->
+        <!-- Question Card -->
         <TextView
             android:id="@+id/questionText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/card_background"
             android:padding="20dp"
+            android:minHeight="100dp"
+            android:gravity="center"
             android:text="@string/question"
             android:textColor="@color/text_primary"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/questionNumberText"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/questionNumberText" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <!-- Answer Options -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/answerAButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:minHeight="54dp"
+            android:layout_marginTop="16dp"
             android:backgroundTint="@color/minimal_dark_primary"
-            android:padding="16dp"
+            android:padding="12dp"
             android:text="@string/answer_a"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="15sp"
+            android:gravity="center_vertical|start"
             app:cornerRadius="12dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/questionText"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/questionText" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/answerBButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:minHeight="54dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/minimal_dark_primary"
-            android:padding="16dp"
+            android:padding="12dp"
             android:text="@string/answer_b"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="15sp"
+            android:gravity="center_vertical|start"
             app:cornerRadius="12dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/answerAButton"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/answerAButton" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/answerCButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:minHeight="54dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/minimal_dark_primary"
-            android:padding="16dp"
+            android:padding="12dp"
             android:text="@string/answer_c"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="15sp"
+            android:gravity="center_vertical|start"
             app:cornerRadius="12dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/answerBButton"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/answerBButton" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/answerDButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:minHeight="54dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/minimal_dark_primary"
-            android:padding="16dp"
+            android:padding="12dp"
             android:text="@string/answer_d"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="15sp"
+            android:gravity="center_vertical|start"
             app:cornerRadius="12dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/answerCButton"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/answerCButton" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Lifelines -->
+        <!-- Lifelines Section -->
         <LinearLayout
             android:id="@+id/lifelinesLayout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="18dp"
             android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/answerDButton"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/answerDButton">
+            app:layout_constraintEnd_toEndOf="parent">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/fiftyFiftyButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="6dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/gold"
                 android:text="@string/fifty_fifty"
                 android:textColor="@color/black"
                 android:textSize="12sp"
-                app:cornerRadius="8dp" />
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/phoneFriendButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="6dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/gold"
                 android:text="@string/phone_friend"
                 android:textColor="@color/black"
                 android:textSize="12sp"
-                app:cornerRadius="8dp" />
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/audienceHelpButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="6dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/gold"
                 android:text="@string/audience_help"
                 android:textColor="@color/black"
                 android:textSize="12sp"
-                app:cornerRadius="8dp" />
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
 
         </LinearLayout>
 
-        <!-- Action Buttons -->
+        <!-- Bottom Actions (Quit & Confirm) -->
         <LinearLayout
+            android:id="@+id/actionLayout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="12dp"
             android:orientation="horizontal"
-            android:layout_marginTop="24dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lifelinesLayout"
             app:layout_constraintBottom_toBottomOf="parent"
-            >
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/quitButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="6dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/red"
                 android:text="@string/quit_game"
                 android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
                 app:cornerRadius="12dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/confirmButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_weight="1"
+                android:layout_height="52dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1.2"
                 android:backgroundTint="@color/green"
                 android:text="@string/confirm_answer"
                 android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
                 app:cornerRadius="12dp" />
 
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView> 
+</ScrollView>

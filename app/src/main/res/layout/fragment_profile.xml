@@ -6,78 +6,61 @@
     android:background="@drawable/bg_minimal_dark"
     android:fillViewport="true">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:padding="24dp">
 
-        <!-- Profile Header -->
+        <!-- Title -->
         <TextView
             android:id="@+id/profileTitleText"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/profile"
             android:textColor="@color/gold"
-            android:textSize="32sp"
+            android:textSize="28sp"
             android:textStyle="bold"
             android:gravity="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/editNameButton"
-            app:layout_constraintVertical_chainStyle="packed" />
+            android:layout_marginBottom="24dp" />
 
-        <!-- Edit Name Button -->
+        <!-- Buttons -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/editNameButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
             android:backgroundTint="@color/minimal_dark_primary"
-            android:padding="16dp"
             android:text="@string/change_name"
             android:textColor="@color/white"
-            android:textSize="18sp"
-            app:cornerRadius="12dp"
-            app:layout_constraintBottom_toTopOf="@+id/resetStatsButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/profileTitleText" />
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp"
+            app:cornerRadius="12dp" />
 
-        <!-- Reset Stats Button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/resetStatsButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
             android:backgroundTint="@color/red"
-            android:padding="16dp"
             android:text="@string/reset_stats"
             android:textColor="@color/white"
-            android:textSize="18sp"
-            app:cornerRadius="12dp"
-            app:layout_constraintBottom_toTopOf="@+id/backButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editNameButton" />
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp"
+            app:cornerRadius="12dp" />
 
-        <!-- Back Button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/backButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
             android:backgroundTint="@color/minimal_dark_surface"
-            android:padding="16dp"
             android:text="@string/back_to_menu"
             android:textColor="@color/text_primary"
-            android:textSize="18sp"
-            app:cornerRadius="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
             app:strokeColor="@color/minimal_dark_primary"
-            app:strokeWidth="2dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/resetStatsButton" />
+            app:strokeWidth="1.5dp"
+            app:cornerRadius="12dp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView> 
+    </LinearLayout>
+</ScrollView>
