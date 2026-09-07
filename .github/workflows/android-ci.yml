@@ -40,5 +40,19 @@ jobs:
           java -version
           ./gradlew --version
 
-      - name: Build Debug APK
-        run: ./gradlew :app:assembleDebug --no-daemon --stacktrace --info
+      - name: Verify debug and release variants
+        run: |
+          ./gradlew \
+            :app:lintDebug \
+            :app:testDebugUnitTest \
+            :app:assembleDebug \
+            :app:assembleRelease \
+            :app:bundleRelease \
+            --no-daemon --stacktrace --info
+
+      - name: Upload debug APK for CI inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: answer-it-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error

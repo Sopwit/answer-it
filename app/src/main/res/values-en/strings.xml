@@ -129,7 +129,7 @@ This Privacy Policy explains how Answer It ("Application") handles user data. We
 2. DATA COLLECTION &amp; PROCESSING
 • Answer It operates entirely offline (offline-first trivia experience).
 • The app does not collect, track, or share personal identification, location, contacts, camera, or microphone data.
-• Player profile names, best scores, and user preferences (theme, audio, haptics) are stored exclusively on your local device (SharedPreferences).
+• Player profile names, best scores, and user preferences (theme, audio, haptics) are stored exclusively on your local device (SharedPreferences) and are excluded from Android cloud backup and device-transfer services.
 
 3. HARDWARE PERMISSIONS
 • Vibration (VIBRATE): Used solely for tactile feedback upon incorrect answers.

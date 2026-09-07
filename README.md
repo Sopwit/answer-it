@@ -69,7 +69,7 @@ cd Answer-it
 
 ## Releases & Downloads
 
-Pre-built binaries (Debug APK, Release APK, and Android App Bundle) are available on the [GitHub Releases](https://github.com/Sopwit/answer-it/releases) page.
+Published GitHub Release artifacts are produced only by the signed release workflow. Debug builds are available as CI artifacts for development and are not end-user releases.
 
 ---
 

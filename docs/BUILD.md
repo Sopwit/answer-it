@@ -54,6 +54,8 @@ All dependencies and plugins are centrally versioned in `gradle/libs.versions.to
 
 R8 code shrinking, unused resource stripping (`isShrinkResources = true`), and ProGuard bytecode optimizations are configured in `app/build.gradle.kts` and `app/proguard-rules.pro`.
 
+GitHub Releases must contain artifacts produced by the **Signed Android Release** workflow. It requires repository secrets named `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, and `ANDROID_KEY_PASSWORD`. Keep the keystore and every secret out of the repository.
+
 ---
 
 ## 5. Testing & Code Quality
