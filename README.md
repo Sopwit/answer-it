@@ -1,5 +1,11 @@
 # Answer It
 
+[![Android CI](https://github.com/Sopwit/answer-it/actions/workflows/android-ci.yml/badge.svg)](https://github.com/Sopwit/answer-it/actions/workflows/android-ci.yml)
+[![Release](https://img.shields.io/github/v/release/Sopwit/answer-it?style=flat&color=brightgreen)](https://github.com/Sopwit/answer-it/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-purple.svg)](https://kotlinlang.org)
+[![Target SDK](https://img.shields.io/badge/Target%20SDK-36-blue.svg)](https://developer.android.com)
+
 **Multilingual Progressive Trivia Engine for Android.**
 
 ---
@@ -10,8 +16,10 @@
 
 ### Core Capabilities
 
-- **15-Question Progressive Ladder:** 4 difficulty tiers (*Easy*, *Medium*, *Hard*, *Expert*) with automated safe haven checkpoints (₺1,000 and ₺32,000).
-- **Interactive Lifeline Suite:** Hardware-assisted 50:50 option elimination, simulated phone advisor, and weighted audience polling distribution.
+- **250 Categorized Questions:** 8 distinct domains (*History, Geography, Science, Pop Culture, Cinema, Literature, Sports, Art*) with progressive difficulty ladders (*Easy, Medium, Hard, Expert*).
+- **15-Question Progressive Ladder:** 4 difficulty tiers with automated safe haven checkpoints (₺1,000 and ₺32,000).
+- **Interactive Lifeline Suite:** Dynamic visual state feedback for 50:50 option elimination, simulated phone advisor, and weighted audience polling.
+- **5 Premium Visual Themes:** *Dark Minimalist*, *Midnight Glow*, *Deep Forest*, *Royal Purple*, and *Monochrome*.
 - **Full 14-Language Localization:** Real-time runtime locale switching and localized currency formatting across English, Turkish, Chinese, Spanish, Arabic, German, French, Russian, Hindi, Japanese, Korean, Portuguese, Vietnamese, and Italian.
 - **Zero-Latency Audio & Haptics:** Native `SoundPool` sound engine and `VibrationEffect` tactile feedback for instant response.
 - **Offline Data Persistence:** Persistent SharedPreferences storage for high scores, total earnings, games played, theme styles, and audio toggles.
@@ -25,6 +33,8 @@
 | :--- | :--- | :--- |
 | **Architecture** | Clean Architecture + UDF | `GameViewModel` + `StateFlow<GameUiState>` |
 | **DI Layer** | Dependency Container | `AppContainer` (Application scope) |
+| **Question Bank** | 250 Questions across 8 Categories | `QuestionRepository` + `Category` Enum |
+| **Theme Engine** | 5 Custom Luxury Themes | `ThemePreferences` + Dynamic Fragment Theming |
 | **Audio Engine** | Hardware-accelerated SFX | `SoundEffectManager` (`SoundPool`) |
 | **Haptic Feedback** | Tactile vibration alerts | `HapticManager` (`VibratorManager`) |
 | **Persistence** | Offline profile & settings | `PreferencesRepository` (SharedPreferences) |
@@ -38,6 +48,7 @@
 
 Comprehensive guides for developers, maintainers, and contributors:
 
+- 📋 **[Changelog](CHANGELOG.md):** Detailed release history, breaking changes, and version milestones.
 - 🏗️ **[Architecture & Technical Specification](docs/ARCHITECTURE.md):** Subsystem structure, UDF reactive state flows, DI container, and audio/haptic pipelines.
 - 🛠️ **[Build & Deployment Guide](docs/BUILD.md):** Prerequisites, Gradle commands, Version Catalogs, ProGuard rules, and APK generation.
 - 🌍 **[Localization & Internationalization Guide](docs/LOCALIZATION.md):** 14 supported locales, runtime language switching, and adding new languages.
@@ -59,6 +70,12 @@ git clone https://github.com/Sopwit/Answer-it.git
 cd Answer-it
 ./gradlew :app:assembleDebug
 ```
+
+---
+
+## Releases & Downloads
+
+Pre-built binaries (Debug APK, Release APK, and Android App Bundle) are available on the [GitHub Releases](https://github.com/Sopwit/answer-it/releases) page.
 
 ---
 
