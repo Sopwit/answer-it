@@ -47,6 +47,9 @@
         android:label="Ayarlar"
         tools:layout="@layout/fragment_settings">
         <action
+            android:id="@+id/action_settingsFragment_to_themeFragment"
+            app:destination="@id/themeFragment" />
+        <action
             android:id="@+id/action_settingsFragment_to_languageFragment"
             app:destination="@id/languageFragment" />
         <action
@@ -56,6 +59,12 @@
             android:id="@+id/action_settingsFragment_to_privacyPolicyFragment"
             app:destination="@id/privacyPolicyFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/themeFragment"
+        android:name="com.example.answerit.ui.theme.ThemeFragment"
+        android:label="Tema Seçimi"
+        tools:layout="@layout/fragment_theme" />
 
     <fragment
         android:id="@+id/languageFragment"

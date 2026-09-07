@@ -11,7 +11,6 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
-import com.example.answerit.AnswerItApplication
 import com.example.answerit.R
 import com.example.answerit.data.model.AppSettings
 import com.example.answerit.data.model.BackgroundTheme
@@ -37,8 +36,8 @@ class SettingsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        setupObservers()
         setupClickListeners()
+        setupObservers()
     }
 
     private fun setupObservers() {
@@ -52,20 +51,8 @@ class SettingsFragment : Fragment() {
     }
 
     private fun setupClickListeners() {
-        binding.minimalDarkRadio.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) updateTheme(BackgroundTheme.MINIMAL_DARK)
-        }
-        binding.minimalLightRadio.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) updateTheme(BackgroundTheme.MINIMAL_LIGHT)
-        }
-        binding.gradientBlueRadio.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) updateTheme(BackgroundTheme.GRADIENT_BLUE)
-        }
-        binding.gradientPurpleRadio.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) updateTheme(BackgroundTheme.GRADIENT_PURPLE)
-        }
-        binding.gradientGoldRadio.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) updateTheme(BackgroundTheme.GRADIENT_GOLD)
+        binding.themeButton.setOnClickListener {
+            findNavController().navigate(R.id.action_settingsFragment_to_themeFragment)
         }
 
         binding.languageButton.setOnClickListener {
@@ -92,36 +79,23 @@ class SettingsFragment : Fragment() {
     }
 
     private fun updateSettingsDisplay(settings: AppSettings) {
-        when (settings.backgroundTheme) {
-            BackgroundTheme.MINIMAL_DARK -> binding.minimalDarkRadio.isChecked = true
-            BackgroundTheme.MINIMAL_LIGHT -> binding.minimalLightRadio.isChecked = true
-            BackgroundTheme.GRADIENT_BLUE -> binding.gradientBlueRadio.isChecked = true
-            BackgroundTheme.GRADIENT_PURPLE -> binding.gradientPurpleRadio.isChecked = true
-            BackgroundTheme.GRADIENT_GOLD -> binding.gradientGoldRadio.isChecked = true
-        }
-
         binding.soundSwitch.isChecked = settings.soundEnabled
         binding.vibrationSwitch.isChecked = settings.vibrationEnabled
-
         updateBackgroundTheme(settings.backgroundTheme)
-    }
-
-    private fun updateTheme(theme: BackgroundTheme) {
-        val currentSettings = viewModel.appSettings.value
-        val newSettings = currentSettings.copy(backgroundTheme = theme)
-        viewModel.updateAppSettings(newSettings)
     }
 
     private fun updateSoundEnabled(enabled: Boolean) {
         val currentSettings = viewModel.appSettings.value
-        val newSettings = currentSettings.copy(soundEnabled = enabled)
-        viewModel.updateAppSettings(newSettings)
+        if (currentSettings.soundEnabled != enabled) {
+            viewModel.updateAppSettings(currentSettings.copy(soundEnabled = enabled))
+        }
     }
 
     private fun updateVibrationEnabled(enabled: Boolean) {
         val currentSettings = viewModel.appSettings.value
-        val newSettings = currentSettings.copy(vibrationEnabled = enabled)
-        viewModel.updateAppSettings(newSettings)
+        if (currentSettings.vibrationEnabled != enabled) {
+            viewModel.updateAppSettings(currentSettings.copy(vibrationEnabled = enabled))
+        }
     }
 
     private fun updateBackgroundTheme(theme: BackgroundTheme) {
@@ -136,13 +110,6 @@ class SettingsFragment : Fragment() {
         } else {
             textColor
         }
-
-        binding.themeTitleText.setTextColor(cardTextColor)
-        binding.minimalDarkRadio.setTextColor(cardTextColor)
-        binding.minimalLightRadio.setTextColor(cardTextColor)
-        binding.gradientBlueRadio.setTextColor(cardTextColor)
-        binding.gradientPurpleRadio.setTextColor(cardTextColor)
-        binding.gradientGoldRadio.setTextColor(cardTextColor)
 
         binding.preferencesTitleText.setTextColor(cardTextColor)
     }

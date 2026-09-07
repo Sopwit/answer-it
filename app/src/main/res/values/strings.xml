@@ -106,8 +106,42 @@
     <string name="never_played">Hiç oynamadı</string>
     <string name="user_agreement">Kullanıcı Sözleşmesi</string>
     <string name="privacy_policy">Gizlilik Politikası</string>
-    <string name="user_agreement_content">Bu bölümde Türkçe kullanıcı sözleşmesi metni yer alacaktır.</string>
-    <string name="privacy_policy_content">Bu bölümde Türkçe gizlilik politikası metni yer alacaktır.</string>
+    <string name="user_agreement_content">1. TARAFLAR VE KABUL
+Bu Kullanıcı Sözleşmesi, Answer It uygulamasını ("Uygulama") indiren ve kullanan her gerçek kişi ("Kullanıcı") ile Uygulama geliştiricisi arasında akdedilmiştir. Uygulamayı kullanarak bu koşulları kabul etmiş sayılırsınız.
+
+2. HİZMETİN NİTELİĞİ VE OYUN KURALLARI
+• Answer It, eğlence ve genel kültür amaçlı geliştirilmiş interaktif bir bilgi yarışmasıdır.
+• Oyunda kazanılan sanal para ("₺1,000,000" vb.) tamamen oyun içi puan ve motivasyon amaçlıdır; gerçek dünyada maddi/nakdi bir karşılığı veya taahhüdü yoktur.
+
+3. KULLANIM KOŞULLARI VE FİKRİ MÜLKİYET
+• Uygulama kaynak kodları, grafikleri, soru veritabanı ve tasarım ögeleri MIT Lisansı kapsamında korunmaktadır.
+• Kullanıcı, uygulamayı tersine mühendislik yoluyla kötüye kullanmayacağını, hile veya manipülasyon yapmayacağını kabul eder.
+
+4. SORUMLULUK REDDİ (GARANTİ VERİLMEMESİ)
+Uygulama "OLDUĞU GİBİ" (AS-IS) sunulmaktadır. Geliştirici, soruların doğruluğu, kesintisiz çalışması veya veri kaybı durumlarında hiçbir doğrudan veya dolaylı maddi/manevi sorumluluk kabul etmez.
+
+5. DEĞİŞİKLİKLER
+Geliştirici, sözleşme maddelerini ve oyun dinamiklerini güncelleme hakkını saklı tutar.</string>
+    <string name="privacy_policy_content">1. GİRİŞ VE KAPSAM
+Bu Gizlilik Politikası, Answer It ("Uygulama") tarafından kullanıcı verilerinin nasıl işlendiğini açıklar. Uygulamamız kullanıcı gizliliğine azami önem vermektedir.
+
+2. VERİ TOPLAMA VE İŞLEME
+• Answer It tamamen çevrimdışı (offline-first) çalışan bir bilgi yarışması oyunudur.
+• Uygulama; kimlik bilgileri, konum, rehber, kamera veya mikrofon gibi hiçbir kişisel veriyi toplamaz, işlemez veya üçüncü taraflarla paylaşmaz.
+• Oyuncu adı, kazanılan skorlar ve ayar tercihleri (tema, ses/titreşim durumu) yalnızca cihazınızın yerel hafızasında (SharedPreferences) saklanır.
+
+3. DONANIM İZİNLERİ
+• Titreşim (VIBRATE): Yalnızca yarışma sırasında yanlış cevaplarda haptik geri bildirim sağlamak amacıyla kullanılır.
+• Ses ve Ses Havuzu (SoundPool): Oyun efektlerini oynatmak amacıyla kullanılır.
+
+4. ÜÇÜNCÜ TARAF SERVİSLER
+Uygulamada harici analitik araçları, reklam takip modülleri veya kullanıcı profilleme servisleri bulunmamaktadır.
+
+5. VERİLERİ SİLME VE SIFIRLAMA
+Kullanıcılar diledikleri zaman Profil ekranından istatistiklerini sıfırlayabilir veya uygulamayı cihazdan kaldırarak yerel verileri tamamen silebilir.
+
+6. İLETİŞİM
+Gizlilik politikamız ile ilgili her türlü soru ve bildirim için GitHub açık kaynak deposu üzerinden iletişime geçebilirsiniz.</string>
     <string name="profile_contestant">Yarışmacı</string>
     <string name="statistics">İstatistikler</string>
     <string name="total_earnings">Toplam Kazanç:</string>

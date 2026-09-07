@@ -107,6 +107,39 @@
     <string name="never_played">Never played</string>
     <string name="user_agreement">User Agreement</string>
     <string name="privacy_policy">Privacy Policy</string>
-    <string name="user_agreement_content">This is the user agreement text in English.</string>
-    <string name="privacy_policy_content">This is the privacy policy text in English.</string>
+    <string name="user_agreement_content">1. ACCEPTANCE OF TERMS
+By downloading or using Answer It ("Application"), you agree to be bound by this User Agreement.
+
+2. NATURE OF SERVICE
+• Answer It is an educational and entertainment trivia game.
+• All prize amounts shown within the game (e.g. $1,000,000) are strictly virtual scores with zero real-world monetary value or payout liability.
+
+3. INTELLECTUAL PROPERTY
+The application source code, assets, and questions are licensed under the MIT License.
+
+4. DISCLAIMER OF WARRANTIES
+The software is provided "AS IS", without warranty of any kind, express or implied.
+
+5. CHANGES
+The maintainers reserve the right to modify these terms in future releases.</string>
+    <string name="privacy_policy_content">1. INTRODUCTION &amp; SCOPE
+This Privacy Policy explains how Answer It ("Application") handles user data. We are committed to protecting your personal privacy.
+
+2. DATA COLLECTION &amp; PROCESSING
+• Answer It operates entirely offline (offline-first trivia experience).
+• The app does not collect, track, or share personal identification, location, contacts, camera, or microphone data.
+• Player profile names, best scores, and user preferences (theme, audio, haptics) are stored exclusively on your local device (SharedPreferences).
+
+3. HARDWARE PERMISSIONS
+• Vibration (VIBRATE): Used solely for tactile feedback upon incorrect answers.
+• Audio Engine (SoundPool): Used exclusively for playing sound effects.
+
+4. THIRD-PARTY TRACKING
+No third-party analytics, behavioral tracking, advertising SDKs, or data brokers are integrated.
+
+5. DATA DELETION
+You can reset your data anytime via the Profile screen or by uninstalling the application.
+
+6. CONTACT
+For questions, please reach out via our GitHub repository.</string>
 </resources> 

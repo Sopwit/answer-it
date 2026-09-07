@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="24dp">
 
         <!-- Title -->
         <TextView
@@ -22,84 +22,24 @@
             android:textSize="28sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="24dp" />
 
-        <!-- Theme Selection Card -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/themeCard"
+        <!-- Theme Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/themeButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/minimal_dark_surface"
-            app:cardCornerRadius="14dp"
-            app:cardElevation="4dp"
-            android:layout_marginBottom="14dp">
+            android:layout_height="54dp"
+            android:backgroundTint="@color/minimal_dark_surface"
+            android:text="@string/background_theme"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:strokeColor="@color/minimal_dark_primary"
+            app:strokeWidth="1.5dp"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="14dp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:id="@+id/themeTitleText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/background_theme"
-                    android:textColor="@color/gold"
-                    android:textSize="17sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="10dp" />
-
-                <RadioGroup
-                    android:id="@+id/themeRadioGroup"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:id="@+id/minimalDarkRadio"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/minimal_dark"
-                        android:textColor="@color/text_primary"
-                        android:buttonTint="@color/minimal_dark_primary" />
-
-                    <RadioButton
-                        android:id="@+id/minimalLightRadio"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/minimal_light"
-                        android:textColor="@color/text_primary"
-                        android:buttonTint="@color/minimal_dark_primary" />
-
-                    <RadioButton
-                        android:id="@+id/gradientBlueRadio"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/gradient_blue"
-                        android:textColor="@color/text_primary"
-                        android:buttonTint="@color/minimal_dark_primary" />
-
-                    <RadioButton
-                        android:id="@+id/gradientPurpleRadio"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/gradient_purple"
-                        android:textColor="@color/text_primary"
-                        android:buttonTint="@color/minimal_dark_primary" />
-
-                    <RadioButton
-                        android:id="@+id/gradientGoldRadio"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/gradient_gold"
-                        android:textColor="@color/text_primary"
-                        android:buttonTint="@color/minimal_dark_primary" />
-                </RadioGroup>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- Language Selection Button -->
+        <!-- Language Button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/languageButton"
             android:layout_width="match_parent"
@@ -112,9 +52,9 @@
             app:strokeColor="@color/minimal_dark_primary"
             app:strokeWidth="1.5dp"
             app:cornerRadius="12dp"
-            android:layout_marginBottom="14dp" />
+            android:layout_marginBottom="18dp" />
 
-        <!-- Preferences Card (Sound & Vibration) -->
+        <!-- Preferences Card -->
         <androidx.cardview.widget.CardView
             android:id="@+id/preferencesCard"
             android:layout_width="match_parent"
@@ -122,7 +62,7 @@
             app:cardBackgroundColor="@color/minimal_dark_surface"
             app:cardCornerRadius="14dp"
             app:cardElevation="4dp"
-            android:layout_marginBottom="14dp">
+            android:layout_marginBottom="18dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -165,7 +105,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="20dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/userAgreementCard"
@@ -174,7 +114,10 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="6dp"
                 app:cardBackgroundColor="@color/minimal_dark_surface"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
 
                 <TextView
                     android:id="@+id/userAgreementText"
@@ -196,7 +139,10 @@
                 android:layout_weight="1"
                 android:layout_marginStart="6dp"
                 app:cardBackgroundColor="@color/minimal_dark_surface"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
 
                 <TextView
                     android:id="@+id/privacyPolicyText"
@@ -224,8 +170,7 @@
             android:textStyle="bold"
             app:strokeColor="@color/minimal_dark_primary"
             app:strokeWidth="1.5dp"
-            app:cornerRadius="12dp"
-            android:layout_marginBottom="16dp" />
+            app:cornerRadius="12dp" />
 
     </LinearLayout>
 </ScrollView>
