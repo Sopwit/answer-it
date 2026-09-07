@@ -9,8 +9,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="24dp">
+        android:paddingHorizontal="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="24dp">
 
         <!-- Top Header: Question Stage Badge & Prize Badge -->
         <LinearLayout
@@ -26,36 +27,38 @@
             <!-- Question Number Badge -->
             <TextView
                 android:id="@+id/questionNumberText"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
                 android:background="@drawable/card_background"
-                android:paddingHorizontal="14dp"
+                android:paddingHorizontal="10dp"
                 android:paddingVertical="8dp"
                 android:text="Soru 1 / 15"
                 android:textColor="@color/text_primary"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1" />
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="end" />
 
             <!-- Prize Amount Pill -->
             <LinearLayout
                 android:id="@+id/prizeContainer"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:layout_marginStart="6dp"
                 android:background="@drawable/card_background"
-                android:paddingHorizontal="14dp"
-                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
                 android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center">
 
                 <ImageView
                     android:id="@+id/prizeIcon"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
                     android:layout_marginEnd="6dp"
                     android:src="@drawable/ic_diamond"
                     android:contentDescription="Prize Icon" />
@@ -66,8 +69,10 @@
                     android:layout_height="wrap_content"
                     android:text="@string/current_prize"
                     android:textColor="@color/gold"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:ellipsize="end" />
             </LinearLayout>
         </LinearLayout>
 
@@ -76,16 +81,16 @@
             android:id="@+id/questionText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/card_background"
-            android:padding="24dp"
-            android:minHeight="120dp"
+            android:padding="20dp"
+            android:minHeight="105dp"
             android:gravity="center"
             android:text="@string/question"
             android:textColor="@color/text_primary"
-            android:textSize="18sp"
+            android:textSize="17sp"
             android:textStyle="bold"
-            android:lineSpacingMultiplier="1.25"
+            android:lineSpacingMultiplier="1.2"
             app:layout_constraintTop_toBottomOf="@+id/headerLayout"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -96,7 +101,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="14dp"
             app:layout_constraintTop_toBottomOf="@+id/questionText"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -105,64 +110,64 @@
                 android:id="@+id/answerAButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="58dp"
-                android:layout_marginBottom="10dp"
+                android:minHeight="52dp"
+                android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/minimal_dark_surface"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="14dp"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="10dp"
                 android:text="@string/answer_a"
                 android:textColor="@color/text_primary"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:gravity="center_vertical|start"
-                app:cornerRadius="14dp" />
+                app:cornerRadius="12dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/answerBButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="58dp"
-                android:layout_marginBottom="10dp"
+                android:minHeight="52dp"
+                android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/minimal_dark_surface"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="14dp"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="10dp"
                 android:text="@string/answer_b"
                 android:textColor="@color/text_primary"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:gravity="center_vertical|start"
-                app:cornerRadius="14dp" />
+                app:cornerRadius="12dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/answerCButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="58dp"
-                android:layout_marginBottom="10dp"
+                android:minHeight="52dp"
+                android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/minimal_dark_surface"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="14dp"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="10dp"
                 android:text="@string/answer_c"
                 android:textColor="@color/text_primary"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:gravity="center_vertical|start"
-                app:cornerRadius="14dp" />
+                app:cornerRadius="12dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/answerDButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="58dp"
+                android:minHeight="52dp"
                 android:backgroundTint="@color/minimal_dark_surface"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="14dp"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="10dp"
                 android:text="@string/answer_d"
                 android:textColor="@color/text_primary"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:gravity="center_vertical|start"
-                app:cornerRadius="14dp" />
+                app:cornerRadius="12dp" />
 
         </LinearLayout>
 
@@ -171,7 +176,7 @@
             android:id="@+id/lifelinesLayout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/optionsContainer"
             app:layout_constraintStart_toStartOf="parent"
@@ -180,14 +185,18 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/fiftyFiftyButton"
                 android:layout_width="0dp"
-                android:layout_height="52dp"
-                android:layout_marginEnd="6dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="4dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/gold"
                 android:text="@string/fifty_fifty"
                 android:textColor="@color/black"
-                android:textSize="13sp"
+                android:textSize="12sp"
                 android:textStyle="bold"
+                android:singleLine="true"
+                android:padding="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 app:icon="@drawable/ic_percent"
                 app:iconGravity="textStart"
                 app:iconPadding="4dp"
@@ -198,14 +207,18 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/phoneFriendButton"
                 android:layout_width="0dp"
-                android:layout_height="52dp"
-                android:layout_marginHorizontal="6dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="4dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/gold"
                 android:text="@string/phone_friend"
                 android:textColor="@color/black"
-                android:textSize="13sp"
+                android:textSize="12sp"
                 android:textStyle="bold"
+                android:singleLine="true"
+                android:padding="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 app:icon="@drawable/ic_phone"
                 app:iconGravity="textStart"
                 app:iconPadding="4dp"
@@ -216,14 +229,18 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/audienceHelpButton"
                 android:layout_width="0dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="6dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="4dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/gold"
                 android:text="@string/audience_help"
                 android:textColor="@color/black"
-                android:textSize="13sp"
+                android:textSize="12sp"
                 android:textStyle="bold"
+                android:singleLine="true"
+                android:padding="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 app:icon="@drawable/ic_groups"
                 app:iconGravity="textStart"
                 app:iconPadding="4dp"
@@ -238,8 +255,7 @@
             android:id="@+id/actionLayout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginTop="16dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/lifelinesLayout"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -249,40 +265,48 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/quitButton"
                 android:layout_width="0dp"
-                android:layout_height="56dp"
+                android:layout_height="52dp"
                 android:layout_marginEnd="6dp"
                 android:layout_weight="1"
                 android:backgroundTint="#26FF3D57"
                 android:text="@string/quit_game"
                 android:textColor="@color/red"
-                android:textSize="15sp"
+                android:textSize="14sp"
                 android:textStyle="bold"
+                android:singleLine="true"
+                android:padding="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 app:icon="@drawable/ic_logout"
                 app:iconGravity="textStart"
-                app:iconPadding="6dp"
+                app:iconPadding="4dp"
                 app:iconSize="18dp"
                 app:iconTint="@color/red"
                 app:strokeColor="@color/red"
                 app:strokeWidth="1.5dp"
-                app:cornerRadius="14dp" />
+                app:cornerRadius="12dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/confirmButton"
                 android:layout_width="0dp"
-                android:layout_height="56dp"
+                android:layout_height="52dp"
                 android:layout_marginStart="6dp"
                 android:layout_weight="1.3"
                 android:backgroundTint="@color/green"
                 android:text="@string/confirm_answer"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
+                android:singleLine="true"
+                android:padding="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 app:icon="@drawable/ic_check"
                 app:iconGravity="textStart"
-                app:iconPadding="8dp"
-                app:iconSize="20dp"
+                app:iconPadding="6dp"
+                app:iconSize="18dp"
                 app:iconTint="@color/black"
-                app:cornerRadius="14dp"
+                app:cornerRadius="12dp"
                 app:elevation="4dp" />
 
         </LinearLayout>
