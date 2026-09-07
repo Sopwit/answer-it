@@ -1,36 +1,36 @@
 <resources>
     <string name="app_name">Answer It</string>
-    <string name="start_game">खेल शुरू करें</string>
+    <string name="start_game">खेलें</string>
     <string name="settings">सेटिंग्स</string>
     <string name="profile">प्रोफ़ाइल</string>
     <string name="exit">बाहर निकलें</string>
     <string name="question">प्रश्न</string>
-    <string name="answer_a">क:</string>
-    <string name="answer_b">ख:</string>
-    <string name="answer_c">ग:</string>
-    <string name="answer_d">घ:</string>
-    <string name="confirm_answer">उत्तर की पुष्टि करें</string>
+    <string name="answer_a">A:</string>
+    <string name="answer_b">B:</string>
+    <string name="answer_c">C:</string>
+    <string name="answer_d">D:</string>
+    <string name="confirm_answer">पुष्टि करें</string>
     <string name="use_lifeline">लाइफलाइन का उपयोग करें</string>
     <string name="fifty_fifty">50:50</string>
-    <string name="phone_friend">दोस्त को फोन करें</string>
-    <string name="audience_help">दर्शकों से पूछें</string>
-    <string name="correct_answer">सही!</string>
-    <string name="wrong_answer">गलत उत्तर!</string>
+    <string name="phone_friend">फोन अ फ्रेंड</string>
+    <string name="audience_help">दर्शक पोल</string>
+    <string name="correct_answer">सही जवाब!</string>
+    <string name="wrong_answer">गलत जवाब!</string>
     <string name="game_over">खेल समाप्त</string>
     <string name="congratulations">बधाई हो!</string>
     <string name="you_won">आप जीत गए!</string>
-    <string name="prize_money">पुरस्कार: %1$s</string>
-    <string name="current_prize">वर्तमान पुरस्कार: %1$s</string>
+    <string name="prize_money">पुरस्कार राशि: %1$s</string>
+    <string name="current_prize">पुरस्कार: %1$s</string>
     <string name="next_question">अगला प्रश्न</string>
     <string name="quit_game">खेल छोड़ें</string>
-    <string name="safe_haven">सुरक्षित बंदरगाह: %1$s</string>
+    <string name="safe_haven">सुरक्षित पड़ाव: %1$s</string>
     <string name="million_dollars">₹1,000,000</string>
-    <string name="background_theme">पृष्ठभूमि थीम</string>
+    <string name="background_theme">बैकग्राउंड थीम</string>
     <string name="minimal_dark">डार्क</string>
     <string name="minimal_light">लाइट</string>
     <string name="gradient_blue">नीला ग्रेडिएंट</string>
     <string name="gradient_purple">बैंगनी ग्रेडिएंट</string>
-    <string name="gradient_gold">सुनहरा ग्रेडिएंट</string>
+    <string name="gradient_gold">स्वर्ण ग्रेडिएंट</string>
     <string name="sound_effects">ध्वनि प्रभाव</string>
     <string name="vibration">कंपन</string>
     <string name="rules">नियम</string>
@@ -43,65 +43,105 @@
     <string name="welcome_message">Answer It में आपका स्वागत है!</string>
     <string name="best_score">सर्वश्रेष्ठ स्कोर: %1$s</string>
     <string name="games_played">खेले गए खेल: %1$d</string>
-    <string name="total_winnings">कुल जीत: %1$s</string>
+    <string name="total_winnings">कुल कमाई: %1$s</string>
     <string name="edit_profile">प्रोफ़ाइल संपादित करें</string>
     <string name="change_name">नाम बदलें</string>
     <string name="reset_stats">आंकड़े रीसेट करें</string>
     <string name="confirm_reset">क्या आप वाकई आंकड़े रीसेट करना चाहते हैं?</string>
     <string name="yes">हाँ</string>
     <string name="no">नहीं</string>
-    <string name="stats_reset">आंकड़े रीसेट हो गए</string>
-    <string name="name_updated">नाम अपडेट हो गया</string>
+    <string name="stats_reset">आंकड़े रीसेट कर दिए गए हैं</string>
+    <string name="name_updated">नाम अपडेट हो गया है</string>
     <string name="language">भाषा</string>
     <string name="turkish">तुर्की</string>
     <string name="english">अंग्रेज़ी</string>
     <string name="chinese">चीनी</string>
-    <string name="spanish">स्पेनिश</string>
+    <string name="spanish">स्पैनिश</string>
     <string name="arabic">अरबी</string>
     <string name="german">जर्मन</string>
-    <string name="french">फ्रेंच</string>
+    <string name="french">फ़्रेंच</string>
     <string name="russian">रूसी</string>
-    <string name="hindi">हिंदी</string>
+    <string name="hindi">हिन्दी</string>
     <string name="japanese">जापानी</string>
     <string name="korean">कोरियाई</string>
     <string name="portuguese">पुर्तगाली</string>
     <string name="vietnamese">वियतनामी</string>
+    <string name="italian">इतालवी</string>
     <string name="preferences">प्राथमिकताएं</string>
-    <string name="language_changed_turkish">भाषा तुर्की में बदल गई</string>
-    <string name="language_changed_english">भाषा अंग्रेजी में बदली गई</string>
-    <string name="language_changed_chinese">भाषा चीनी में बदल गई</string>
-    <string name="language_changed_spanish">भाषा स्पेनिश में बदल गई</string>
-    <string name="language_changed_arabic">भाषा अरबी में बदल गई</string>
-    <string name="language_changed_german">भाषा जर्मन में बदल गई</string>
-    <string name="language_changed_french">भाषा फ्रेंच में बदल गई</string>
-    <string name="language_changed_russian">भाषा रूसी में बदल गई</string>
-    <string name="language_changed_hindi">भाषा हिंदी में बदल गई</string>
-    <string name="language_changed_japanese">भाषा जापानी में बदल गई</string>
-    <string name="language_changed_korean">भाषा कोरियाई में बदल गई</string>
-    <string name="language_changed_portuguese">भाषा पुर्तगाली में बदल गई</string>
-    <string name="language_changed_vietnamese">भाषा वियतनामी में बदल गई</string>
-    <string name="phone_friend_title">दोस्त को फोन करें</string>
-    <string name="phone_friend_hint">मुझे लगता है कि यह %1$s हो सकता है... लेकिन मुझे यकीन नहीं है!</string>
+    <string name="language_changed_turkish">भाषा बदलकर तुर्की कर दी गई है</string>
+    <string name="language_changed_english">भाषा बदलकर अंग्रेज़ी कर दी गई है</string>
+    <string name="language_changed_chinese">भाषा बदलकर चीनी कर दी गई है</string>
+    <string name="language_changed_spanish">भाषा बदलकर स्पैनिश कर दी गई है</string>
+    <string name="language_changed_arabic">भाषा बदलकर अरबी कर दी गई है</string>
+    <string name="language_changed_german">भाषा बदलकर जर्मन कर दी गई है</string>
+    <string name="language_changed_french">भाषा बदलकर फ़्रेंच कर दी गई है</string>
+    <string name="language_changed_russian">भाषा बदलकर रूसी कर दी गई है</string>
+    <string name="language_changed_hindi">भाषा बदलकर हिन्दी कर दी गई है</string>
+    <string name="language_changed_japanese">भाषा बदलकर जापानी कर दी गई है</string>
+    <string name="language_changed_korean">भाषा बदलकर कोरियाई कर दी गई है</string>
+    <string name="language_changed_portuguese">भाषा बदलकर पुर्तगाली कर दी गई है</string>
+    <string name="language_changed_vietnamese">भाषा बदलकर वियतनामी कर दी गई है</string>
+    <string name="language_changed_italian">भाषा बदलकर इतालवी कर दी गई है</string>
+    <string name="phone_friend_title">फोन अ फ्रेंड</string>
+    <string name="phone_friend_hint">मुझे लगता है कि उत्तर %1$s हो सकता है... लेकिन मुझे पूरा यकीन नहीं है!</string>
     <string name="thank_you">धन्यवाद!</string>
-    <string name="audience_help_title">दर्शकों से पूछें</string>
+    <string name="audience_help_title">दर्शकों की मदद</string>
     <string name="audience_votes">दर्शकों के वोट:</string>
     <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">समझ गया</string>
     <string name="quit_game_title">खेल छोड़ें</string>
-    <string name="quit_game_message">क्या आप वाकई खेल छोड़ना चाहते हैं? आपका सुरक्षित बंदरगाह: %1$s</string>
+    <string name="quit_game_message">क्या आप वाकई खेल छोड़ना चाहते हैं? आपकी सुरक्षित राशि: %1$s</string>
     <string name="yes_quit">हाँ, छोड़ें</string>
     <string name="no_continue">नहीं, जारी रखें</string>
-    <string name="game_won_message">आपने सभी प्रश्नों का सही उत्तर दिया! आपका पुरस्कार: %1$s</string>
-    <string name="game_lost_message">गलत उत्तर! आपका पुरस्कार: %1$s</string>
+    <string name="game_won_message">आपने सभी प्रश्नों के सही उत्तर दिए हैं! आपका पुरस्कार: %1$s</string>
+    <string name="game_lost_message">गलत उत्तर! आपकी पुरस्कार राशि: %1$s</string>
     <string name="back_to_main_menu">मुख्य मेनू पर वापस जाएं</string>
     <string name="result_won_title">बधाई हो!</string>
-    <string name="result_won_message">आपने सभी प्रश्नों का सही उत्तर दिया!</string>
+    <string name="result_won_message">आपने सभी प्रश्नों के सही उत्तर दिए हैं!</string>
     <string name="result_lost_title">खेल समाप्त</string>
-    <string name="result_lost_message">गलत उत्तर!</string>
+    <string name="result_lost_message">गलत जवाब!</string>
     <string name="result_quit_title">आपने खेल छोड़ दिया</string>
-    <string name="result_quit_message">आप अपने सुरक्षित बंदरगाह तक पहुंच गए!</string>
-    <string name="result_default_title">खेल का परिणाम</string>
+    <string name="result_quit_message">आप अपने सुरक्षित पड़ाव तक पहुंच गए!</string>
+    <string name="result_default_title">खेल परिणाम</string>
     <string name="result_default_message">खेल पूरा हुआ</string>
     <string name="prize_won">जीता गया पुरस्कार: %1$s</string>
     <string name="never_played">कभी नहीं खेला</string>
-</resources> 
+    <string name="user_agreement">उपयोगकर्ता समझौता</string>
+    <string name="privacy_policy">गोपनीयता नीति</string>
+    <string name="user_agreement_content">1. शर्तों की स्वीकृति
+Answer It का उपयोग करके, आप इस उपयोगकर्ता समझौते की शर्तों से सहमत होते हैं।
+
+2. सेवा की प्रकृति
+• Answer It एक इंटरैक्टिव क्विज़ गेम है जो शिक्षा और मनोरंजन के उद्देश्य से बनाया गया है।
+• खेल में दिखाई जाने वाली सभी पुरस्कार राशियाँ (जैसे ₹1,000,000) आभासी अंक हैं और इनका कोई वास्तविक मौद्रिक मूल्य नहीं है।
+
+3. बौद्धिक संपदा
+एप्लिकेशन स्रोत कोड और सामग्री MIT लाइसेंस के तहत संरक्षित हैं।
+
+4. वारंटी का अस्वीकरण
+यह सॉफ़्टवेयर बिना किसी वारंटी के "जैसा है" प्रदान किया जाता है।
+
+5. परिवर्तन
+डेवलपर भविष्य में इन शर्तों को अपडेट करने का अधिकार सुरक्षित रखता है।</string>
+    <string name="privacy_policy_content">1. गोपनीयता नीति
+Answer It आपकी गोपनीयता की पूरी सुरक्षा के लिए प्रतिबद्ध है।
+
+2. डेटा संग्रह
+• एप्लिकेशन पूरी तरह से ऑफ़लाइन (Offline-First) काम करता है।
+• कोई भी व्यक्तिगत जानकारी, स्थान या संपर्क सर्वर पर नहीं भेजे जाते।
+• खिलाड़ी का नाम और स्कोर केवल आपके डिवाइस (SharedPreferences) पर सहेजे जाते हैं।
+
+3. अनुमतियां
+• कंपन (VIBRATE): गलत उत्तर पर हैप्टिक फीडबैक के लिए।
+• ऑडियो: खेल के ध्वनि प्रभावों के लिए।
+
+4. कोई तृतीय-पक्ष ट्रैकर नहीं
+ऐप में कोई विज्ञापन या ट्रैकिंग मॉड्यूल शामिल नहीं है।
+
+5. डेटा हटाना
+आप प्रोफ़ाइल स्क्रीन से कभी भी अपना डेटा रीसेट कर सकते हैं।</string>
+    <string name="profile_contestant">प्रतियोगी</string>
+    <string name="statistics">आंकड़े</string>
+    <string name="total_earnings">कुल कमाई:</string>
+    <string name="last_game">अंतिम खेल:</string>
+</resources>

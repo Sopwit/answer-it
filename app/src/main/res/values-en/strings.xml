@@ -81,6 +81,7 @@
     <string name="language_changed_korean">Language changed to Korean</string>
     <string name="language_changed_portuguese">Language changed to Portuguese</string>
     <string name="language_changed_vietnamese">Language changed to Vietnamese</string>
+    <string name="language_changed_italian">Language changed to Italian</string>
     <string name="phone_friend_title">Phone a Friend</string>
     <string name="phone_friend_hint">I think it might be %1$s... but I\'m not sure!</string>
     <string name="thank_you">Thank you!</string>
@@ -142,4 +143,8 @@ You can reset your data anytime via the Profile screen or by uninstalling the ap
 
 6. CONTACT
 For questions, please reach out via our GitHub repository.</string>
-</resources> 
+    <string name="profile_contestant">Contestant</string>
+    <string name="statistics">Statistics</string>
+    <string name="total_earnings">Total Earnings:</string>
+    <string name="last_game">Last Game:</string>
+</resources>

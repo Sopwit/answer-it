@@ -9,23 +9,23 @@
     <string name="answer_b">B:</string>
     <string name="answer_c">C:</string>
     <string name="answer_d">D:</string>
-    <string name="confirm_answer">Confirmer la Réponse</string>
+    <string name="confirm_answer">Confirmer</string>
     <string name="use_lifeline">Utiliser un Joker</string>
     <string name="fifty_fifty">50:50</string>
-    <string name="phone_friend">Appeler un Ami</string>
-    <string name="audience_help">Demander au Public</string>
-    <string name="correct_answer">Correct!</string>
-    <string name="wrong_answer">Mauvaise Réponse!</string>
-    <string name="game_over">Fin de Partie</string>
-    <string name="congratulations">Félicitations!</string>
-    <string name="you_won">Vous avez gagné!</string>
-    <string name="prize_money">Prix: %1$s</string>
-    <string name="current_prize">Prix Actuel: %1$s</string>
+    <string name="phone_friend">Téléphone</string>
+    <string name="audience_help">Public</string>
+    <string name="correct_answer">Correct !</string>
+    <string name="wrong_answer">Mauvaise Réponse !</string>
+    <string name="game_over">Partie Terminée</string>
+    <string name="congratulations">Félicitations !</string>
+    <string name="you_won">Vous Avez Gagné !</string>
+    <string name="prize_money">Gain : %1$s</string>
+    <string name="current_prize">Gain : %1$s</string>
     <string name="next_question">Question Suivante</string>
-    <string name="quit_game">Quitter le Jeu</string>
-    <string name="safe_haven">Port de Refuge: %1$s</string>
-    <string name="million_dollars">€1,000,000</string>
-    <string name="background_theme">Thème d\'Arrière-plan</string>
+    <string name="quit_game">Abandonner</string>
+    <string name="safe_haven">Palier Garanti : %1$s</string>
+    <string name="million_dollars">1 000 000 €</string>
+    <string name="background_theme">Thème de Fond</string>
     <string name="minimal_dark">Sombre</string>
     <string name="minimal_light">Clair</string>
     <string name="gradient_blue">Dégradé Bleu</string>
@@ -36,18 +36,18 @@
     <string name="rules">Règles</string>
     <string name="play_again">Rejouer</string>
     <string name="back_to_menu">Menu Principal</string>
-    <string name="player_name">Nom du Joueur</string>
+    <string name="player_name">Nom du Candidat</string>
     <string name="enter_name">Entrez votre nom</string>
-    <string name="save">Sauvegarder</string>
+    <string name="save">Enregistrer</string>
     <string name="cancel">Annuler</string>
-    <string name="welcome_message">Bienvenue dans Answer It!</string>
-    <string name="best_score">Meilleur Score: %1$s</string>
-    <string name="games_played">Parties Jouées: %1$d</string>
-    <string name="total_winnings">Gains Totaux: %1$s</string>
+    <string name="welcome_message">Bienvenue sur Answer It !</string>
+    <string name="best_score">Meilleur Score : %1$s</string>
+    <string name="games_played">Parties Jouées : %1$d</string>
+    <string name="total_winnings">Gains Totaux : %1$s</string>
     <string name="edit_profile">Modifier le Profil</string>
-    <string name="change_name">Changer le Nom</string>
-    <string name="reset_stats">Réinitialiser les Statistiques</string>
-    <string name="confirm_reset">Êtes-vous sûr de vouloir réinitialiser les statistiques?</string>
+    <string name="change_name">Changer de Nom</string>
+    <string name="reset_stats">Réinitialiser les Stats</string>
+    <string name="confirm_reset">Êtes-vous sûr de vouloir réinitialiser les statistiques ?</string>
     <string name="yes">Oui</string>
     <string name="no">Non</string>
     <string name="stats_reset">Statistiques réinitialisées</string>
@@ -66,6 +66,7 @@
     <string name="korean">Coréen</string>
     <string name="portuguese">Portugais</string>
     <string name="vietnamese">Vietnamien</string>
+    <string name="italian">Italien</string>
     <string name="preferences">Préférences</string>
     <string name="language_changed_turkish">Langue changée en turc</string>
     <string name="language_changed_english">Langue changée en anglais</string>
@@ -80,28 +81,67 @@
     <string name="language_changed_korean">Langue changée en coréen</string>
     <string name="language_changed_portuguese">Langue changée en portugais</string>
     <string name="language_changed_vietnamese">Langue changée en vietnamien</string>
-    <string name="phone_friend_title">Appeler un Ami</string>
-    <string name="phone_friend_hint">Je pense que ça pourrait être %1$s... mais je ne suis pas sûr!</string>
-    <string name="thank_you">Merci!</string>
-    <string name="audience_help_title">Demander au Public</string>
-    <string name="audience_votes">Votes du Public:</string>
+    <string name="language_changed_italian">Langue changée en italien</string>
+    <string name="phone_friend_title">Appel à un Ami</string>
+    <string name="phone_friend_hint">Je pense que c\'est %1$s... mais je ne suis pas certain !</string>
+    <string name="thank_you">Merci !</string>
+    <string name="audience_help_title">Avis du Public</string>
+    <string name="audience_votes">Votes du Public :</string>
     <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">Compris</string>
-    <string name="quit_game_title">Quitter le Jeu</string>
-    <string name="quit_game_message">Êtes-vous sûr de vouloir quitter le jeu? Votre port de refuge: %1$s</string>
+    <string name="quit_game_title">Quitter la Partie</string>
+    <string name="quit_game_message">Voulez-vous vraiment quitter ? Votre palier garanti : %1$s</string>
     <string name="yes_quit">Oui, Quitter</string>
     <string name="no_continue">Non, Continuer</string>
-    <string name="game_won_message">Vous avez répondu correctement à toutes les questions! Votre prix: %1$s</string>
-    <string name="game_lost_message">Mauvaise réponse! Votre prix: %1$s</string>
+    <string name="game_won_message">Vous avez répondu correctement à toutes les questions ! Votre gain : %1$s</string>
+    <string name="game_lost_message">Mauvaise réponse ! Votre gain : %1$s</string>
     <string name="back_to_main_menu">Retour au Menu Principal</string>
-    <string name="result_won_title">Félicitations!</string>
-    <string name="result_won_message">Vous avez répondu correctement à toutes les questions!</string>
-    <string name="result_lost_title">Fin de Partie</string>
-    <string name="result_lost_message">Mauvaise réponse!</string>
-    <string name="result_quit_title">Vous avez quitté le jeu</string>
-    <string name="result_quit_message">Vous avez atteint votre port de refuge!</string>
-    <string name="result_default_title">Résultat du Jeu</string>
-    <string name="result_default_message">Partie terminée</string>
-    <string name="prize_won">Prix Gagné: %1$s</string>
+    <string name="result_won_title">Félicitations !</string>
+    <string name="result_won_message">Vous avez répondu correctement à toutes les questions !</string>
+    <string name="result_lost_title">Partie Terminée</string>
+    <string name="result_lost_message">Mauvaise réponse !</string>
+    <string name="result_quit_title">Vous avez quitté</string>
+    <string name="result_quit_message">Vous avez atteint votre palier garanti !</string>
+    <string name="result_default_title">Résultat</string>
+    <string name="result_default_message">Partie achevée</string>
+    <string name="prize_won">Gain Remporté : %1$s</string>
     <string name="never_played">Jamais joué</string>
-</resources> 
+    <string name="user_agreement">Conditions d\'Utilisation</string>
+    <string name="privacy_policy">Politique de Confidentialité</string>
+    <string name="user_agreement_content">1. ACCEPTATION DES CONDITIONS
+En utilisant Answer It, vous acceptez les présentes conditions générales.
+
+2. NATURE DU JEU
+• Answer It est un jeu de quiz culturel et récréatif.
+• Tous les montants indiqués (ex. 1 000 000 €) sont des scores virtuels sans valeur monétaire réelle.
+
+3. PROPRIÉTÉ INTELLECTUELLE
+Le code et les ressources sont sous licence open source MIT.
+
+4. EXCLUSION DE GARANTIE
+Le jeu est fourni "EN L\'ÉTAT", sans garantie expresse ou implicite.
+
+5. MODIFICATIONS
+Les développeurs se réservent le droit d\'adapter les fonctionnalités du jeu.</string>
+    <string name="privacy_policy_content">1. RESPECT DE LA VIE PRIVÉE
+Answer It protège intégralement votre vie privée.
+
+2. TRAITEMENT DES DONNÉES
+• Fonctionnement 100%% hors ligne.
+• Aucune donnée personnelle, géolocalisation ou contacts n\'est collectée ni transmise.
+• Vos statistiques et choix de thèmes sont stockés localement sur l\'appareil.
+
+3. AUTORISATIONS
+• Vibreur : Retour tactile en cas d\'erreur.
+• Audio : Bruitages du quiz.
+
+4. AUCUN TRACEUR PUBLICITAIRE
+Aucun outil d\'analyse externe n\'est intégré.
+
+5. GESTION DES DONNÉES
+Réinitialisation possible à tout moment via le profil.</string>
+    <string name="profile_contestant">Candidat</string>
+    <string name="statistics">Statistiques</string>
+    <string name="total_earnings">Gains Totaux :</string>
+    <string name="last_game">Dernière Partie :</string>
+</resources>

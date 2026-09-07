@@ -4,56 +4,56 @@
     <string name="settings">설정</string>
     <string name="profile">프로필</string>
     <string name="exit">종료</string>
-    <string name="question">질문</string>
+    <string name="question">문제</string>
     <string name="answer_a">A:</string>
     <string name="answer_b">B:</string>
     <string name="answer_c">C:</string>
     <string name="answer_d">D:</string>
-    <string name="confirm_answer">답변 확인</string>
-    <string name="use_lifeline">라이프라인 사용</string>
+    <string name="confirm_answer">최종 결정</string>
+    <string name="use_lifeline">찬스 사용</string>
     <string name="fifty_fifty">50:50</string>
-    <string name="phone_friend">친구에게 전화</string>
-    <string name="audience_help">관객에게 물어보기</string>
-    <string name="correct_answer">정답!</string>
-    <string name="wrong_answer">틀렸습니다!</string>
-    <string name="game_over">게임 오버</string>
+    <string name="phone_friend">전화 찬스</string>
+    <string name="audience_help">관객 찬스</string>
+    <string name="correct_answer">정답입니다!</string>
+    <string name="wrong_answer">오답입니다!</string>
+    <string name="game_over">게임 종료</string>
     <string name="congratulations">축하합니다!</string>
-    <string name="you_won">당신이 이겼습니다!</string>
+    <string name="you_won">최종 우승!</string>
     <string name="prize_money">상금: %1$s</string>
-    <string name="current_prize">현재 상금: %1$s</string>
-    <string name="next_question">다음 질문</string>
-    <string name="quit_game">게임 종료</string>
-    <string name="safe_haven">세이프 헤이븐: %1$s</string>
+    <string name="current_prize">상금: %1$s</string>
+    <string name="next_question">다음 문제</string>
+    <string name="quit_game">도전 중단</string>
+    <string name="safe_haven">안전 상금: %1$s</string>
     <string name="million_dollars">₩1,000,000</string>
     <string name="background_theme">배경 테마</string>
     <string name="minimal_dark">다크</string>
     <string name="minimal_light">라이트</string>
-    <string name="gradient_blue">블루 그라데이션</string>
-    <string name="gradient_purple">퍼플 그라데이션</string>
-    <string name="gradient_gold">골드 그라데이션</string>
-    <string name="sound_effects">사운드 효과</string>
+    <string name="gradient_blue">블루 그라디언트</string>
+    <string name="gradient_purple">퍼플 그라디언트</string>
+    <string name="gradient_gold">골드 그라디언트</string>
+    <string name="sound_effects">효과음</string>
     <string name="vibration">진동</string>
-    <string name="rules">규칙</string>
-    <string name="play_again">다시 플레이</string>
+    <string name="rules">게임 규칙</string>
+    <string name="play_again">다시 하기</string>
     <string name="back_to_menu">메인 메뉴</string>
-    <string name="player_name">플레이어 이름</string>
+    <string name="player_name">도전자 이름</string>
     <string name="enter_name">이름을 입력하세요</string>
     <string name="save">저장</string>
     <string name="cancel">취소</string>
     <string name="welcome_message">Answer It에 오신 것을 환영합니다!</string>
-    <string name="best_score">최고 점수: %1$s</string>
-    <string name="games_played">플레이한 게임: %1$d</string>
-    <string name="total_winnings">총 상금: %1$s</string>
+    <string name="best_score">최고 기록: %1$s</string>
+    <string name="games_played">플레이 횟수: %1$d</string>
+    <string name="total_winnings">총 획득 상금: %1$s</string>
     <string name="edit_profile">프로필 편집</string>
     <string name="change_name">이름 변경</string>
     <string name="reset_stats">통계 초기화</string>
-    <string name="confirm_reset">통계를 초기화하시겠습니까?</string>
+    <string name="confirm_reset">통계 데이터를 초기화하시겠습니까?</string>
     <string name="yes">예</string>
     <string name="no">아니오</string>
     <string name="stats_reset">통계가 초기화되었습니다</string>
-    <string name="name_updated">이름이 업데이트되었습니다</string>
+    <string name="name_updated">이름이 변경되었습니다</string>
     <string name="language">언어</string>
-    <string name="turkish">터키어</string>
+    <string name="turkish">튀르키예어</string>
     <string name="english">영어</string>
     <string name="chinese">중국어</string>
     <string name="spanish">스페인어</string>
@@ -66,8 +66,9 @@
     <string name="korean">한국어</string>
     <string name="portuguese">포르투갈어</string>
     <string name="vietnamese">베트남어</string>
-    <string name="preferences">설정</string>
-    <string name="language_changed_turkish">언어가 터키어로 변경되었습니다</string>
+    <string name="italian">이탈리아어</string>
+    <string name="preferences">환경 설정</string>
+    <string name="language_changed_turkish">언어가 튀르키예어로 변경되었습니다</string>
     <string name="language_changed_english">언어가 영어로 변경되었습니다</string>
     <string name="language_changed_chinese">언어가 중국어로 변경되었습니다</string>
     <string name="language_changed_spanish">언어가 스페인어로 변경되었습니다</string>
@@ -80,28 +81,67 @@
     <string name="language_changed_korean">언어가 한국어로 변경되었습니다</string>
     <string name="language_changed_portuguese">언어가 포르투갈어로 변경되었습니다</string>
     <string name="language_changed_vietnamese">언어가 베트남어로 변경되었습니다</string>
-    <string name="phone_friend_title">친구에게 전화</string>
-    <string name="phone_friend_hint">%1$s인 것 같은데... 확신이 없어!</string>
-    <string name="thank_you">감사합니다!</string>
-    <string name="audience_help_title">관객에게 물어보기</string>
-    <string name="audience_votes">관객 투표:</string>
+    <string name="language_changed_italian">언어가 이탈리아어로 변경되었습니다</string>
+    <string name="phone_friend_title">전화 찬스</string>
+    <string name="phone_friend_hint">내 생각엔 %1$s인 것 같은데... 확실하진 않아!</string>
+    <string name="thank_you">고마워요!</string>
+    <string name="audience_help_title">관객 찬스</string>
+    <string name="audience_votes">관객 투표 결과:</string>
     <string name="audience_option">%1$s: %2$d%%</string>
-    <string name="understood">알겠습니다</string>
-    <string name="quit_game_title">게임 종료</string>
-    <string name="quit_game_message">게임을 종료하시겠습니까? 세이프 헤이븐: %1$s</string>
-    <string name="yes_quit">예, 종료</string>
-    <string name="no_continue">아니오, 계속</string>
-    <string name="game_won_message">모든 질문에 정답입니다! 상금: %1$s</string>
-    <string name="game_lost_message">틀렸습니다! 상금: %1$s</string>
+    <string name="understood">확인</string>
+    <string name="quit_game_title">도전 중단</string>
+    <string name="quit_game_message">여기서 도전을 멈추고 상금을 수령하시겠습니까? 보장 상금: %1$s</string>
+    <string name="yes_quit">중단하기</string>
+    <string name="no_continue">계속 도전</string>
+    <string name="game_won_message">모든 문제를 맞히셨습니다! 최종 상금: %1$s</string>
+    <string name="game_lost_message">오답입니다! 최종 획득 상금: %1$s</string>
     <string name="back_to_main_menu">메인 메뉴로 돌아가기</string>
     <string name="result_won_title">축하합니다!</string>
-    <string name="result_won_message">모든 질문에 정답입니다!</string>
-    <string name="result_lost_title">게임 오버</string>
-    <string name="result_lost_message">틀렸습니다!</string>
-    <string name="result_quit_title">게임을 종료했습니다</string>
-    <string name="result_quit_message">세이프 헤이븐에 도달했습니다!</string>
+    <string name="result_won_message">모든 퀴즈를 완벽하게 통과했습니다!</string>
+    <string name="result_lost_title">게임 종료</string>
+    <string name="result_lost_message">아쉽게도 틀렸습니다!</string>
+    <string name="result_quit_title">도전 중단</string>
+    <string name="result_quit_message">안전 상금을 확보하셨습니다!</string>
     <string name="result_default_title">게임 결과</string>
     <string name="result_default_message">게임 완료</string>
-    <string name="prize_won">획득한 상금: %1$s</string>
-    <string name="never_played">한 번도 플레이하지 않음</string>
-</resources> 
+    <string name="prize_won">획득 상금: %1$s</string>
+    <string name="never_played">플레이 기록 없음</string>
+    <string name="user_agreement">이용약관</string>
+    <string name="privacy_policy">개인정보 처리방침</string>
+    <string name="user_agreement_content">1. 이용약관 동의
+Answer It(이하 "앱")을 이용함으로써 본 약관에 동의하게 됩니다.
+
+2. 서비스의 성격
+• Answer It은 상식 퀴즈 및 오락용 게임입니다.
+• 게임 내에 표시되는 모든 상금(예: ₩1,000,000 등)은 가상의 게임 점수이며 실제 현금 가치나 지급 의무가 없습니다.
+
+3. 지식재산권
+앱의 코드 및 자산은 MIT 오픈소스 라이선스를 따릅니다.
+
+4. 책임의 한계
+앱은 어떠한 보증 없이 "있는 그대로" 제공됩니다.
+
+5. 약관 변경
+개발자는 향후 업데이트를 통해 약관을 수정할 수 있습니다.</string>
+    <string name="privacy_policy_content">1. 개인정보 보호
+Answer It은 사용자의 개인정보를 매우 소중하게 생각합니다.
+
+2. 데이터 수집 및 처리
+• 완전한 오프라인 환경에서 동작합니다(Offline-First).
+• 개인 식별 정보, 위치, 연락처 등을 절대 수집하거나 외부 서버로 전송하지 않습니다.
+• 도전자 이름, 전적 및 테마 설정은 오직 기기 내부(SharedPreferences)에만 저장됩니다.
+
+3. 하드웨어 권한
+• 진동(VIBRATE): 오답 시 햅틱 피드백 제공.
+• 오디오: 퀴즈 효과음 재생.
+
+4. 타사 트래커 없음
+광고 모듈이나 사용자 추적 도구가 일절 포함되지 않습니다.
+
+5. 데이터 초기화
+프로필 화면에서 언제든지 데이터를 초기화할 수 있습니다.</string>
+    <string name="profile_contestant">도전자</string>
+    <string name="statistics">전적 통계</string>
+    <string name="total_earnings">총 획득 상금:</string>
+    <string name="last_game">최근 게임:</string>
+</resources>

@@ -1,56 +1,56 @@
 <resources>
     <string name="app_name">Answer It</string>
-    <string name="start_game">ابدأ اللعبة</string>
+    <string name="start_game">ابدأ اللعب</string>
     <string name="settings">الإعدادات</string>
     <string name="profile">الملف الشخصي</string>
     <string name="exit">خروج</string>
-    <string name="question">سؤال</string>
+    <string name="question">السؤال</string>
     <string name="answer_a">أ:</string>
     <string name="answer_b">ب:</string>
     <string name="answer_c">ج:</string>
     <string name="answer_d">د:</string>
-    <string name="confirm_answer">تأكيد الإجابة</string>
-    <string name="use_lifeline">استخدام المساعدة</string>
+    <string name="confirm_answer">تأكيد</string>
+    <string name="use_lifeline">استخدم وسيلة مساعدة</string>
     <string name="fifty_fifty">50:50</string>
     <string name="phone_friend">اتصال بصديق</string>
-    <string name="audience_help">مساعدة الجمهور</string>
-    <string name="correct_answer">صحيح!</string>
+    <string name="audience_help">رأي الجمهور</string>
+    <string name="correct_answer">إجابة صحيحة!</string>
     <string name="wrong_answer">إجابة خاطئة!</string>
     <string name="game_over">انتهت اللعبة</string>
-    <string name="congratulations">تهانينا!</string>
+    <string name="congratulations">مبروك!</string>
     <string name="you_won">لقد فزت!</string>
     <string name="prize_money">الجائزة: %1$s</string>
-    <string name="current_prize">الجائزة الحالية: %1$s</string>
+    <string name="current_prize">الجائزة: %1$s</string>
     <string name="next_question">السؤال التالي</string>
-    <string name="quit_game">الخروج من اللعبة</string>
-    <string name="safe_haven">الميناء الآمن: %1$s</string>
-    <string name="million_dollars">ر.س1,000,000</string>
+    <string name="quit_game">انسحاب</string>
+    <string name="safe_haven">المبلغ المضمون: %1$s</string>
+    <string name="million_dollars">1,000,000 ر.س</string>
     <string name="background_theme">مظهر الخلفية</string>
     <string name="minimal_dark">داكن</string>
     <string name="minimal_light">فاتح</string>
-    <string name="gradient_blue">التدرج الأزرق</string>
-    <string name="gradient_purple">التدرج البنفسجي</string>
-    <string name="gradient_gold">التدرج الذهبي</string>
+    <string name="gradient_blue">تدرج أزرق</string>
+    <string name="gradient_purple">تدرج بنفسجي</string>
+    <string name="gradient_gold">تدرج ذهبي</string>
     <string name="sound_effects">المؤثرات الصوتية</string>
     <string name="vibration">الاهتزاز</string>
     <string name="rules">القواعد</string>
-    <string name="play_again">اللعب مرة أخرى</string>
+    <string name="play_again">العب مرة أخرى</string>
     <string name="back_to_menu">القائمة الرئيسية</string>
-    <string name="player_name">اسم اللاعب</string>
+    <string name="player_name">اسم المتسابق</string>
     <string name="enter_name">أدخل اسمك</string>
     <string name="save">حفظ</string>
     <string name="cancel">إلغاء</string>
     <string name="welcome_message">مرحباً بك في Answer It!</string>
     <string name="best_score">أفضل نتيجة: %1$s</string>
-    <string name="games_played">الألعاب الملعوبة: %1$d</string>
-    <string name="total_winnings">إجمالي المكاسب: %1$s</string>
-    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="games_played">المباريات الملعوبة: %1$d</string>
+    <string name="total_winnings">إجمالي الأرباح: %1$s</string>
+    <string name="edit_profile">تعديل الملف</string>
     <string name="change_name">تغيير الاسم</string>
-    <string name="reset_stats">إعادة تعيين الإحصائيات</string>
-    <string name="confirm_reset">هل أنت متأكد من أنك تريد إعادة تعيين الإحصائيات؟</string>
+    <string name="reset_stats">إعادة ضبط الإحصائيات</string>
+    <string name="confirm_reset">هل أنت متأكد من رغبتك في إعادة ضبط الإحصائيات؟</string>
     <string name="yes">نعم</string>
     <string name="no">لا</string>
-    <string name="stats_reset">تم إعادة تعيين الإحصائيات</string>
+    <string name="stats_reset">تمت إعادة ضبط الإحصائيات</string>
     <string name="name_updated">تم تحديث الاسم</string>
     <string name="language">اللغة</string>
     <string name="turkish">التركية</string>
@@ -66,6 +66,7 @@
     <string name="korean">الكورية</string>
     <string name="portuguese">البرتغالية</string>
     <string name="vietnamese">الفيتنامية</string>
+    <string name="italian">الإيطالية</string>
     <string name="preferences">التفضيلات</string>
     <string name="language_changed_turkish">تم تغيير اللغة إلى التركية</string>
     <string name="language_changed_english">تم تغيير اللغة إلى الإنجليزية</string>
@@ -80,28 +81,67 @@
     <string name="language_changed_korean">تم تغيير اللغة إلى الكورية</string>
     <string name="language_changed_portuguese">تم تغيير اللغة إلى البرتغالية</string>
     <string name="language_changed_vietnamese">تم تغيير اللغة إلى الفيتنامية</string>
+    <string name="language_changed_italian">تم تغيير اللغة إلى الإيطالية</string>
     <string name="phone_friend_title">اتصال بصديق</string>
-    <string name="phone_friend_hint">أعتقد أنه قد يكون %1$s... لكنني لست متأكداً!</string>
+    <string name="phone_friend_hint">أعتقد أن الإجابة هي %1$s... ولكنني لست متأكداً تماماً!</string>
     <string name="thank_you">شكراً لك!</string>
     <string name="audience_help_title">مساعدة الجمهور</string>
     <string name="audience_votes">أصوات الجمهور:</string>
     <string name="audience_option">%1$s: %2$d%%</string>
-    <string name="understood">فهمت</string>
-    <string name="quit_game_title">الخروج من اللعبة</string>
-    <string name="quit_game_message">هل أنت متأكد من أنك تريد الخروج من اللعبة؟ ميناؤك الآمن: %1$s</string>
-    <string name="yes_quit">نعم، خروج</string>
-    <string name="no_continue">لا، استمرار</string>
+    <string name="understood">مفهوم</string>
+    <string name="quit_game_title">الانسحاب من اللعبة</string>
+    <string name="quit_game_message">هل أنت متأكد من رغبتك في الانسحاب؟ رصيدك المضمون: %1$s</string>
+    <string name="yes_quit">نعم، انسحب</string>
+    <string name="no_continue">لا، استمر</string>
     <string name="game_won_message">لقد أجبت على جميع الأسئلة بشكل صحيح! جائزتك: %1$s</string>
     <string name="game_lost_message">إجابة خاطئة! جائزتك: %1$s</string>
     <string name="back_to_main_menu">العودة إلى القائمة الرئيسية</string>
-    <string name="result_won_title">تهانينا!</string>
+    <string name="result_won_title">مبروك!</string>
     <string name="result_won_message">لقد أجبت على جميع الأسئلة بشكل صحيح!</string>
     <string name="result_lost_title">انتهت اللعبة</string>
     <string name="result_lost_message">إجابة خاطئة!</string>
-    <string name="result_quit_title">لقد خرجت من اللعبة</string>
-    <string name="result_quit_message">لقد وصلت إلى مينائك الآمن!</string>
+    <string name="result_quit_title">لقد انسحبت</string>
+    <string name="result_quit_message">لقد حصلت على مبلغك المضمون!</string>
     <string name="result_default_title">نتيجة اللعبة</string>
     <string name="result_default_message">اكتملت اللعبة</string>
-    <string name="prize_won">الجائزة المكتسبة: %1$s</string>
-    <string name="never_played">لم يلعب أبداً</string>
-</resources> 
+    <string name="prize_won">الجائزة التي فزت بها: %1$s</string>
+    <string name="never_played">لم تلعب بعد</string>
+    <string name="user_agreement">اتفاقية الاستخدام</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="user_agreement_content">1. الموافقة على الشروط
+باستخدام تطبيق Answer It، فإنك توافق على جميع الشروط الواردة في هذه الاتفاقية.
+
+2. طبيعة اللعبة
+• Answer It هي لعبة مسابقات ثقافية ترفيهية وتعليمية.
+• جميع المبالغ والجوائز المعروضة داخل اللعبة هي نقاط ونقود افتراضية لا تحمل أي قيمة نقدية حقيقية.
+
+3. الملكية الفكرية
+البرنامج ومحتوياته مرخصة بموجب ترخيص MIT مفتوح المصدر.
+
+4. إخلاء المسؤولية
+يتم تقديم التطبيق "كما هو" دون أي ضمانات صريحة أو ضمنية.
+
+5. التعديلات
+يحتفظ المطور بالحق في تحديث شروط الاستخدام في الإصدارات القادمة.</string>
+    <string name="privacy_policy_content">1. الخصوصية والأمان
+يلتزم تطبيق Answer It بحماية خصوصية المستخدم بشكل كامل.
+
+2. جمع البيانات
+• التطبيق يعمل بالكامل بدون اتصال بالإنترنت (Offline).
+• لا يتم جمع أو مشاركة أي بيانات شخصية أو موقع جغرافي أو جهات اتصال.
+• يتم تخزين الاسم والإحصائيات والإعدادات محلياً فقط على جهازك.
+
+3. الأذونات
+• الاهتزاز: لتقديم استجابة لمسية عند الإجابة الخاطئة.
+• الصوت: لتشغيل مؤثرات اللعبة.
+
+4. عدم وجود أدوات تتبع
+لا يتضمن التطبيق أي إعلانات أو برمجيات تتبع من أطراف ثالثة.
+
+5. حذف البيانات
+يمكنك إعادة تعيين جميع بياناتك من شاشة الملف الشخصي في أي وقت.</string>
+    <string name="profile_contestant">المتسابق</string>
+    <string name="statistics">الإحصائيات</string>
+    <string name="total_earnings">إجمالي الأرباح:</string>
+    <string name="last_game">آخر مباراة:</string>
+</resources>

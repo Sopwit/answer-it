@@ -66,6 +66,7 @@
     <string name="korean">Korece</string>
     <string name="portuguese">Portekizce</string>
     <string name="vietnamese">Vietnamca</string>
+    <string name="italian">İtalyanca</string>
     <string name="preferences">Tercihler</string>
     <string name="language_changed_turkish">Dil Türkçe olarak değiştirildi</string>
     <string name="language_changed_english">Language changed to English</string>
@@ -80,6 +81,7 @@
     <string name="language_changed_korean">언어가 한국어로 변경되었습니다</string>
     <string name="language_changed_portuguese">Idioma alterado para português</string>
     <string name="language_changed_vietnamese">Ngôn ngữ đã được thay đổi sang tiếng Việt</string>
+    <string name="language_changed_italian">Lingua cambiata in italiano</string>
     <string name="phone_friend_title">Telefon Joker</string>
     <string name="phone_friend_hint">Sanırım %1$s olabilir... ama emin değilim!</string>
     <string name="thank_you">Teşekkürler!</string>
@@ -146,5 +148,4 @@ Gizlilik politikamız ile ilgili her türlü soru ve bildirim için GitHub açı
     <string name="statistics">İstatistikler</string>
     <string name="total_earnings">Toplam Kazanç:</string>
     <string name="last_game">Son Oyun:</string>
-    <string name="italian">İtalyanca</string>
-</resources> 
+</resources>

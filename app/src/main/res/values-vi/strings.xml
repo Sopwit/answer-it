@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Answer It</string>
-    <string name="start_game">Bắt đầu trò chơi</string>
+    <string name="start_game">Bắt đầu chơi</string>
     <string name="settings">Cài đặt</string>
     <string name="profile">Hồ sơ</string>
     <string name="exit">Thoát</string>
@@ -9,30 +9,30 @@
     <string name="answer_b">B:</string>
     <string name="answer_c">C:</string>
     <string name="answer_d">D:</string>
-    <string name="confirm_answer">Xác nhận câu trả lời</string>
-    <string name="use_lifeline">Sử dụng cứu trợ</string>
+    <string name="confirm_answer">Xác nhận</string>
+    <string name="use_lifeline">Dùng quyền trợ giúp</string>
     <string name="fifty_fifty">50:50</string>
-    <string name="phone_friend">Gọi điện cho bạn</string>
-    <string name="audience_help">Hỏi khán giả</string>
-    <string name="correct_answer">Đúng!</string>
-    <string name="wrong_answer">Sai!</string>
-    <string name="game_over">Kết thúc trò chơi</string>
-    <string name="congratulations">Chúc mừng!</string>
-    <string name="you_won">Bạn đã thắng!</string>
-    <string name="prize_money">Giải thưởng: %1$s</string>
-    <string name="current_prize">Giải thưởng hiện tại: %1$s</string>
+    <string name="phone_friend">Gọi điện thoại</string>
+    <string name="audience_help">Ý kiến khán giả</string>
+    <string name="correct_answer">Chính xác!</string>
+    <string name="wrong_answer">Câu trả lời sai!</string>
+    <string name="game_over">Trò chơi kết thúc</string>
+    <string name="congratulations">Xin chúc mừng!</string>
+    <string name="you_won">Bạn đã chiến thắng!</string>
+    <string name="prize_money">Tiền thưởng: %1$s</string>
+    <string name="current_prize">Tiền thưởng: %1$s</string>
     <string name="next_question">Câu hỏi tiếp theo</string>
-    <string name="quit_game">Thoát trò chơi</string>
-    <string name="safe_haven">Bến an toàn: %1$s</string>
-    <string name="million_dollars">₫1,000,000</string>
-    <string name="background_theme">Chủ đề nền</string>
-    <string name="minimal_dark">Tối</string>
+    <string name="quit_game">Dừng cuộc chơi</string>
+    <string name="safe_haven">Mốc an toàn: %1$s</string>
+    <string name="million_dollars">1.000.000 ₫</string>
+    <string name="background_theme">Giao diện nền</string>
+    <string name="minimal_dark">Tối giản</string>
     <string name="minimal_light">Sáng</string>
-    <string name="gradient_blue">Gradient xanh</string>
-    <string name="gradient_purple">Gradient tím</string>
-    <string name="gradient_gold">Gradient vàng</string>
+    <string name="gradient_blue">Xanh dương</string>
+    <string name="gradient_purple">Tím huyền ảo</string>
+    <string name="gradient_gold">Vàng hoàng gia</string>
     <string name="sound_effects">Hiệu ứng âm thanh</string>
-    <string name="vibration">Rung</string>
+    <string name="vibration">Rung phản hồi</string>
     <string name="rules">Luật chơi</string>
     <string name="play_again">Chơi lại</string>
     <string name="back_to_menu">Menu chính</string>
@@ -40,20 +40,20 @@
     <string name="enter_name">Nhập tên của bạn</string>
     <string name="save">Lưu</string>
     <string name="cancel">Hủy</string>
-    <string name="welcome_message">Chào mừng đến với Answer It!</string>
+    <string name="welcome_message">Chào mừng bạn đến với Answer It!</string>
     <string name="best_score">Điểm cao nhất: %1$s</string>
-    <string name="games_played">Số trò chơi đã chơi: %1$d</string>
-    <string name="total_winnings">Tổng tiền thắng: %1$s</string>
+    <string name="games_played">Số trận đã chơi: %1$d</string>
+    <string name="total_winnings">Tổng tiền thưởng: %1$s</string>
     <string name="edit_profile">Chỉnh sửa hồ sơ</string>
     <string name="change_name">Đổi tên</string>
     <string name="reset_stats">Đặt lại thống kê</string>
-    <string name="confirm_reset">Bạn có chắc chắn muốn đặt lại thống kê?</string>
+    <string name="confirm_reset">Bạn có chắc chắn muốn đặt lại toàn bộ thống kê?</string>
     <string name="yes">Có</string>
     <string name="no">Không</string>
-    <string name="stats_reset">Đã đặt lại thống kê</string>
+    <string name="stats_reset">Thống kê đã được đặt lại</string>
     <string name="name_updated">Đã cập nhật tên</string>
     <string name="language">Ngôn ngữ</string>
-    <string name="turkish">Thổ Nhĩ Kỳ</string>
+    <string name="turkish">Tiếng Thổ Nhĩ Kỳ</string>
     <string name="english">Tiếng Anh</string>
     <string name="chinese">Tiếng Trung</string>
     <string name="spanish">Tiếng Tây Ban Nha</string>
@@ -66,42 +66,82 @@
     <string name="korean">Tiếng Hàn</string>
     <string name="portuguese">Tiếng Bồ Đào Nha</string>
     <string name="vietnamese">Tiếng Việt</string>
+    <string name="italian">Tiếng Ý</string>
     <string name="preferences">Tùy chọn</string>
-    <string name="language_changed_turkish">Đã thay đổi ngôn ngữ sang tiếng Thổ Nhĩ Kỳ</string>
-    <string name="language_changed_english">Ngôn ngữ đã được thay đổi sang tiếng Anh</string>
-    <string name="language_changed_chinese">Đã thay đổi ngôn ngữ sang tiếng Trung</string>
-    <string name="language_changed_spanish">Đã thay đổi ngôn ngữ sang tiếng Tây Ban Nha</string>
-    <string name="language_changed_arabic">Đã thay đổi ngôn ngữ sang tiếng Ả Rập</string>
-    <string name="language_changed_german">Đã thay đổi ngôn ngữ sang tiếng Đức</string>
-    <string name="language_changed_french">Đã thay đổi ngôn ngữ sang tiếng Pháp</string>
-    <string name="language_changed_russian">Đã thay đổi ngôn ngữ sang tiếng Nga</string>
-    <string name="language_changed_hindi">Đã thay đổi ngôn ngữ sang tiếng Hindi</string>
-    <string name="language_changed_japanese">Đã thay đổi ngôn ngữ sang tiếng Nhật</string>
-    <string name="language_changed_korean">Đã thay đổi ngôn ngữ sang tiếng Hàn</string>
-    <string name="language_changed_portuguese">Đã thay đổi ngôn ngữ sang tiếng Bồ Đào Nha</string>
-    <string name="language_changed_vietnamese">Ngôn ngữ đã được thay đổi sang tiếng Việt</string>
-    <string name="phone_friend_title">Gọi điện cho bạn</string>
-    <string name="phone_friend_hint">Tôi nghĩ là %1$s... nhưng tôi không chắc!</string>
-    <string name="thank_you">Cảm ơn!</string>
-    <string name="audience_help_title">Hỏi khán giả</string>
-    <string name="audience_votes">Phiếu bầu của khán giả:</string>
+    <string name="language_changed_turkish">Đã chuyển ngôn ngữ sang Tiếng Thổ Nhĩ Kỳ</string>
+    <string name="language_changed_english">Đã chuyển ngôn ngữ sang Tiếng Anh</string>
+    <string name="language_changed_chinese">Đã chuyển ngôn ngữ sang Tiếng Trung</string>
+    <string name="language_changed_spanish">Đã chuyển ngôn ngữ sang Tiếng Tây Ban Nha</string>
+    <string name="language_changed_arabic">Đã chuyển ngôn ngữ sang Tiếng Ả Rập</string>
+    <string name="language_changed_german">Đã chuyển ngôn ngữ sang Tiếng Đức</string>
+    <string name="language_changed_french">Đã chuyển ngôn ngữ sang Tiếng Pháp</string>
+    <string name="language_changed_russian">Đã chuyển ngôn ngữ sang Tiếng Nga</string>
+    <string name="language_changed_hindi">Đã chuyển ngôn ngữ sang Tiếng Hindi</string>
+    <string name="language_changed_japanese">Đã chuyển ngôn ngữ sang Tiếng Nhật</string>
+    <string name="language_changed_korean">Đã chuyển ngôn ngữ sang Tiếng Hàn</string>
+    <string name="language_changed_portuguese">Đã chuyển ngôn ngữ sang Tiếng Bồ Đào Nha</string>
+    <string name="language_changed_vietnamese">Đã chuyển ngôn ngữ sang Tiếng Việt</string>
+    <string name="language_changed_italian">Đã chuyển ngôn ngữ sang Tiếng Ý</string>
+    <string name="phone_friend_title">Gọi cho người thân</string>
+    <string name="phone_friend_hint">Tôi nghĩ đáp án có thể là %1$s... nhưng tôi không hoàn toàn chắc chắn!</string>
+    <string name="thank_you">Cảm ơn bạn!</string>
+    <string name="audience_help_title">Hỏi ý kiến khán giả</string>
+    <string name="audience_votes">Khán giả bình chọn:</string>
     <string name="audience_option">%1$s: %2$d%%</string>
-    <string name="understood">Hiểu rồi</string>
-    <string name="quit_game_title">Thoát trò chơi</string>
-    <string name="quit_game_message">Bạn có chắc chắn muốn thoát trò chơi? Bến an toàn của bạn: %1$s</string>
-    <string name="yes_quit">Có, thoát</string>
-    <string name="no_continue">Không, tiếp tục</string>
-    <string name="game_won_message">Bạn đã trả lời đúng tất cả câu hỏi! Giải thưởng của bạn: %1$s</string>
-    <string name="game_lost_message">Câu trả lời sai! Giải thưởng của bạn: %1$s</string>
-    <string name="back_to_main_menu">Quay lại menu chính</string>
-    <string name="result_won_title">Chúc mừng!</string>
-    <string name="result_won_message">Bạn đã trả lời đúng tất cả câu hỏi!</string>
-    <string name="result_lost_title">Kết thúc trò chơi</string>
-    <string name="result_lost_message">Câu trả lời sai!</string>
-    <string name="result_quit_title">Bạn đã thoát trò chơi</string>
-    <string name="result_quit_message">Bạn đã đạt đến bến an toàn!</string>
-    <string name="result_default_title">Kết quả trò chơi</string>
-    <string name="result_default_message">Trò chơi hoàn thành</string>
-    <string name="prize_won">Giải thưởng đã thắng: %1$s</string>
+    <string name="understood">Đã hiểu</string>
+    <string name="quit_game_title">Dừng cuộc chơi</string>
+    <string name="quit_game_message">Bạn có chắc muốn dừng cuộc chơi để bảo toàn tiền thưởng? Mốc an toàn: %1$s</string>
+    <string name="yes_quit">Dừng chơi</string>
+    <string name="no_continue">Chơi tiếp</string>
+    <string name="game_won_message">Xuất sắc! Bạn đã trả lời đúng tất cả các câu hỏi! Tiền thưởng: %1$s</string>
+    <string name="game_lost_message">Rất tiếc câu trả lời chưa đúng! Tiền thưởng mang về: %1$s</string>
+    <string name="back_to_main_menu">Trở về Menu chính</string>
+    <string name="result_won_title">Xin chúc mừng!</string>
+    <string name="result_won_message">Bạn đã vượt qua toàn bộ các câu hỏi!</string>
+    <string name="result_lost_title">Trò chơi kết thúc</string>
+    <string name="result_lost_message">Câu trả lời chưa chính xác!</string>
+    <string name="result_quit_title">Dừng cuộc chơi thành công</string>
+    <string name="result_quit_message">Bạn đã bảo toàn được mốc giải thưởng an toàn!</string>
+    <string name="result_default_title">Kết quả trận đấu</string>
+    <string name="result_default_message">Trận đấu hoàn thành</string>
+    <string name="prize_won">Giải thưởng đạt được: %1$s</string>
     <string name="never_played">Chưa từng chơi</string>
-</resources> 
+    <string name="user_agreement">Thỏa thuận người dùng</string>
+    <string name="privacy_policy">Chính sách bảo mật</string>
+    <string name="user_agreement_content">1. CHẤP THUẬN ĐIỀU KHOẢN
+Bằng việc cài đặt hoặc sử dụng Answer It, bạn đồng ý với các điều khoản này.
+
+2. BẢN CHẤT DỊCH VỤ
+• Answer It là trò chơi đố vui kiến thức phục vụ mục đích giải trí và giáo dục.
+• Tất cả giải thưởng hiển thị trong trò chơi (ví dụ: 1.000.000 ₫) hoàn toàn là điểm số ảo, không có giá trị tiền mặt thực tế.
+
+3. SỞ HỮU TRÍ TUỆ
+Mã nguồn và tài nguyên được bảo hộ theo giấy phép mã nguồn mở MIT.
+
+4. TỪ CHỐI BẢO HÀNH
+Ứng dụng được cung cấp "NGUYÊN TRẠNG" mà không có bất kỳ bảo đảm nào.
+
+5. ĐIỀU CHỈNH
+Nhà phát triển có quyền cập nhật các điều khoản trong các phiên bản tiếp theo.</string>
+    <string name="privacy_policy_content">1. CHÍNH SÁCH BẢO MẬT
+Answer It cam kết tôn trọng và bảo vệ tuyệt đối quyền riêng tư của bạn.
+
+2. THU THẬP DỮ LIỆU
+• Hoạt động hoàn toàn ngoại tuyến (Offline-First).
+• Không thu thập hay chia sẻ bất kỳ thông tin cá nhân, vị trí hay danh bạ nào.
+• Tên người chơi, điểm số và tùy chọn cài đặt chỉ được lưu trên thiết bị của bạn (SharedPreferences).
+
+3. QUYỀN TRUY CẬP PHẦN CỨNG
+• Rung (VIBRATE): Phản hồi xúc giác khi trả lời sai.
+• Âm thanh: Phát hiệu ứng âm thanh câu hỏi.
+
+4. KHÔNG CÓ TRÌNH THEO DÕI
+Không tích hợp quảng cáo hoặc SDK theo dõi từ bên thứ ba.
+
+5. XÓA DỮ LIỆU
+Bạn có thể đặt lại toàn bộ thống kê bất cứ lúc nào trong mục Hồ sơ.</string>
+    <string name="profile_contestant">Người chơi</string>
+    <string name="statistics">Thống kê</string>
+    <string name="total_earnings">Tổng tiền thưởng:</string>
+    <string name="last_game">Trận gần nhất:</string>
+</resources>

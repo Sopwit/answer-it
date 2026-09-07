@@ -1,6 +1,4 @@
 <resources>
-    <string name="user_agreement_content"></string>
-    <string name="privacy_policy_content"></string>
     <string name="app_name">Answer It</string>
     <string name="start_game">Gioca</string>
     <string name="settings">Impostazioni</string>
@@ -11,48 +9,48 @@
     <string name="answer_b">B:</string>
     <string name="answer_c">C:</string>
     <string name="answer_d">D:</string>
-    <string name="confirm_answer">Conferma risposta</string>
-    <string name="use_lifeline">Usa aiuto</string>
+    <string name="confirm_answer">Conferma</string>
+    <string name="use_lifeline">Usa Aiuto</string>
     <string name="fifty_fifty">50:50</string>
-    <string name="phone_friend">Chiama un amico</string>
-    <string name="audience_help">Aiuto del pubblico</string>
-    <string name="correct_answer">Corretto!</string>
-    <string name="wrong_answer">Risposta sbagliata!</string>
-    <string name="game_over">Gioco finito</string>
+    <string name="phone_friend">Telefono</string>
+    <string name="audience_help">Pubblico</string>
+    <string name="correct_answer">Esatto!</string>
+    <string name="wrong_answer">Risposta Errata!</string>
+    <string name="game_over">Fine Partita</string>
     <string name="congratulations">Congratulazioni!</string>
-    <string name="you_won">Hai vinto!</string>
+    <string name="you_won">Hai Vinto!</string>
     <string name="prize_money">Premio: %1$s</string>
-    <string name="current_prize">Premio attuale: %1$s</string>
-    <string name="next_question">Prossima domanda</string>
-    <string name="quit_game">Abbandona il gioco</string>
-    <string name="safe_haven">Salvagente: %1$s</string>
-    <string name="million_dollars">€1.000.000</string>
-    <string name="background_theme">Tema sfondo</string>
+    <string name="current_prize">Premio: %1$s</string>
+    <string name="next_question">Prossima Domanda</string>
+    <string name="quit_game">Ritirati</string>
+    <string name="safe_haven">Traguardo Sicuro: %1$s</string>
+    <string name="million_dollars">1.000.000 €</string>
+    <string name="background_theme">Tema di Sfondo</string>
     <string name="minimal_dark">Scuro</string>
     <string name="minimal_light">Chiaro</string>
-    <string name="gradient_blue">Gradiente blu</string>
-    <string name="gradient_purple">Gradiente viola</string>
-    <string name="gradient_gold">Gradiente oro</string>
-    <string name="sound_effects">Effetti sonori</string>
+    <string name="gradient_blue">Gradiente Blu</string>
+    <string name="gradient_purple">Gradiente Viola</string>
+    <string name="gradient_gold">Gradiente Oro</string>
+    <string name="sound_effects">Effetti Sonori</string>
     <string name="vibration">Vibrazione</string>
     <string name="rules">Regole</string>
-    <string name="play_again">Gioca di nuovo</string>
-    <string name="back_to_menu">Menu principale</string>
-    <string name="player_name">Nome concorrente</string>
+    <string name="play_again">Gioca Ancora</string>
+    <string name="back_to_menu">Menu Principale</string>
+    <string name="player_name">Nome Concorrente</string>
     <string name="enter_name">Inserisci il tuo nome</string>
     <string name="save">Salva</string>
     <string name="cancel">Annulla</string>
     <string name="welcome_message">Benvenuto su Answer It!</string>
-    <string name="best_score">Miglior punteggio: %1$s</string>
-    <string name="games_played">Giochi giocati: %1$d</string>
-    <string name="total_winnings">Vincite totali: %1$s</string>
-    <string name="edit_profile">Modifica profilo</string>
-    <string name="change_name">Cambia nome</string>
-    <string name="reset_stats">Reimposta statistiche</string>
-    <string name="confirm_reset">Sei sicuro di voler reimpostare le statistiche?</string>
+    <string name="best_score">Miglior Punteggio: %1$s</string>
+    <string name="games_played">Partite Giocate: %1$d</string>
+    <string name="total_winnings">Vincite Totali: %1$s</string>
+    <string name="edit_profile">Modifica Profilo</string>
+    <string name="change_name">Cambia Nome</string>
+    <string name="reset_stats">Azzera Statistiche</string>
+    <string name="confirm_reset">Sei sicuro di voler azzerare le statistiche?</string>
     <string name="yes">Sì</string>
     <string name="no">No</string>
-    <string name="stats_reset">Statistiche reimpostate</string>
+    <string name="stats_reset">Statistiche azzerate</string>
     <string name="name_updated">Nome aggiornato</string>
     <string name="language">Lingua</string>
     <string name="turkish">Turco</string>
@@ -68,6 +66,7 @@
     <string name="korean">Coreano</string>
     <string name="portuguese">Portoghese</string>
     <string name="vietnamese">Vietnamita</string>
+    <string name="italian">Italiano</string>
     <string name="preferences">Preferenze</string>
     <string name="language_changed_turkish">Lingua cambiata in turco</string>
     <string name="language_changed_english">Lingua cambiata in inglese</string>
@@ -82,35 +81,67 @@
     <string name="language_changed_korean">Lingua cambiata in coreano</string>
     <string name="language_changed_portuguese">Lingua cambiata in portoghese</string>
     <string name="language_changed_vietnamese">Lingua cambiata in vietnamita</string>
-    <string name="phone_friend_title">Chiama un amico</string>
-    <string name="phone_friend_hint">Penso che possa essere %1$s... ma non sono sicuro!</string>
+    <string name="language_changed_italian">Lingua cambiata in italiano</string>
+    <string name="phone_friend_title">Aiuto da Casa</string>
+    <string name="phone_friend_hint">Penso che la risposta corretta sia %1$s... ma non sono sicuro al 100%%!</string>
     <string name="thank_you">Grazie!</string>
-    <string name="audience_help_title">Aiuto del pubblico</string>
-    <string name="audience_votes">Voti del pubblico:</string>
+    <string name="audience_help_title">Aiuto del Pubblico</string>
+    <string name="audience_votes">Voti del Pubblico:</string>
     <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">Ho capito</string>
-    <string name="quit_game_title">Abbandona il gioco</string>
-    <string name="quit_game_message">Sei sicuro di voler abbandonare il gioco? Salvagente: %1$s</string>
-    <string name="yes_quit">Sì, esci</string>
-    <string name="no_continue">No, continua</string>
-    <string name="game_won_message">Hai risposto correttamente a tutte le domande! Premio vinto: %1$s</string>
-    <string name="game_lost_message">Risposta sbagliata! Premio vinto: %1$s</string>
-    <string name="back_to_main_menu">Torna al menu principale</string>
+    <string name="quit_game_title">Abbandona la Partita</string>
+    <string name="quit_game_message">Sei sicuro di voler abbandonare? Il tuo traguardo sicuro: %1$s</string>
+    <string name="yes_quit">Sì, Ritirati</string>
+    <string name="no_continue">No, Continua</string>
+    <string name="game_won_message">Hai risposto esattamente a tutte le domande! Vincita: %1$s</string>
+    <string name="game_lost_message">Risposta errata! Vincita: %1$s</string>
+    <string name="back_to_main_menu">Torna al Menu Principale</string>
     <string name="result_won_title">Congratulazioni!</string>
-    <string name="result_won_message">Hai risposto correttamente a tutte le domande!</string>
-    <string name="result_lost_title">Gioco finito</string>
-    <string name="result_lost_message">Risposta sbagliata!</string>
-    <string name="result_quit_title">Hai abbandonato il gioco</string>
-    <string name="result_quit_message">Hai raggiunto il tuo salvagente!</string>
-    <string name="result_default_title">Risultato del gioco</string>
-    <string name="result_default_message">Gioco completato</string>
-    <string name="prize_won">Premio vinto: %1$s</string>
-    <string name="never_played">Mai giocato</string>
-    <string name="user_agreement">Accordo utente</string>
-    <string name="privacy_policy">Informativa sulla privacy</string>
+    <string name="result_won_message">Hai risposto esattamente a tutte le domande!</string>
+    <string name="result_lost_title">Fine Partita</string>
+    <string name="result_lost_message">Risposta errata!</string>
+    <string name="result_quit_title">Ti sei ritirato</string>
+    <string name="result_quit_message">Hai portato a casa il traguardo sicuro!</string>
+    <string name="result_default_title">Risultato Partita</string>
+    <string name="result_default_message">Partita completata</string>
+    <string name="prize_won">Premio Vinto: %1$s</string>
+    <string name="never_played">Nessuna partita</string>
+    <string name="user_agreement">Accordo Utente</string>
+    <string name="privacy_policy">Informativa sulla Privacy</string>
+    <string name="user_agreement_content">1. ACCETTAZIONE DEI TERMINI
+Scaricando o utilizzando Answer It, accetti i termini del presente accordo.
+
+2. NATURA DEL GIOCO
+• Answer It è un gioco a quiz educativo e di intrattenimento.
+• Tutti i premi mostrati (es. 1.000.000 €) sono punteggi virtuali privi di valore economico o monetario reale.
+
+3. PROPRIETÀ INTELLETTUALE
+Il codice sorgente e i contenuti sono distribuiti con licenza MIT.
+
+4. ESCLUSIONE DI RESPONSABILITÀ
+L\'applicazione è fornita "COSÌ COM\'È" senza garanzie di alcun tipo.
+
+5. MODIFICHE
+I gestori si riservano il diritto di aggiornare i termini in versioni future.</string>
+    <string name="privacy_policy_content">1. PRIVACY E SICUREZZA
+Answer It tratta i dati dell\'utente con il massimo rispetto e trasparenza.
+
+2. TRATTAMENTO DATI
+• Esperienza 100%% offline.
+• Nessun dato personale, posizione o rubrica viene raccolto o trasmesso su server esterni.
+• Nome profilo, impostazioni e statistiche sono conservati solo sul tuo dispositivo.
+
+3. AUTORIZZAZIONI
+• Vibrazione: Feedback tattile in caso di errore.
+• Audio: Riproduzione effetti sonori del quiz.
+
+4. NESSUN TRACCIAMENTO
+Nessun modulo pubblicitario o tracker di profilazione integrato.
+
+5. CANCELLAZIONE DATI
+Puoi ripristinare le statistiche in qualsiasi momento dalla schermata Profilo.</string>
     <string name="profile_contestant">Concorrente</string>
     <string name="statistics">Statistiche</string>
-    <string name="total_earnings">Vincite totali:</string>
-    <string name="last_game">Ultima partita:</string>
-    <string name="italian">Italiano</string>
-</resources> 
+    <string name="total_earnings">Vincite Totali:</string>
+    <string name="last_game">Ultima Partita:</string>
+</resources>

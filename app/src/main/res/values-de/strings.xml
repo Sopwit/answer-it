@@ -9,23 +9,23 @@
     <string name="answer_b">B:</string>
     <string name="answer_c">C:</string>
     <string name="answer_d">D:</string>
-    <string name="confirm_answer">Antwort Bestätigen</string>
-    <string name="use_lifeline">Joker Verwenden</string>
+    <string name="confirm_answer">Bestätigen</string>
+    <string name="use_lifeline">Joker einsetzen</string>
     <string name="fifty_fifty">50:50</string>
-    <string name="phone_friend">Anruf bei einem Freund</string>
-    <string name="audience_help">Publikum fragen</string>
+    <string name="phone_friend">Telefon</string>
+    <string name="audience_help">Publikum</string>
     <string name="correct_answer">Richtig!</string>
     <string name="wrong_answer">Falsche Antwort!</string>
-    <string name="game_over">Spiel Beendet</string>
-    <string name="congratulations">Glückwunsch!</string>
-    <string name="you_won">Du hast gewonnen!</string>
-    <string name="prize_money">Preis: %1$s</string>
-    <string name="current_prize">Aktueller Preis: %1$s</string>
+    <string name="game_over">Spiel vorbei</string>
+    <string name="congratulations">Herzlichen Glückwunsch!</string>
+    <string name="you_won">Sie haben gewonnen!</string>
+    <string name="prize_money">Gewinn: %1$s</string>
+    <string name="current_prize">Gewinn: %1$s</string>
     <string name="next_question">Nächste Frage</string>
-    <string name="quit_game">Spiel Beenden</string>
-    <string name="safe_haven">Sicherer Hafen: %1$s</string>
-    <string name="million_dollars">€1,000,000</string>
-    <string name="background_theme">Hintergrund-Design</string>
+    <string name="quit_game">Aussteigen</string>
+    <string name="safe_haven">Sicherheitsstufe: %1$s</string>
+    <string name="million_dollars">1.000.000 €</string>
+    <string name="background_theme">Hintergrunddesign</string>
     <string name="minimal_dark">Dunkel</string>
     <string name="minimal_light">Hell</string>
     <string name="gradient_blue">Blauer Verlauf</string>
@@ -34,20 +34,20 @@
     <string name="sound_effects">Soundeffekte</string>
     <string name="vibration">Vibration</string>
     <string name="rules">Regeln</string>
-    <string name="play_again">Nochmal Spielen</string>
+    <string name="play_again">Erneut spielen</string>
     <string name="back_to_menu">Hauptmenü</string>
     <string name="player_name">Spielername</string>
-    <string name="enter_name">Gib deinen Namen ein</string>
+    <string name="enter_name">Geben Sie Ihren Namen ein</string>
     <string name="save">Speichern</string>
     <string name="cancel">Abbrechen</string>
     <string name="welcome_message">Willkommen bei Answer It!</string>
-    <string name="best_score">Beste Punktzahl: %1$s</string>
+    <string name="best_score">Bester Punktestand: %1$s</string>
     <string name="games_played">Gespielte Spiele: %1$d</string>
     <string name="total_winnings">Gesamtgewinn: %1$s</string>
-    <string name="edit_profile">Profil Bearbeiten</string>
-    <string name="change_name">Namen Ändern</string>
-    <string name="reset_stats">Statistiken Zurücksetzen</string>
-    <string name="confirm_reset">Bist du sicher, dass du die Statistiken zurücksetzen möchtest?</string>
+    <string name="edit_profile">Profil bearbeiten</string>
+    <string name="change_name">Name ändern</string>
+    <string name="reset_stats">Statistiken zurücksetzen</string>
+    <string name="confirm_reset">Möchten Sie die Statistiken wirklich zurücksetzen?</string>
     <string name="yes">Ja</string>
     <string name="no">Nein</string>
     <string name="stats_reset">Statistiken zurückgesetzt</string>
@@ -66,6 +66,7 @@
     <string name="korean">Koreanisch</string>
     <string name="portuguese">Portugiesisch</string>
     <string name="vietnamese">Vietnamesisch</string>
+    <string name="italian">Italienisch</string>
     <string name="preferences">Einstellungen</string>
     <string name="language_changed_turkish">Sprache zu Türkisch geändert</string>
     <string name="language_changed_english">Sprache zu Englisch geändert</string>
@@ -80,28 +81,67 @@
     <string name="language_changed_korean">Sprache zu Koreanisch geändert</string>
     <string name="language_changed_portuguese">Sprache zu Portugiesisch geändert</string>
     <string name="language_changed_vietnamese">Sprache zu Vietnamesisch geändert</string>
-    <string name="phone_friend_title">Anruf bei einem Freund</string>
-    <string name="phone_friend_hint">Ich denke, es könnte %1$s sein... aber ich bin mir nicht sicher!</string>
+    <string name="language_changed_italian">Sprache zu Italienisch geändert</string>
+    <string name="phone_friend_title">Telefonjoker</string>
+    <string name="phone_friend_hint">Ich glaube, es könnte %1$s sein... bin mir aber nicht ganz sicher!</string>
     <string name="thank_you">Danke!</string>
-    <string name="audience_help_title">Publikum fragen</string>
-    <string name="audience_votes">Publikumsstimmen:</string>
+    <string name="audience_help_title">Publikumsjoker</string>
+    <string name="audience_votes">Publikumsergebnis:</string>
     <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">Verstanden</string>
-    <string name="quit_game_title">Spiel Beenden</string>
-    <string name="quit_game_message">Bist du sicher, dass du das Spiel beenden möchtest? Dein sicherer Hafen: %1$s</string>
-    <string name="yes_quit">Ja, Beenden</string>
-    <string name="no_continue">Nein, Weiter</string>
-    <string name="game_won_message">Du hast alle Fragen richtig beantwortet! Dein Preis: %1$s</string>
-    <string name="game_lost_message">Falsche Antwort! Dein Preis: %1$s</string>
+    <string name="quit_game_title">Spiel beenden</string>
+    <string name="quit_game_message">Möchten Sie das Spiel wirklich beenden? Ihre Sicherheitsstufe: %1$s</string>
+    <string name="yes_quit">Ja, beenden</string>
+    <string name="no_continue">Nein, weiterspielen</string>
+    <string name="game_won_message">Sie haben alle Fragen richtig beantwortet! Ihr Gewinn: %1$s</string>
+    <string name="game_lost_message">Falsche Antwort! Ihr Gewinn: %1$s</string>
     <string name="back_to_main_menu">Zurück zum Hauptmenü</string>
-    <string name="result_won_title">Glückwunsch!</string>
-    <string name="result_won_message">Du hast alle Fragen richtig beantwortet!</string>
-    <string name="result_lost_title">Spiel Beendet</string>
+    <string name="result_won_title">Herzlichen Glückwunsch!</string>
+    <string name="result_won_message">Sie haben alle Fragen richtig beantwortet!</string>
+    <string name="result_lost_title">Spiel vorbei</string>
     <string name="result_lost_message">Falsche Antwort!</string>
-    <string name="result_quit_title">Du hast das Spiel beendet</string>
-    <string name="result_quit_message">Du hast deinen sicheren Hafen erreicht!</string>
+    <string name="result_quit_title">Sie sind ausgestiegen</string>
+    <string name="result_quit_message">Sie haben Ihre Sicherheitsstufe gesichert!</string>
     <string name="result_default_title">Spielergebnis</string>
     <string name="result_default_message">Spiel beendet</string>
     <string name="prize_won">Gewonnener Preis: %1$s</string>
-    <string name="never_played">Nie gespielt</string>
-</resources> 
+    <string name="never_played">Noch nicht gespielt</string>
+    <string name="user_agreement">Nutzungsbedingungen</string>
+    <string name="privacy_policy">Datenschutzerklärung</string>
+    <string name="user_agreement_content">1. GELTUNGSBEREICH
+Durch das Herunterladen oder Verwenden von Answer It stimmen Sie diesen Bedingungen zu.
+
+2. ART DES DIENSTES
+• Answer It ist ein interaktives Quizspiel zu Unterhaltungs- und Bildungszwecken.
+• Alle im Spiel angezeigten Gewinnsummen (z. B. 1.000.000 €) sind rein virtuelle Punkte ohne realen Geldwert oder Auszahlungsanspruch.
+
+3. URHEBERRECHT
+Quellcode, Grafiken und Inhalte stehen unter der MIT-Lizenz.
+
+4. HAFTUNGSAUSSCHLUSS
+Die App wird im Ist-Zustand ("AS IS") ohne Mängelgewähr bereitgestellt.
+
+5. ÄNDERUNGEN
+Der Entwickler behält sich das Recht vor, Spielregeln und Richtlinien anzupassen.</string>
+    <string name="privacy_policy_content">1. DATENSCHUTZ BEI ANSWER IT
+Wir legen höchsten Wert auf den Schutz Ihrer persönlichen Daten.
+
+2. DATENERHEBUNG
+• Answer It funktioniert komplett offline.
+• Es werden keinerlei persönliche Daten, Standortdaten oder Kontakte erhoben oder an Server übermittelt.
+• Spielerprofile und Einstellungen werden ausschließlich lokal auf Ihrem Gerät (SharedPreferences) gespeichert.
+
+3. BERECHTIGUNGEN
+• Vibration: Ausschließlich für haptisches Feedback bei falschen Antworten.
+• Audio: Für Toneffekte im Spiel.
+
+4. KEINE TRACKER
+Keine Werbenetzwerke oder Analyse-Tools Dritter integriert.
+
+5. LÖSCHUNG
+Über die Profilansicht können alle Daten jederzeit gelöscht werden.</string>
+    <string name="profile_contestant">Kandidat</string>
+    <string name="statistics">Statistiken</string>
+    <string name="total_earnings">Gesamtgewinn:</string>
+    <string name="last_game">Letztes Spiel:</string>
+</resources>

@@ -4,55 +4,55 @@
     <string name="settings">设置</string>
     <string name="profile">个人资料</string>
     <string name="exit">退出</string>
-    <string name="question">问题</string>
+    <string name="question">题目</string>
     <string name="answer_a">A:</string>
     <string name="answer_b">B:</string>
     <string name="answer_c">C:</string>
     <string name="answer_d">D:</string>
     <string name="confirm_answer">确认答案</string>
-    <string name="use_lifeline">使用生命线</string>
+    <string name="use_lifeline">使用求助</string>
     <string name="fifty_fifty">50:50</string>
-    <string name="phone_friend">打电话给朋友</string>
-    <string name="audience_help">求助观众</string>
-    <string name="correct_answer">正确！</string>
-    <string name="wrong_answer">错误答案！</string>
+    <string name="phone_friend">求助热线</string>
+    <string name="audience_help">现场观众</string>
+    <string name="correct_answer">回答正确！</string>
+    <string name="wrong_answer">回答错误！</string>
     <string name="game_over">游戏结束</string>
-    <string name="congratulations">恭喜！</string>
+    <string name="congratulations">恭喜通关！</string>
     <string name="you_won">你赢了！</string>
-    <string name="prize_money">奖金：%1$s</string>
-    <string name="current_prize">当前奖金：%1$s</string>
+    <string name="prize_money">奖金: %1$s</string>
+    <string name="current_prize">奖金: %1$s</string>
     <string name="next_question">下一题</string>
-    <string name="quit_game">退出游戏</string>
-    <string name="safe_haven">安全港：%1$s</string>
+    <string name="quit_game">弃权带走</string>
+    <string name="safe_haven">保险关卡: %1$s</string>
     <string name="million_dollars">¥1,000,000</string>
     <string name="background_theme">背景主题</string>
-    <string name="minimal_dark">深色</string>
-    <string name="minimal_light">浅色</string>
-    <string name="gradient_blue">蓝色渐变</string>
-    <string name="gradient_purple">紫色渐变</string>
-    <string name="gradient_gold">金色渐变</string>
-    <string name="sound_effects">音效</string>
-    <string name="vibration">震动</string>
-    <string name="rules">规则</string>
+    <string name="minimal_dark">暗黑极简</string>
+    <string name="minimal_light">明亮白调</string>
+    <string name="gradient_blue">科技蓝渐变</string>
+    <string name="gradient_purple">梦幻紫渐变</string>
+    <string name="gradient_gold">至尊金渐变</string>
+    <string name="sound_effects">音效开关</string>
+    <string name="vibration">震动反馈</string>
+    <string name="rules">游戏规则</string>
     <string name="play_again">再玩一次</string>
-    <string name="back_to_menu">主菜单</string>
-    <string name="player_name">玩家姓名</string>
-    <string name="enter_name">输入您的姓名</string>
+    <string name="back_to_menu">返回主菜单</string>
+    <string name="player_name">参赛选手</string>
+    <string name="enter_name">请输入选手姓名</string>
     <string name="save">保存</string>
     <string name="cancel">取消</string>
-    <string name="welcome_message">欢迎来到Answer It！</string>
-    <string name="best_score">最高分：%1$s</string>
-    <string name="games_played">游戏次数：%1$d</string>
-    <string name="total_winnings">总奖金：%1$s</string>
+    <string name="welcome_message">欢迎来到 Answer It 答题竞技场！</string>
+    <string name="best_score">最高纪录: %1$s</string>
+    <string name="games_played">对局场次: %1$d</string>
+    <string name="total_winnings">累计赢得: %1$s</string>
     <string name="edit_profile">编辑资料</string>
-    <string name="change_name">更改姓名</string>
-    <string name="reset_stats">重置统计</string>
-    <string name="confirm_reset">您确定要重置统计数据吗？</string>
-    <string name="yes">是</string>
-    <string name="no">否</string>
-    <string name="stats_reset">统计数据已重置</string>
-    <string name="name_updated">姓名已更新</string>
-    <string name="language">语言</string>
+    <string name="change_name">更改名字</string>
+    <string name="reset_stats">重置数据</string>
+    <string name="confirm_reset">确定要重置所有统计数据吗？</string>
+    <string name="yes">确定</string>
+    <string name="no">取消</string>
+    <string name="stats_reset">数据已重置</string>
+    <string name="name_updated">名字已更新</string>
+    <string name="language">语言选择</string>
     <string name="turkish">土耳其语</string>
     <string name="english">英语</string>
     <string name="chinese">中文</string>
@@ -66,42 +66,82 @@
     <string name="korean">韩语</string>
     <string name="portuguese">葡萄牙语</string>
     <string name="vietnamese">越南语</string>
+    <string name="italian">意大利语</string>
     <string name="preferences">偏好设置</string>
-    <string name="language_changed_turkish">语言已更改为土耳其语</string>
-    <string name="language_changed_english">语言已更改为英语</string>
-    <string name="language_changed_chinese">语言已更改为中文</string>
-    <string name="language_changed_spanish">语言已更改为西班牙语</string>
-    <string name="language_changed_arabic">语言已更改为阿拉伯语</string>
-    <string name="language_changed_german">语言已更改为德语</string>
-    <string name="language_changed_french">语言已更改为法语</string>
-    <string name="language_changed_russian">语言已更改为俄语</string>
-    <string name="language_changed_hindi">语言已更改为印地语</string>
-    <string name="language_changed_japanese">语言已更改为日语</string>
-    <string name="language_changed_korean">语言已更改为韩语</string>
-    <string name="language_changed_portuguese">语言已更改为葡萄牙语</string>
-    <string name="language_changed_vietnamese">语言已更改为越南语</string>
-    <string name="phone_friend_title">打电话给朋友</string>
-    <string name="phone_friend_hint">我觉得可能是%1$s...但我不确定！</string>
+    <string name="language_changed_turkish">语言已切换为土耳其语</string>
+    <string name="language_changed_english">语言已切换为英语</string>
+    <string name="language_changed_chinese">语言已切换为中文</string>
+    <string name="language_changed_spanish">语言已切换为西班牙语</string>
+    <string name="language_changed_arabic">语言已切换为阿拉伯语</string>
+    <string name="language_changed_german">语言已切换为德语</string>
+    <string name="language_changed_french">语言已切换为法语</string>
+    <string name="language_changed_russian">语言已切换为俄语</string>
+    <string name="language_changed_hindi">语言已切换为印地语</string>
+    <string name="language_changed_japanese">语言已切换为日语</string>
+    <string name="language_changed_korean">语言已切换为韩语</string>
+    <string name="language_changed_portuguese">语言已切换为葡萄牙语</string>
+    <string name="language_changed_vietnamese">语言已切换为越南语</string>
+    <string name="language_changed_italian">语言已切换为意大利语</string>
+    <string name="phone_friend_title">电话求助</string>
+    <string name="phone_friend_hint">我觉得正确答案大概是 %1$s…… 但我也不太敢百分之百确定！</string>
     <string name="thank_you">谢谢！</string>
-    <string name="audience_help_title">求助观众</string>
-    <string name="audience_votes">观众投票：</string>
+    <string name="audience_help_title">观众投票</string>
+    <string name="audience_votes">观众投票结果:</string>
     <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">明白了</string>
-    <string name="quit_game_title">退出游戏</string>
-    <string name="quit_game_message">您确定要退出游戏吗？您的安全港：%1$s</string>
-    <string name="yes_quit">是，退出</string>
-    <string name="no_continue">否，继续</string>
-    <string name="game_won_message">您答对了所有问题！您的奖金：%1$s</string>
-    <string name="game_lost_message">错误答案！您的奖金：%1$s</string>
-    <string name="back_to_main_menu">返回主菜单</string>
-    <string name="result_won_title">恭喜！</string>
-    <string name="result_won_message">您答对了所有问题！</string>
-    <string name="result_lost_title">游戏结束</string>
-    <string name="result_lost_message">错误答案！</string>
-    <string name="result_quit_title">您退出了游戏</string>
-    <string name="result_quit_message">您到达了安全港！</string>
-    <string name="result_default_title">游戏结果</string>
-    <string name="result_default_message">游戏完成</string>
-    <string name="prize_won">获得的奖金：%1$s</string>
-    <string name="never_played">从未玩过</string>
-</resources> 
+    <string name="quit_game_title">放弃并退出</string>
+    <string name="quit_game_message">确定要带着当前保险关卡奖金退出吗？当前锁定: %1$s</string>
+    <string name="yes_quit">确定退出</string>
+    <string name="no_continue">继续挑战</string>
+    <string name="game_won_message">太不可思议了！你成功答对了全部题目！终极奖金: %1$s</string>
+    <string name="game_lost_message">回答错误！带走安全奖金: %1$s</string>
+    <string name="back_to_main_menu">返回主界面</string>
+    <string name="result_won_title">巅峰夺冠！</string>
+    <string name="result_won_message">恭喜你完美答对所有难题！</string>
+    <string name="result_lost_title">答题遗憾止步</string>
+    <string name="result_lost_message">本题回答错误，再接再厉！</string>
+    <string name="result_quit_title">安全离场</string>
+    <string name="result_quit_message">你已保住保底奖金！</string>
+    <string name="result_default_title">本局结算</string>
+    <string name="result_default_message">挑战结束</string>
+    <string name="prize_won">赢得奖金: %1$s</string>
+    <string name="never_played">暂无对局</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="user_agreement_content">1. 协议接受与效力
+下载或使用 Answer It（以下简称"本应用"），即表示您完全接受本用户协议。
+
+2. 服务性质与规则
+• 本应用为纯本地益智娱乐答题应用，旨在增长知识与提供休闲娱乐。
+• 游戏内所展示的任何虚拟货币（如 ¥1,000,000 等）均为游戏内积分象征，在现实中不具备任何现金或财产兑现属性。
+
+3. 知识产权
+本应用代码与资产遵循 MIT 开源许可。
+
+4. 免责声明
+本应用按"原样"提供，不提供任何形式的明示或暗示保证。
+
+5. 规则更新
+开发者保留适时更新游戏条款及机制的权利。</string>
+    <string name="privacy_policy_content">1. 隐私原则
+Answer It 极为重视用户个人隐私保护。
+
+2. 数据收集与离线架构
+• 本应用采用 100%% 离线运行模式（Offline-First）。
+• 我们不会收集、上传或与第三方共享任何个人身份、位置、联系人、麦克风等隐私数据。
+• 您的姓名、最高得分及主题偏好仅保存在您的本地设备内存（SharedPreferences）中。
+
+3. 硬件权限说明
+• 振动权限（VIBRATE）：仅用于答错题目时的触觉反馈。
+• 音频播放（SoundPool）：仅用于本地答题音效。
+
+4. 无第三方追踪器
+本应用不包含任何广告 SDK、行为跟踪或第三方数据分析组件。
+
+5. 数据管理与清除
+您可以随时在"个人资料"页面中重置全部数据，或通过卸载应用彻底清除。</string>
+    <string name="profile_contestant">参赛选手</string>
+    <string name="statistics">生涯战绩</string>
+    <string name="total_earnings">累计奖金:</string>
+    <string name="last_game">最近战绩:</string>
+</resources>

@@ -5,48 +5,48 @@
     <string name="profile">Профиль</string>
     <string name="exit">Выход</string>
     <string name="question">Вопрос</string>
-    <string name="answer_a">А:</string>
-    <string name="answer_b">Б:</string>
-    <string name="answer_c">В:</string>
-    <string name="answer_d">Г:</string>
-    <string name="confirm_answer">Подтвердить Ответ</string>
-    <string name="use_lifeline">Использовать Подсказку</string>
+    <string name="answer_a">A:</string>
+    <string name="answer_b">B:</string>
+    <string name="answer_c">C:</string>
+    <string name="answer_d">D:</string>
+    <string name="confirm_answer">Подтвердить</string>
+    <string name="use_lifeline">Использовать подсказку</string>
     <string name="fifty_fifty">50:50</string>
-    <string name="phone_friend">Звонок Другу</string>
-    <string name="audience_help">Помощь Зала</string>
+    <string name="phone_friend">Звонок другу</string>
+    <string name="audience_help">Помощь зала</string>
     <string name="correct_answer">Правильно!</string>
-    <string name="wrong_answer">Неправильный Ответ!</string>
-    <string name="game_over">Игра Окончена</string>
+    <string name="wrong_answer">Неверный ответ!</string>
+    <string name="game_over">Игра окончена</string>
     <string name="congratulations">Поздравляем!</string>
-    <string name="you_won">Вы выиграли!</string>
-    <string name="prize_money">Приз: %1$s</string>
-    <string name="current_prize">Текущий Приз: %1$s</string>
-    <string name="next_question">Следующий Вопрос</string>
-    <string name="quit_game">Выйти из Игры</string>
-    <string name="safe_haven">Безопасная Гавань: %1$s</string>
-    <string name="million_dollars">₽1,000,000</string>
-    <string name="background_theme">Тема Фона</string>
-    <string name="minimal_dark">Тёмная</string>
+    <string name="you_won">Вы победили!</string>
+    <string name="prize_money">Выигрыш: %1$s</string>
+    <string name="current_prize">Выигрыш: %1$s</string>
+    <string name="next_question">Следующий вопрос</string>
+    <string name="quit_game">Забрать деньги</string>
+    <string name="safe_haven">Несгораемая сумма: %1$s</string>
+    <string name="million_dollars">1 000 000 ₽</string>
+    <string name="background_theme">Тема оформления</string>
+    <string name="minimal_dark">Темная</string>
     <string name="minimal_light">Светлая</string>
-    <string name="gradient_blue">Синий Градиент</string>
-    <string name="gradient_purple">Фиолетовый Градиент</string>
-    <string name="gradient_gold">Золотой Градиент</string>
-    <string name="sound_effects">Звуковые Эффекты</string>
+    <string name="gradient_blue">Синий градиент</string>
+    <string name="gradient_purple">Фиолетовый градиент</string>
+    <string name="gradient_gold">Золотой градиент</string>
+    <string name="sound_effects">Звуковые эффекты</string>
     <string name="vibration">Вибрация</string>
     <string name="rules">Правила</string>
-    <string name="play_again">Играть Снова</string>
-    <string name="back_to_menu">Главное Меню</string>
-    <string name="player_name">Имя Игрока</string>
+    <string name="play_again">Играть снова</string>
+    <string name="back_to_menu">Главное меню</string>
+    <string name="player_name">Имя игрока</string>
     <string name="enter_name">Введите ваше имя</string>
     <string name="save">Сохранить</string>
     <string name="cancel">Отмена</string>
     <string name="welcome_message">Добро пожаловать в Answer It!</string>
-    <string name="best_score">Лучший Результат: %1$s</string>
-    <string name="games_played">Сыгранные Игры: %1$d</string>
-    <string name="total_winnings">Общий Выигрыш: %1$s</string>
-    <string name="edit_profile">Редактировать Профиль</string>
-    <string name="change_name">Изменить Имя</string>
-    <string name="reset_stats">Сбросить Статистику</string>
+    <string name="best_score">Лучший результат: %1$s</string>
+    <string name="games_played">Сыграно игр: %1$d</string>
+    <string name="total_winnings">Общий выигрыш: %1$s</string>
+    <string name="edit_profile">Редактировать профиль</string>
+    <string name="change_name">Изменить имя</string>
+    <string name="reset_stats">Сбросить статистику</string>
     <string name="confirm_reset">Вы уверены, что хотите сбросить статистику?</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
@@ -66,7 +66,8 @@
     <string name="korean">Корейский</string>
     <string name="portuguese">Португальский</string>
     <string name="vietnamese">Вьетнамский</string>
-    <string name="preferences">Настройки</string>
+    <string name="italian">Итальянский</string>
+    <string name="preferences">Параметры</string>
     <string name="language_changed_turkish">Язык изменен на турецкий</string>
     <string name="language_changed_english">Язык изменен на английский</string>
     <string name="language_changed_chinese">Язык изменен на китайский</string>
@@ -80,28 +81,67 @@
     <string name="language_changed_korean">Язык изменен на корейский</string>
     <string name="language_changed_portuguese">Язык изменен на португальский</string>
     <string name="language_changed_vietnamese">Язык изменен на вьетнамский</string>
-    <string name="phone_friend_title">Звонок Другу</string>
-    <string name="phone_friend_hint">Я думаю, это может быть %1$s... но я не уверен!</string>
+    <string name="language_changed_italian">Язык изменен на итальянский</string>
+    <string name="phone_friend_title">Звонок другу</string>
+    <string name="phone_friend_hint">Мне кажется, правильный ответ — %1$s... но я не уверен на 100%%!</string>
     <string name="thank_you">Спасибо!</string>
-    <string name="audience_help_title">Помощь Зала</string>
-    <string name="audience_votes">Голоса Зрителей:</string>
+    <string name="audience_help_title">Помощь зала</string>
+    <string name="audience_votes">Голосование зрителей:</string>
     <string name="audience_option">%1$s: %2$d%%</string>
     <string name="understood">Понятно</string>
-    <string name="quit_game_title">Выйти из Игры</string>
-    <string name="quit_game_message">Вы уверены, что хотите выйти из игры? Ваша безопасная гавань: %1$s</string>
-    <string name="yes_quit">Да, Выйти</string>
-    <string name="no_continue">Нет, Продолжить</string>
-    <string name="game_won_message">Вы правильно ответили на все вопросы! Ваш приз: %1$s</string>
-    <string name="game_lost_message">Неправильный ответ! Ваш приз: %1$s</string>
-    <string name="back_to_main_menu">Вернуться в Главное Меню</string>
+    <string name="quit_game_title">Завершить игру</string>
+    <string name="quit_game_message">Вы уверены, что хотите забрать выигрыш? Ваша несгораемая сумма: %1$s</string>
+    <string name="yes_quit">Да, забрать</string>
+    <string name="no_continue">Нет, продолжить</string>
+    <string name="game_won_message">Вы ответили правильно на все вопросы! Ваш выигрыш: %1$s</string>
+    <string name="game_lost_message">Неверный ответ! Ваш выигрыш: %1$s</string>
+    <string name="back_to_main_menu">В главное меню</string>
     <string name="result_won_title">Поздравляем!</string>
-    <string name="result_won_message">Вы правильно ответили на все вопросы!</string>
-    <string name="result_lost_title">Игра Окончена</string>
-    <string name="result_lost_message">Неправильный ответ!</string>
-    <string name="result_quit_title">Вы вышли из игры</string>
-    <string name="result_quit_message">Вы достигли своей безопасной гавани!</string>
-    <string name="result_default_title">Результат Игры</string>
+    <string name="result_won_message">Вы ответили правильно на все вопросы викторины!</string>
+    <string name="result_lost_title">Игра окончена</string>
+    <string name="result_lost_message">Неверный ответ!</string>
+    <string name="result_quit_title">Вы забрали выигрыш</string>
+    <string name="result_quit_message">Вы сохранили несгораемую сумму!</string>
+    <string name="result_default_title">Результат игры</string>
     <string name="result_default_message">Игра завершена</string>
-    <string name="prize_won">Выигранный Приз: %1$s</string>
-    <string name="never_played">Никогда не играл</string>
-</resources> 
+    <string name="prize_won">Выигранный приз: %1$s</string>
+    <string name="never_played">Игр не было</string>
+    <string name="user_agreement">Пользовательское соглашение</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="user_agreement_content">1. ПРИНЯТИЕ УСЛОВИЙ
+Используя приложение Answer It, вы соглашаетесь с условиями данного соглашения.
+
+2. ХАРАКТЕР ИГРЫ
+• Answer It — интерактивная развлекательно-познавательная викторина.
+• Все денежные суммы в игре (например, 1 000 000 ₽) являются исключительно игровыми очками без реальной материальной ценности.
+
+3. АВТОРСКИЕ ПРАВА
+Исходный код и материалы распространяются под лицензией MIT.
+
+4. ОТКАЗ ОТ ГАРАНТИЙ
+Приложение предоставляется «КАК ЕСТЬ» без каких-либо гарантий.
+
+5. ИЗМЕНЕНИЯ
+Разработчики оставляют за собой право обновлять условия в будущих версиях.</string>
+    <string name="privacy_policy_content">1. КОНФИДЕНЦИАЛЬНОСТЬ
+Мы бережно относимся к безопасности ваших данных.
+
+2. ОБРАБОТКА ДАННЫХ
+• Полностью автономная работа без интернета (offline-first).
+• Никакие личные данные, местоположение или контакты не собираются и не передаются.
+• Имя профиля, счет и настройки хранятся исключительно на вашем устройстве (SharedPreferences).
+
+3. РАЗРЕШЕНИЯ
+• Вибрация: Тактильный отклик при ошибке.
+• Звук: Воспроизведение игровых аудиоэффектов.
+
+4. БЕЗ СТОРОННИХ ТРЕКЕРОВ
+В приложении нет рекламных сетей и сторонних систем аналитики.
+
+5. УДАЛЕНИЕ ДАННЫХ
+Вы можете сбросить статистику в любой момент на экране профиля.</string>
+    <string name="profile_contestant">Участник</string>
+    <string name="statistics">Статистика</string>
+    <string name="total_earnings">Общий выигрыш:</string>
+    <string name="last_game">Последняя игра:</string>
+</resources>
