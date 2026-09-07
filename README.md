@@ -1,11 +1,5 @@
 # Answer It
 
-[![Android CI](https://github.com/Sopwit/answer-it/actions/workflows/android-ci.yml/badge.svg)](https://github.com/Sopwit/answer-it/actions/workflows/android-ci.yml)
-[![Release](https://img.shields.io/github/v/release/Sopwit/answer-it?style=flat&color=brightgreen)](https://github.com/Sopwit/answer-it/releases/latest)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-purple.svg)](https://kotlinlang.org)
-[![Target SDK](https://img.shields.io/badge/Target%20SDK-36-blue.svg)](https://developer.android.com)
-
 **Multilingual Progressive Trivia Engine for Android.**
 
 ---
