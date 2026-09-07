@@ -57,7 +57,12 @@ class GameViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun updateQuestionsForLanguage(language: Language) {
-        questions = questionRepository.getGameQuestions(language)
+        val activeIds = questions.map { it.id }
+        if (activeIds.isNotEmpty()) {
+            questions = questionRepository.getQuestionsByIds(activeIds, language)
+        } else {
+            questions = questionRepository.getGameQuestions(language)
+        }
         val currentIndex = _gameUiState.value.questionIndex
         if (currentIndex < questions.size) {
             loadQuestion(currentIndex)
