@@ -136,8 +136,20 @@ class GameFragment : Fragment() {
         binding.phoneFriendButton.isEnabled = state.lifelines.phoneFriend
         binding.audienceHelpButton.isEnabled = state.lifelines.audienceHelp
 
-        val primaryColor = ContextCompat.getColor(requireContext(), R.color.minimal_dark_primary)
-        val goldColor = ContextCompat.getColor(requireContext(), R.color.gold)
+        val theme = viewModel.appSettings.value.backgroundTheme
+        val primaryColor = ContextCompat.getColor(requireContext(), theme.secondaryButtonBgRes)
+        val normalTextColor = ContextCompat.getColor(requireContext(), theme.secondaryButtonTextRes)
+        val normalStrokeColor = ContextCompat.getColor(requireContext(), theme.secondaryButtonStrokeRes)
+        val selectedBgColor = if (theme == BackgroundTheme.GRADIENT_GOLD) {
+            ContextCompat.getColor(requireContext(), R.color.gold_primary_button)
+        } else {
+            ContextCompat.getColor(requireContext(), R.color.gold)
+        }
+        val selectedTextColor = if (theme == BackgroundTheme.GRADIENT_GOLD) {
+            ContextCompat.getColor(requireContext(), R.color.white)
+        } else {
+            ContextCompat.getColor(requireContext(), R.color.black)
+        }
 
         answerButtons.forEachIndexed { index, button ->
             if (state.hiddenOptionIndices.contains(index)) {
@@ -147,9 +159,21 @@ class GameFragment : Fragment() {
                 button.visibility = View.VISIBLE
                 button.isEnabled = true
                 if (state.selectedOptionIndex == index) {
-                    button.setBackgroundColor(goldColor)
+                    button.backgroundTintList = android.content.res.ColorStateList.valueOf(selectedBgColor)
+                    button.setTextColor(selectedTextColor)
+                    button.strokeWidth = 0
                 } else {
-                    button.setBackgroundColor(primaryColor)
+                    if (theme.isLight) {
+                        button.backgroundTintList = android.content.res.ColorStateList.valueOf(primaryColor)
+                        button.setTextColor(normalTextColor)
+                        button.strokeColor = android.content.res.ColorStateList.valueOf(normalStrokeColor)
+                        button.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
+                    } else {
+                        val darkPrimary = ContextCompat.getColor(requireContext(), R.color.minimal_dark_primary)
+                        button.backgroundTintList = android.content.res.ColorStateList.valueOf(darkPrimary)
+                        button.setTextColor(ContextCompat.getColor(requireContext(), R.color.white))
+                        button.strokeWidth = 0
+                    }
                 }
             }
         }
@@ -166,6 +190,29 @@ class GameFragment : Fragment() {
 
     private fun updateBackgroundTheme(theme: BackgroundTheme) {
         binding.root.setBackgroundResource(theme.drawableRes)
+
+        binding.questionNumberText.setTextColor(ContextCompat.getColor(requireContext(), theme.subTextColorRes))
+        binding.prizeMoneyText.setTextColor(ContextCompat.getColor(requireContext(), theme.accentColorRes))
+
+        val cardBg = ContextCompat.getColor(requireContext(), theme.cardBgColorRes)
+        val cardStroke = ContextCompat.getColor(requireContext(), theme.cardStrokeColorRes)
+        val cardTextColor = ContextCompat.getColor(requireContext(), theme.cardTextColorRes)
+
+        val shape = android.graphics.drawable.GradientDrawable().apply {
+            setColor(cardBg)
+            cornerRadius = 16 * resources.displayMetrics.density
+            setStroke((1.5f * resources.displayMetrics.density).toInt(), cardStroke)
+        }
+        binding.questionText.background = shape
+        binding.questionText.setTextColor(cardTextColor)
+
+        val lifelineBg = ContextCompat.getColor(requireContext(), theme.lifelineBgRes)
+        val lifelineText = ContextCompat.getColor(requireContext(), theme.lifelineTextRes)
+        val lifelines = listOf(binding.fiftyFiftyButton, binding.phoneFriendButton, binding.audienceHelpButton)
+        lifelines.forEach { btn ->
+            btn.backgroundTintList = android.content.res.ColorStateList.valueOf(lifelineBg)
+            btn.setTextColor(lifelineText)
+        }
     }
 
     private fun showPhoneFriendDialog(answer: String) {

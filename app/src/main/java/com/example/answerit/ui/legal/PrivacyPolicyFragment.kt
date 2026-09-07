@@ -57,16 +57,22 @@ class PrivacyPolicyFragment : Fragment() {
 
     private fun updateBackgroundTheme(theme: BackgroundTheme) {
         binding.root.setBackgroundResource(theme.drawableRes)
-        val textColor = ContextCompat.getColor(requireContext(), theme.textColorRes)
-        binding.titleText.setTextColor(textColor)
 
-        val isLightTheme = theme == BackgroundTheme.MINIMAL_LIGHT || theme == BackgroundTheme.GRADIENT_GOLD
-        val contentColor = if (isLightTheme) {
-            ContextCompat.getColor(requireContext(), R.color.text_dark)
-        } else {
-            textColor
-        }
-        binding.contentText.setTextColor(contentColor)
+        val textColor = ContextCompat.getColor(requireContext(), theme.textColorRes)
+        val cardBg = ContextCompat.getColor(requireContext(), theme.cardBgColorRes)
+        val cardTextColor = ContextCompat.getColor(requireContext(), theme.cardTextColorRes)
+        val secondaryBtnBg = ContextCompat.getColor(requireContext(), theme.secondaryButtonBgRes)
+        val secondaryBtnText = ContextCompat.getColor(requireContext(), theme.secondaryButtonTextRes)
+        val secondaryBtnStroke = ContextCompat.getColor(requireContext(), theme.secondaryButtonStrokeRes)
+
+        binding.titleText.setTextColor(textColor)
+        binding.contentCard.setCardBackgroundColor(cardBg)
+        binding.contentText.setTextColor(cardTextColor)
+
+        binding.backButton.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
+        binding.backButton.setTextColor(secondaryBtnText)
+        binding.backButton.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
+        binding.backButton.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
     }
 
     override fun onDestroyView() {

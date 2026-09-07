@@ -25,12 +25,17 @@
     
     <!-- Common Colors -->
     <color name="gold">#FFFFD700</color>
+    <color name="gold_accent_readable">#FF7A4A00</color>
+    <color name="gold_primary_button">#FF1F1F1F</color>
     <color name="green">#FF4CAF50</color>
     <color name="red">#FFF44336</color>
     <color name="text_primary">#FFFFFFFF</color>
     <color name="text_secondary">#FFB3B3B3</color>
     <color name="text_dark">#FF212121</color>
-    <color name="text_dark_secondary">#FF757575</color>
+    <color name="text_dark_secondary">#FF616161</color>
     <color name="card_light_bg">#FFF0F0F0</color>
     <color name="text_black">#FF000000</color>
+    <color name="stroke_dark">#33FFFFFF</color>
+    <color name="stroke_light">#FFE0E0E0</color>
+    <color name="stroke_gold">#4D7A4A00</color>
 </resources> 

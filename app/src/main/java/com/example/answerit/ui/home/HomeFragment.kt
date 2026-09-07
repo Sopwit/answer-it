@@ -69,8 +69,28 @@ class HomeFragment : Fragment() {
 
     private fun updateBackgroundTheme(theme: BackgroundTheme) {
         binding.root.setBackgroundResource(theme.drawableRes)
+
         val textColor = ContextCompat.getColor(requireContext(), theme.textColorRes)
+        val primaryBtnBg = ContextCompat.getColor(requireContext(), theme.primaryButtonBgRes)
+        val primaryBtnText = ContextCompat.getColor(requireContext(), theme.primaryButtonTextRes)
+        val secondaryBtnBg = ContextCompat.getColor(requireContext(), theme.secondaryButtonBgRes)
+        val secondaryBtnText = ContextCompat.getColor(requireContext(), theme.secondaryButtonTextRes)
+        val secondaryBtnStroke = ContextCompat.getColor(requireContext(), theme.secondaryButtonStrokeRes)
+
         binding.welcomeText.setTextColor(textColor)
+
+        binding.playButton.backgroundTintList = android.content.res.ColorStateList.valueOf(primaryBtnBg)
+        binding.playButton.setTextColor(primaryBtnText)
+
+        binding.profileButton.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
+        binding.profileButton.setTextColor(secondaryBtnText)
+        binding.profileButton.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
+        binding.profileButton.strokeWidth = (2 * resources.displayMetrics.density).toInt()
+
+        binding.settingsButton.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
+        binding.settingsButton.setTextColor(secondaryBtnText)
+        binding.settingsButton.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
+        binding.settingsButton.strokeWidth = (2 * resources.displayMetrics.density).toInt()
     }
 
     override fun onDestroyView() {

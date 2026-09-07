@@ -69,8 +69,23 @@ class ProfileFragment : Fragment() {
 
     private fun updateBackgroundTheme(theme: BackgroundTheme) {
         binding.root.setBackgroundResource(theme.drawableRes)
+
         val textColor = ContextCompat.getColor(requireContext(), theme.textColorRes)
+        val primaryBtnBg = ContextCompat.getColor(requireContext(), theme.primaryButtonBgRes)
+        val primaryBtnText = ContextCompat.getColor(requireContext(), theme.primaryButtonTextRes)
+        val secondaryBtnBg = ContextCompat.getColor(requireContext(), theme.secondaryButtonBgRes)
+        val secondaryBtnText = ContextCompat.getColor(requireContext(), theme.secondaryButtonTextRes)
+        val secondaryBtnStroke = ContextCompat.getColor(requireContext(), theme.secondaryButtonStrokeRes)
+
         binding.profileTitleText.setTextColor(textColor)
+
+        binding.editNameButton.backgroundTintList = android.content.res.ColorStateList.valueOf(primaryBtnBg)
+        binding.editNameButton.setTextColor(primaryBtnText)
+
+        binding.backButton.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
+        binding.backButton.setTextColor(secondaryBtnText)
+        binding.backButton.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
+        binding.backButton.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
     }
 
     private fun showEditNameDialog() {

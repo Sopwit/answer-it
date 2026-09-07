@@ -89,20 +89,30 @@ class ThemeFragment : Fragment() {
         binding.root.setBackgroundResource(theme.drawableRes)
 
         val textColor = ContextCompat.getColor(requireContext(), theme.textColorRes)
+        val accentColor = ContextCompat.getColor(requireContext(), theme.accentColorRes)
+        val secondaryBtnBg = ContextCompat.getColor(requireContext(), theme.secondaryButtonBgRes)
+        val secondaryBtnText = ContextCompat.getColor(requireContext(), theme.secondaryButtonTextRes)
+        val secondaryBtnStroke = ContextCompat.getColor(requireContext(), theme.secondaryButtonStrokeRes)
+
         binding.themeTitleText.setTextColor(textColor)
 
-        val isLightTheme = theme == BackgroundTheme.MINIMAL_LIGHT || theme == BackgroundTheme.GRADIENT_GOLD
-        val cardTextColor = if (isLightTheme) {
-            ContextCompat.getColor(requireContext(), R.color.text_dark)
-        } else {
-            textColor
+        val radioButtons = listOf(
+            binding.minimalDarkRadio,
+            binding.minimalLightRadio,
+            binding.gradientBlueRadio,
+            binding.gradientPurpleRadio,
+            binding.gradientGoldRadio
+        )
+
+        radioButtons.forEach { radio ->
+            radio.setTextColor(textColor)
+            radio.buttonTintList = android.content.res.ColorStateList.valueOf(accentColor)
         }
 
-        binding.minimalDarkRadio.setTextColor(cardTextColor)
-        binding.minimalLightRadio.setTextColor(cardTextColor)
-        binding.gradientBlueRadio.setTextColor(cardTextColor)
-        binding.gradientPurpleRadio.setTextColor(cardTextColor)
-        binding.gradientGoldRadio.setTextColor(cardTextColor)
+        binding.backButton.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
+        binding.backButton.setTextColor(secondaryBtnText)
+        binding.backButton.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
+        binding.backButton.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
     }
 
     override fun onDestroyView() {

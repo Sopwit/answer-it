@@ -102,16 +102,36 @@ class SettingsFragment : Fragment() {
         binding.root.setBackgroundResource(theme.drawableRes)
 
         val textColor = ContextCompat.getColor(requireContext(), theme.textColorRes)
+        val cardBg = ContextCompat.getColor(requireContext(), theme.cardBgColorRes)
+        val cardTextColor = ContextCompat.getColor(requireContext(), theme.cardTextColorRes)
+        val accentColor = ContextCompat.getColor(requireContext(), theme.accentColorRes)
+        val secondaryBtnBg = ContextCompat.getColor(requireContext(), theme.secondaryButtonBgRes)
+        val secondaryBtnText = ContextCompat.getColor(requireContext(), theme.secondaryButtonTextRes)
+        val secondaryBtnStroke = ContextCompat.getColor(requireContext(), theme.secondaryButtonStrokeRes)
+
         binding.settingsTitleText.setTextColor(textColor)
 
-        val isLightTheme = theme == BackgroundTheme.MINIMAL_LIGHT || theme == BackgroundTheme.GRADIENT_GOLD
-        val cardTextColor = if (isLightTheme) {
-            ContextCompat.getColor(requireContext(), R.color.text_dark)
-        } else {
-            textColor
+        // Buttons
+        val buttons = listOf(binding.themeButton, binding.languageButton, binding.backButton)
+        buttons.forEach { btn ->
+            btn.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
+            btn.setTextColor(secondaryBtnText)
+            btn.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
+            btn.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
         }
 
-        binding.preferencesTitleText.setTextColor(cardTextColor)
+        // Preferences Card & Switches
+        binding.preferencesCard.setCardBackgroundColor(cardBg)
+        binding.preferencesTitleText.setTextColor(accentColor)
+        binding.soundSwitch.setTextColor(cardTextColor)
+        binding.vibrationSwitch.setTextColor(cardTextColor)
+
+        // Legal Cards
+        binding.userAgreementCard.setCardBackgroundColor(cardBg)
+        binding.userAgreementText.setTextColor(accentColor)
+
+        binding.privacyPolicyCard.setCardBackgroundColor(cardBg)
+        binding.privacyPolicyText.setTextColor(accentColor)
     }
 
     override fun onDestroyView() {

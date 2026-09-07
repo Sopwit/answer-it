@@ -112,19 +112,30 @@ class ResultFragment : Fragment() {
         binding.root.setBackgroundResource(theme.drawableRes)
 
         val textColor = ContextCompat.getColor(requireContext(), theme.textColorRes)
-        val isLightTheme = theme == BackgroundTheme.MINIMAL_LIGHT || theme == BackgroundTheme.GRADIENT_GOLD
-        val cardTextColor = if (isLightTheme) {
-            ContextCompat.getColor(requireContext(), R.color.text_dark)
-        } else {
-            textColor
-        }
+        val cardBg = ContextCompat.getColor(requireContext(), theme.cardBgColorRes)
+        val cardTextColor = ContextCompat.getColor(requireContext(), theme.cardTextColorRes)
+        val accentColor = ContextCompat.getColor(requireContext(), theme.accentColorRes)
+        val primaryBtnBg = ContextCompat.getColor(requireContext(), theme.primaryButtonBgRes)
+        val primaryBtnText = ContextCompat.getColor(requireContext(), theme.primaryButtonTextRes)
+        val secondaryBtnBg = ContextCompat.getColor(requireContext(), theme.secondaryButtonBgRes)
+        val secondaryBtnText = ContextCompat.getColor(requireContext(), theme.secondaryButtonTextRes)
+        val secondaryBtnStroke = ContextCompat.getColor(requireContext(), theme.secondaryButtonStrokeRes)
 
         binding.resultTitleText.setTextColor(textColor)
+        binding.resultCard.setCardBackgroundColor(cardBg)
         binding.resultMessageText.setTextColor(cardTextColor)
-        binding.prizeWonText.setTextColor(cardTextColor)
+        binding.prizeWonText.setTextColor(accentColor)
         binding.reachedQuestionText.setTextColor(cardTextColor)
         binding.usedLifelinesText.setTextColor(cardTextColor)
         binding.safeHavenText.setTextColor(cardTextColor)
+
+        binding.playAgainButton.backgroundTintList = android.content.res.ColorStateList.valueOf(primaryBtnBg)
+        binding.playAgainButton.setTextColor(primaryBtnText)
+
+        binding.backToMenuButton.backgroundTintList = android.content.res.ColorStateList.valueOf(secondaryBtnBg)
+        binding.backToMenuButton.setTextColor(secondaryBtnText)
+        binding.backToMenuButton.strokeColor = android.content.res.ColorStateList.valueOf(secondaryBtnStroke)
+        binding.backToMenuButton.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
     }
 
     override fun onDestroyView() {
