@@ -1,119 +1,67 @@
-# Answer It 🎯
+# Answer It
 
-[![Android CI](https://github.com/Sopwit/Answer-it/actions/workflows/android-ci.yml/badge.svg)](https://github.com/Sopwit/Answer-it/actions/workflows/android-ci.yml)
-[![Platform](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com)
-[![Kotlin](https://img.shields.io/badge/Kotlin-1.9.22-blue.svg)](https://kotlinlang.org)
-[![Min SDK](https://img.shields.io/badge/Min%20SDK-24-orange.svg)](https://developer.android.com/about/dashboards)
-[![Target SDK](https://img.shields.io/badge/Target%20SDK-36-blueviolet.svg)](https://developer.android.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-**Answer It** is a multilingual Android trivia game inspired by *"Who Wants to Be a Millionaire?"*, engineered with **Modern Android Architecture (Clean Architecture + Unidirectional Data Flow)**, Kotlin Coroutines, StateFlow, and low-latency audio/haptic engines.
+**Multilingual Progressive Trivia Engine for Android.**
 
 ---
 
-## 📱 Features
+## Overview
 
-- **15-Question Escalation:** Progressive difficulty tiers (*Easy*, *Medium*, *Hard*, *Expert*) with realistic prize ladders.
-- **3 Classic Lifelines:**
-  - ✂️ **50:50:** Eliminates two incorrect options.
-  - 📞 **Phone a Friend:** Simulates an expert recommendation.
-  - 👥 **Ask the Audience:** Simulates live crowd voting statistics.
-- **🌍 14 Languages Supported:** Complete localization for questions, answers, UI strings, and currency formatting.
-  - Turkish (`tr`), English (`en`), Chinese (`zh`), Spanish (`es`), Arabic (`ar`), German (`de`), French (`fr`), Russian (`ru`), Hindi (`hi`), Japanese (`ja`), Korean (`ko`), Portuguese (`pt`), Vietnamese (`vi`), Italian (`it`).
-- **⚡ Hard Optimizations:**
-  - **Zero-Latency Audio:** `SoundPool` hardware-accelerated audio engine (no GC pauses or `MediaPlayer` leaks).
-  - **Modern Haptics:** `VibrationEffect` & `VibratorManager` for responsive tactile feedback.
-  - **Data Persistence:** Offline storage for player statistics, best scores, themes, and sound/vibration preferences.
-  - **R8 / ProGuard:** Bytecode shrinking, resource optimization, and obfuscation.
+**Answer It** is an open-source Android trivia game inspired by *"Who Wants to Be a Millionaire?"*. Engineered with **Clean Architecture**, **Unidirectional Data Flow (UDF)**, Kotlin Coroutines, and `StateFlow`, it delivers a responsive, zero-latency quiz experience across 14 fully localized languages.
+
+### Core Capabilities
+
+- **15-Question Progressive Ladder:** 4 difficulty tiers (*Easy*, *Medium*, *Hard*, *Expert*) with automated safe haven checkpoints (₺1,000 and ₺32,000).
+- **Interactive Lifeline Suite:** Hardware-assisted 50:50 option elimination, simulated phone advisor, and weighted audience polling distribution.
+- **Full 14-Language Localization:** Real-time runtime locale switching and localized currency formatting across English, Turkish, Chinese, Spanish, Arabic, German, French, Russian, Hindi, Japanese, Korean, Portuguese, Vietnamese, and Italian.
+- **Zero-Latency Audio & Haptics:** Native `SoundPool` sound engine and `VibrationEffect` tactile feedback for instant response.
+- **Offline Data Persistence:** Persistent SharedPreferences storage for high scores, total earnings, games played, theme styles, and audio toggles.
+- **Modern Build System:** Gradle 8.13 with TOML Version Catalogs (`libs.versions.toml`) and automated R8/ProGuard code/resource shrinking.
 
 ---
 
-## 🏗️ Architecture & Tech Stack
+## Feature Matrix
 
-```text
-┌─────────────────────────────────────────────────────────────┐
-│                      MODERN ARCHITECTURE                    │
-├─────────────────┬───────────────────────────────────────────┤
-│ UI Layer        │ Fragments + ViewBinding + Single-Activity │
-├─────────────────┼───────────────────────────────────────────┤
-│ State Mgmt      │ StateFlow + SharedFlow (UDF Pattern)      │
-├─────────────────┼───────────────────────────────────────────┤
-│ DI Layer        │ AppContainer (Service Locator / DI)       │
-├─────────────────┼───────────────────────────────────────────┤
-│ Audio & Haptics │ SoundPool Engine + VibratorManager        │
-├─────────────────┼───────────────────────────────────────────┤
-│ Persistence     │ SharedPreferences Repository Layer        │
-├─────────────────┼───────────────────────────────────────────┤
-│ Build System    │ Gradle 8.13 + TOML Version Catalogs       │
-└─────────────────┴───────────────────────────────────────────┘
-```
-
-- **Languages:** Kotlin 100%
-- **Jetpack Libraries:** Navigation Component, ViewModel, Lifecycle, ViewBinding
-- **Concurrency:** Kotlin Coroutines & Flow (StateFlow, SharedFlow, Channels)
-- **Dependency Management:** Gradle Version Catalog (`libs.versions.toml`)
+| Feature | Description | Implementation |
+| :--- | :--- | :--- |
+| **Architecture** | Clean Architecture + UDF | `GameViewModel` + `StateFlow<GameUiState>` |
+| **DI Layer** | Dependency Container | `AppContainer` (Application scope) |
+| **Audio Engine** | Hardware-accelerated SFX | `SoundEffectManager` (`SoundPool`) |
+| **Haptic Feedback** | Tactile vibration alerts | `HapticManager` (`VibratorManager`) |
+| **Persistence** | Offline profile & settings | `PreferencesRepository` (SharedPreferences) |
+| **Navigation** | Single-Activity Architecture | Jetpack Navigation (`nav_graph.xml`) |
+| **Dependencies** | Centralized Version Catalog | `gradle/libs.versions.toml` |
+| **Minification** | Bytecode & Resource Shrinking | R8 / ProGuard (`proguard-rules.pro`) |
 
 ---
 
-## 📂 Project Structure
+## Documentation
 
-```text
-app/
-  src/main/java/com/example/answerit/
-    AnswerItApplication.kt    # Application entry & AppContainer initialization
-    core/
-      audio/                  # SoundEffectManager (SoundPool engine)
-      di/                     # AppContainer (Dependency Injection)
-      haptics/                # HapticManager (Tactile feedback engine)
-    data/
-      local/                  # PreferencesRepository, LanguageManager
-      model/                  # Immutable Data Models & Enums (GameUiState, Question, etc.)
-      repository/             # Multi-tier QuestionRepository
-    ui/
-      MainActivity.kt         # Navigation Host Activity
-      game/                   # GameFragment, GameViewModel, GameUiEvent
-      home/                   # HomeFragment
-      result/                 # ResultFragment
-      profile/                # ProfileFragment
-      settings/               # SettingsFragment
-      language/               # LanguageFragment
-      legal/                  # PrivacyPolicyFragment, UserAgreementFragment
-  src/main/res/               # Vector Drawables, Layouts, Themes, Audio Assets, 14 Locales
-gradle/
-  libs.versions.toml          # Centralized Version Catalog
-.github/
-  workflows/                  # GitHub Actions CI Pipeline
-```
+Comprehensive guides for developers, maintainers, and contributors:
+
+- 🏗️ **[Architecture & Technical Specification](docs/ARCHITECTURE.md):** Subsystem structure, UDF reactive state flows, DI container, and audio/haptic pipelines.
+- 🛠️ **[Build & Deployment Guide](docs/BUILD.md):** Prerequisites, Gradle commands, Version Catalogs, ProGuard rules, and APK generation.
+- 🌍 **[Localization & Internationalization Guide](docs/LOCALIZATION.md):** 14 supported locales, runtime language switching, and adding new languages.
+- 🎮 **[Gameplay Mechanics & Progression](docs/GAMEPLAY.md):** 15-question progression, safe havens, prize ladders, and lifeline algorithms.
+- 🤝 **[Contributing Guidelines](CONTRIBUTING.md):** Branch naming, pull request workflows, and coding standards.
+- 🔒 **[Security Policy](SECURITY.md):** Vulnerability reporting and security procedures.
 
 ---
 
-## 🚀 Getting Started
+## Quick Start
 
 ### Prerequisites
-
 - Android Studio Ladybug (2024.2+) or newer
-- Android SDK (API 34+)
-- JDK 17+
+- Android SDK (API 34+) & JDK 17+
 
 ### Build & Run
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Sopwit/Answer-it.git
-   cd Answer-it
-   ```
-2. Open the project in Android Studio.
-3. Allow Gradle to sync dependencies via `libs.versions.toml`.
-4. Run on an emulator or physical Android device (`Run 'app'`).
+```bash
+git clone https://github.com/Sopwit/Answer-it.git
+cd Answer-it
+./gradlew :app:assembleDebug
+```
 
 ---
 
-## 🤝 Contributing
+## License
 
-Contributions are welcome! Please check out [CONTRIBUTING.md](CONTRIBUTING.md) for details on code standards and pull request workflows.
-
----
-
-## 📄 License
-
-Distributed under the **MIT License**. See [LICENSE](LICENSE) for more information.
+Answer It is open-source software licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
