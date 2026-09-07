@@ -132,11 +132,11 @@ class GameFragment : Fragment() {
             viewModel.formatPrizeMoney(state.currentPrize)
         )
 
-        binding.fiftyFiftyButton.isEnabled = state.lifelines.fiftyFifty
-        binding.phoneFriendButton.isEnabled = state.lifelines.phoneFriend
-        binding.audienceHelpButton.isEnabled = state.lifelines.audienceHelp
-
         val theme = viewModel.appSettings.value.backgroundTheme
+        updateLifelineButton(binding.fiftyFiftyButton, state.lifelines.fiftyFifty, theme)
+        updateLifelineButton(binding.phoneFriendButton, state.lifelines.phoneFriend, theme)
+        updateLifelineButton(binding.audienceHelpButton, state.lifelines.audienceHelp, theme)
+
         val primaryColor = ContextCompat.getColor(requireContext(), theme.secondaryButtonBgRes)
         val normalTextColor = ContextCompat.getColor(requireContext(), theme.secondaryButtonTextRes)
         val normalStrokeColor = ContextCompat.getColor(requireContext(), theme.secondaryButtonStrokeRes)
@@ -176,6 +176,31 @@ class GameFragment : Fragment() {
                     }
                 }
             }
+        }
+    }
+
+    private fun updateLifelineButton(button: MaterialButton, isAvailable: Boolean, theme: BackgroundTheme) {
+        button.isEnabled = isAvailable
+        if (isAvailable) {
+            val lifelineBg = ContextCompat.getColor(requireContext(), theme.lifelineBgRes)
+            val lifelineText = ContextCompat.getColor(requireContext(), theme.lifelineTextRes)
+            button.backgroundTintList = android.content.res.ColorStateList.valueOf(lifelineBg)
+            button.setTextColor(lifelineText)
+            button.iconTint = android.content.res.ColorStateList.valueOf(lifelineText)
+            button.strokeWidth = 0
+            button.alpha = 1.0f
+            button.elevation = (3f * resources.displayMetrics.density)
+        } else {
+            val disabledBg = ContextCompat.getColor(requireContext(), R.color.minimal_dark_surface)
+            val disabledText = ContextCompat.getColor(requireContext(), R.color.text_secondary)
+            val disabledStroke = ContextCompat.getColor(requireContext(), R.color.stroke_dark)
+            button.backgroundTintList = android.content.res.ColorStateList.valueOf(disabledBg)
+            button.setTextColor(disabledText)
+            button.iconTint = android.content.res.ColorStateList.valueOf(disabledText)
+            button.strokeColor = android.content.res.ColorStateList.valueOf(disabledStroke)
+            button.strokeWidth = (1.5f * resources.displayMetrics.density).toInt()
+            button.alpha = 0.38f
+            button.elevation = 0f
         }
     }
 
@@ -219,14 +244,10 @@ class GameFragment : Fragment() {
         binding.prizeContainer.background = pillShape
 
         // Lifelines
-        val lifelineBg = ContextCompat.getColor(requireContext(), theme.lifelineBgRes)
-        val lifelineText = ContextCompat.getColor(requireContext(), theme.lifelineTextRes)
-        val lifelines = listOf(binding.fiftyFiftyButton, binding.phoneFriendButton, binding.audienceHelpButton)
-        lifelines.forEach { btn ->
-            btn.backgroundTintList = android.content.res.ColorStateList.valueOf(lifelineBg)
-            btn.setTextColor(lifelineText)
-            btn.iconTint = android.content.res.ColorStateList.valueOf(lifelineText)
-        }
+        val state = viewModel.gameUiState.value
+        updateLifelineButton(binding.fiftyFiftyButton, state.lifelines.fiftyFifty, theme)
+        updateLifelineButton(binding.phoneFriendButton, state.lifelines.phoneFriend, theme)
+        updateLifelineButton(binding.audienceHelpButton, state.lifelines.audienceHelp, theme)
     }
 
     private fun showPhoneFriendDialog(answer: String) {

@@ -73,22 +73,22 @@ class ResultFragment : Fragment() {
             GameStatus.WON -> {
                 binding.resultTitleText.text = getString(R.string.result_won_title)
                 binding.resultMessageText.text = getString(R.string.result_won_message)
-                binding.resultIcon.setImageResource(android.R.drawable.ic_dialog_info)
+                binding.resultIcon.setImageResource(R.drawable.ic_trophy)
             }
             GameStatus.LOST -> {
                 binding.resultTitleText.text = getString(R.string.result_lost_title)
                 binding.resultMessageText.text = getString(R.string.result_lost_message)
-                binding.resultIcon.setImageResource(android.R.drawable.ic_dialog_alert)
+                binding.resultIcon.setImageResource(R.drawable.ic_refresh)
             }
             GameStatus.QUIT -> {
                 binding.resultTitleText.text = getString(R.string.result_quit_title)
                 binding.resultMessageText.text = getString(R.string.result_quit_message)
-                binding.resultIcon.setImageResource(android.R.drawable.ic_menu_send)
+                binding.resultIcon.setImageResource(R.drawable.ic_logout)
             }
             else -> {
                 binding.resultTitleText.text = getString(R.string.result_default_title)
                 binding.resultMessageText.text = getString(R.string.result_default_message)
-                binding.resultIcon.setImageResource(android.R.drawable.ic_dialog_info)
+                binding.resultIcon.setImageResource(R.drawable.ic_trophy)
             }
         }
 
